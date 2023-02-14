@@ -1,0 +1,485 @@
+---
+sidebar: sidebar 
+permalink: reference-limits-aws.html 
+keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM, ebs 
+summary: Cloud Volumes ONTAP tiene límites de configuración de almacenamiento en AWS para proporcionar operaciones fiables. Para obtener el mejor rendimiento, no configure el sistema con los valores máximos. 
+---
+= Límites de almacenamiento en AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para proporcionar operaciones fiables. Para obtener el mejor rendimiento, no configure el sistema con los valores máximos.
+
+
+
+== Capacidad máxima del sistema por licencia
+
+La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
+
+NetApp no admite superar el límite de capacidad del sistema. Si alcanza el límite de capacidad con licencia, BlueXP muestra un mensaje de acción necesaria y ya no permite añadir discos adicionales.
+
+En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Consulte los límites de capacidad y de disco siguientes para obtener más información.
+
+[cols="25,75"]
+|===
+| Licencia | Capacidad máxima del sistema (discos + almacenamiento de objetos) 
+
+
+| Freemium | 500 GIB 
+
+
+| PAYGO Explora | 2 TIB (la organización en niveles de los datos no es compatible con Explore) 
+
+
+| Norma PAYGO | 10 TIB 
+
+
+| PAYGO Premium | 368 TIB 
+
+
+| Licencia basada en nodos | 368 TIB por licencia 
+
+
+| Licencia basada en capacidad | 2 PIB 
+|===
+.Para alta disponibilidad, ¿el límite de capacidad de licencia por nodo o para todo el par de alta disponibilidad?
+El límite de capacidad corresponde a todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TIB de capacidad entre ambos nodos.
+
+.En el caso de un sistema de alta disponibilidad en AWS, ¿los datos reflejados tienen en cuenta el límite de capacidad?
+No, no lo hace. Los datos de una pareja de alta disponibilidad de AWS se replican de forma síncrona entre los nodos, de modo que los datos estén disponibles en caso de fallo. Por ejemplo, si compra un disco de 8 TIB en el nodo A, BlueXP también asigna un disco de 8 TIB en el nodo B que se utiliza para datos reflejados. Mientras que se aprovisionaron 16 TIB de capacidad, solo 8 TIB cuenta contra el límite de licencia.
+
+
+
+== Límites del agregado
+
+Cloud Volumes ONTAP usa volúmenes de EBS como discos y los agrupa en _aggregates_. Los agregados proporcionan almacenamiento para volúmenes.
+
+[cols="2*"]
+|===
+| Parámetro | Límite 
+
+
+| Número máximo de agregados | Un solo nodo: El mismo límite de disco que los pares de alta disponibilidad: 18 en un nodo anterior 1 
+
+
+| Tamaño máximo de agregado de esta 2  a| 
+* 96 TIB de capacidad bruta
+* 128 TIB de capacidad bruta con volúmenes Elastic 3
+
+
+
+
+| Discos por agregado 4  a| 
+* 1-6
+* 1-8 con Elastic Volumes 3
+
+
+
+
+| Número máximo de grupos RAID por agregado | 1 
+|===
+Notas:
+
+. No es posible crear 18 agregados en ambos nodos en una pareja de alta disponibilidad porque, si lo hace, superaría el límite del disco de datos.
+. El tamaño máximo del agregado se basa en los discos que componen el agregado. El límite no incluye el almacenamiento de objetos utilizado para la organización en niveles de datos.
+. Si tiene una configuración compatible con la función de volúmenes Elastic de Amazon EBS, un agregado puede contener hasta 8 discos, que ofrece hasta 128 TIB de capacidad. La función Elastic Volumes de Amazon EBS está habilitada de forma predeterminada en sistemas _new_ Cloud Volumes ONTAP 9.11.0 o posteriores cuando se utilizan discos gp3 o io1. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Obtenga más información sobre el soporte para volúmenes Elastic"^]
+. Todos los discos de un agregado deben tener el mismo tamaño.
+
+
+
+
+== Límites de discos y organización en niveles por instancia de EC2
+
+Los límites de capacidad son diferentes en función de la familia de tipos de instancia de EC2 que se utilice y si se utiliza un sistema de nodo único o un par de alta disponibilidad.
+
+En las siguientes notas se ofrecen detalles acerca de los números que verá en las tablas siguientes:
+
+* Los límites de discos son específicos para los discos que contienen datos de usuario.
++
+Los límites no incluyen el disco de arranque ni el disco raíz.
+
+* Una capacidad máxima del sistema se muestra cuando se utilizan solo discos y cuando se utilizan discos y organización en niveles de datos inactivos en el almacenamiento de objetos.
+* Cloud Volumes ONTAP utiliza volúmenes de EBS como discos, con un tamaño de disco máximo de 16 TIB.
+
+
+
+
+=== Límites para licencias basadas en capacidad
+
+Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Obtenga información sobre las opciones de licencias de Cloud Volumes ONTAP"^]
+
+
+
+==== Un solo nodo
+
+[cols="18,18,32,32"]
+|===
+| Instancia | Número máx. De discos por nodo | Máx. De capacidad del sistema solo con discos | Max capacidad del sistema con discos y organización en niveles de los datos 
+
+
+| instancias c5, m5 y r5 | 21 | 336 TIB | 2 PIB 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 19 hacia 1 | 304 TIB | 2 PIB 
+|===
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+==== Parejas de HA
+
+[cols="18,18,32,32"]
+|===
+| Instancia | Número máx. De discos por nodo | Máx. De capacidad del sistema solo con discos | Max capacidad del sistema con discos y organización en niveles de los datos 
+
+
+| instancias c5, m5 y r5 | 18 | 288 TIB | 2 PIB 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 16 hacia 1 | 256 TIB | 2 PIB 
+|===
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+=== Límites para licencias basadas en nodos
+
+Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP que utilizan licencias basadas en nodos, que es el modelo de licencias de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. La licencia basada en nodos sigue estando disponible para los clientes existentes.
+
+* Si utiliza la licencia basada en nodo, puede adquirir varias licencias basadas en nodos para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad.
++
+El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^].
+
+
+
+
+
+==== Un solo nodo con PAYGO Premium
+
+[cols="18,18,32,32"]
+|===
+| Instancia | Número máx. De discos por nodo | Máx. De capacidad del sistema solo con discos | Max capacidad del sistema con discos y organización en niveles de los datos 
+
+
+| instancias c5, m5 y r5 | 21 hacia 1 | 336 TIB | 368 TIB 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 19 hacia 2 | 304 TIB | 368 TIB 
+|===
+. 21 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 22 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+==== Un nodo único con BYOL
+
+[cols="18,18,16,16,16,16"]
+|===
+| Instancia | Número máx. De discos por nodo 2+| Capacidad máxima del sistema con una licencia 2+| Capacidad máxima del sistema con varias licencias 
+
+
+2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
+
+
+| instancias c5, m5 y r5 | 21 hacia 1 | 336 TIB | 368 TIB | 336 TIB | 368 TIB x cada licencia 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 19 hacia 2 | 304 TIB | 368 TIB | 304 TIB | 368 TIB x cada licencia 
+|===
+. 21 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 22 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+==== Pares DE HA con PAYGO Premium
+
+[cols="18,18,32,32"]
+|===
+| Instancia | Número máx. De discos por nodo | Máx. De capacidad del sistema solo con discos | Max capacidad del sistema con discos y organización en niveles de los datos 
+
+
+| instancias c5, m5 y r5 | 18 hacia 1 | 288 TIB | 368 TIB 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 16 hacia 2 | 256 TIB | 368 TIB 
+|===
+. 18 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 19 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+==== Pares de ALTA DISPONIBILIDAD con BYOL
+
+[cols="18,18,16,16,16,16"]
+|===
+| Instancia | Número máx. De discos por nodo 2+| Capacidad máxima del sistema con una licencia 2+| Capacidad máxima del sistema con varias licencias 
+
+
+2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
+
+
+| instancias c5, m5 y r5 | 18 hacia 1 | 288 TIB | 368 TIB | 288 TIB | 368 TIB x cada licencia 
+
+
+ a| 
+* m5dn.24xgrande
+* m6id.32xlarge
+
+| 16 hacia 2 | 256 TIB | 368 TIB | 256 TIB | 368 TIB x cada licencia 
+|===
+. 18 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 19 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
+. Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
+
+
+
+
+== Límites de máquinas virtuales de almacenamiento
+
+Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["Aprenda a crear máquinas virtuales de almacenamiento adicionales"^].
+
+[cols="40,60"]
+|===
+| Tipo de licencia | Límite de VM de almacenamiento 
+
+
+| *Freemium*  a| 
+24 equipos virtuales de almacenamiento total hacia 1,2
+
+
+
+| *PAYGO basado en la capacidad o BYOL* esta 3  a| 
+24 equipos virtuales de almacenamiento total hacia 1,2
+
+
+
+| *PAYGO* basado en nodos  a| 
+* 1 equipo virtual de almacenamiento para proporcionar datos
+* 1 máquina virtual de almacenamiento para recuperación ante desastres
+
+
+
+
+| *BYOL* basado en nodos con esta versión 4  a| 
+* 24 equipos virtuales de almacenamiento total hacia 1,2
+
+
+|===
+. El límite puede ser inferior, según el tipo de instancia de EC2 que se utilice. Los límites por instancia se enumeran en la sección siguiente.
+. Estos 24 equipos virtuales de almacenamiento pueden proporcionar datos o configurarse para recuperación ante desastres (DR).
+. Para las licencias basadas en la capacidad, no hay costes de licencias adicionales para equipos virtuales de almacenamiento adicionales, pero hay un cargo mínimo de capacidad de 4 TIB por equipo virtual de almacenamiento. Por ejemplo, si crea dos VM de almacenamiento y cada una tiene 2 TIB de capacidad aprovisionada, se le cobrará un total de 8 TIB.
+. Para BYOL basado en nodos, se requiere una licencia complementaria para cada equipo virtual de almacenamiento que _data-sirviendo_ adicional más allá de la primera máquina virtual de almacenamiento que se suministra con Cloud Volumes ONTAP de forma predeterminada. Póngase en contacto con el equipo de cuenta para obtener una licencia adicional de máquina virtual de almacenamiento.
++
+Los equipos virtuales de almacenamiento que configure para la recuperación ante desastres (DR) no requieren una licencia adicional (son gratuitos), sino que cuentan con el límite de equipos virtuales de almacenamiento. Por ejemplo, si tiene 12 máquinas virtuales de almacenamiento que sirven datos y 12 máquinas virtuales de almacenamiento configuradas para recuperación ante desastres, ha alcanzado el límite y no puede crear ningún equipo virtual de almacenamiento adicional.
+
+
+
+
+
+=== Límite de máquina virtual de almacenamiento por tipo de instancia de EC2
+
+Al crear una máquina virtual de almacenamiento adicional, tiene que asignar direcciones IP privadas al puerto e0a. En la siguiente tabla se identifica el número máximo de IP privadas por interfaz, así como el número de direcciones IP disponibles en el puerto e0a una vez que se ha implementado Cloud Volumes ONTAP. La cantidad de direcciones IP disponibles afecta directamente al número máximo de equipos virtuales de almacenamiento para esa configuración.
+
+Las instancias que se enumeran a continuación son para las familias de instancias c5, m5 y r5.
+
+[cols="6*"]
+|===
+| Configuración | Tipo de instancia | Número máximo de IP privadas por interfaz | IPS restantes tras la implementación de esta aplicación 1 | Máximo de equipos virtuales de almacenamiento sin utilizar LIF de gestión 2,3 | Máx. De equipos virtuales de almacenamiento con una LIF de gestión de esta versión 2,3 
+
+
+.9+| *Un solo nodo* | *.xlarge | 15 | 9 | 10 | 5 
+
+
+| *.2xgrande | 15 | 9 | 10 | 5 
+
+
+| *.4xlarge | 30 | 24 | 24 | 12 
+
+
+| *.8xlarge | 30 | 24 | 24 | 12 
+
+
+| *.9xlarge | 30 | 24 | 24 | 12 
+
+
+| *.12xlarge | 30 | 24 | 24 | 12 
+
+
+| *.16xlarge | 50 | 44 | 24 | 12 
+
+
+| *.18xlarge | 50 | 44 | 24 | 12 
+
+
+| *.24xgrande | 50 | 44 | 24 | 12 
+
+
+.9+| *Par de alta disponibilidad en un solo AZ* | *.xlarge | 15 | 10 | 11 | 5 
+
+
+| *.2xgrande | 15 | 10 | 11 | 5 
+
+
+| *.4xlarge | 30 | 25 | 24 | 12 
+
+
+| *.8xlarge | 30 | 25 | 24 | 12 
+
+
+| *.9xlarge | 30 | 25 | 24 | 12 
+
+
+| *.12xlarge | 30 | 25 | 24 | 12 
+
+
+| *.16xlarge | 50 | 45 | 24 | 12 
+
+
+| *.18xlarge | 50 | 45 | 24 | 12 
+
+
+| *.24xgrande | 50 | 44 | 24 | 12 
+
+
+.9+| *Par de alta disponibilidad en varios AZs* | *.xlarge | 15 | 12 | 13 | 13 
+
+
+| *.2xgrande | 15 | 12 | 13 | 13 
+
+
+| *.4xlarge | 30 | 27 | 24 | 24 
+
+
+| *.8xlarge | 30 | 27 | 24 | 24 
+
+
+| *.9xlarge | 30 | 27 | 24 | 24 
+
+
+| *.12xlarge | 30 | 27 | 24 | 24 
+
+
+| *.16xlarge | 50 | 47 | 24 | 24 
+
+
+| *.18xlarge | 50 | 47 | 24 | 24 
+
+
+| *.24xgrande | 50 | 44 | 24 | 12 
+|===
+. Este número indica cuántas direcciones IP privadas _remaining_ están disponibles en el puerto e0a después de implementar y configurar Cloud Volumes ONTAP. Por ejemplo, un sistema *.2xlarge admite un máximo de 15 direcciones IP por interfaz de red. Cuando un par de alta disponibilidad se implementa en un único AZ, se asignan 5 direcciones IP privadas al puerto e0a. Como resultado, un par de alta disponibilidad que utiliza un tipo de instancia *.2xgrande tiene 10 direcciones IP privadas restantes para máquinas virtuales de almacenamiento adicionales.
+. El número indicado en estas columnas incluye la máquina virtual de almacenamiento inicial que BlueXP crea de forma predeterminada. Por ejemplo, si 24 aparece en esta columna, significa que puede crear 23 equipos virtuales de almacenamiento adicionales para un total de 24.
+. Una LIF de gestión para el equipo virtual de almacenamiento es opcional. Una LIF de gestión proporciona una conexión con herramientas de gestión como SnapCenter.
++
+Dado que requiere una dirección IP privada, limitará la cantidad de equipos virtuales de almacenamiento adicionales que puede crear. La única excepción es un par de alta disponibilidad en varios AZs. En ese caso, la dirección IP de la LIF de gestión es una dirección IP _flotante_, por lo que no cuenta con el límite de IP _privado_.
+
+
+
+
+
+== Límites de archivos y volúmenes
+
+[cols="22,22,56"]
+|===
+| Almacenamiento lógico | Parámetro | Límite 
+
+
+.2+| *Archivos* | Tamaño máximo | 16 TIB 
+
+
+| Máximo por volumen | Depende del tamaño del volumen, hasta 2000 millones 
+
+
+| *Volúmenes FlexClone* | Profundidad de clonación jerárquica hacia 1 | 499 
+
+
+.3+| *Volúmenes FlexVol* | Máximo por nodo | 500 
+
+
+| Tamaño mínimo | 20 MB 
+
+
+| Tamaño máximo | 100 TIB 
+
+
+| *Qtrees* | Máximo por volumen FlexVol | 4,995 
+
+
+| *Copias Snapshot* | Máximo por volumen FlexVol | 1,023 
+|===
+. La profundidad de clon jerárquica es la profundidad máxima de una jerarquía anidada de volúmenes FlexClone que se pueden crear a partir de un único volumen de FlexVol.
+
+
+
+
+== Límites de almacenamiento de iSCSI
+
+[cols="3*"]
+|===
+| Almacenamiento iSCSI | Parámetro | Límite 
+
+
+.4+| *LUN* | Máximo por nodo | 1,024 
+
+
+| Número máximo de mapas de LUN | 1,024 
+
+
+| Tamaño máximo | 16 TIB 
+
+
+| Máximo por volumen | 512 
+
+
+| *grupos* | Máximo por nodo | 256 
+
+
+.2+| *Iniciadores* | Máximo por nodo | 512 
+
+
+| Máximo por igroup | 128 
+
+
+| *Sesiones iSCSI* | Máximo por nodo | 1,024 
+
+
+.2+| *LIF* | Máximo por puerto | 32 
+
+
+| Máximo por conjunto de puertos | 32 
+
+
+| *Portsets* | Máximo por nodo | 256 
+|===

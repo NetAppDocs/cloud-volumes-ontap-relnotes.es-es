@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: concept-licensing.html 
+keywords: freemium, professional, essential, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+summary: Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opción le permite elegir una configuración que cumpla sus necesidades. 
+---
+= Licencias para Cloud Volumes ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP ofrece distintas opciones de licencias que permiten elegir un modelo de consumo que se adapte a sus necesidades.
+
+Los nuevos clientes disponen de las siguientes opciones de licencia.
+
+Paquetes de licencias basadas en capacidad:: Las licencias basadas en la capacidad le permiten pagar por Cloud Volumes ONTAP por TIB de capacidad. La licencia está asociada con su cuenta de NetApp y le permite cargar varios sistemas con la licencia, siempre que haya suficiente capacidad disponible mediante la licencia.
++
+--
+La licencia basada en la capacidad está disponible en forma de un _package_. Al implementar un sistema Cloud Volumes ONTAP, puede elegir entre varios paquetes de licencias en función de las necesidades de su empresa.
+
+--
+Suscripción a Keystone Flex:: Un servicio basado en suscripción de pago por crecimiento que ofrece una experiencia fluida de cloud híbrido para aquellos que prefieran los modelos de consumo de gastos operativos como arrendamiento o gastos de capital iniciales.
++
+--
+La carga se basa en el tamaño de la capacidad comprometida de uno o varios pares de alta disponibilidad Cloud Volumes ONTAP de su suscripción Keystone Flex.
+
+--
+
+
+El modelo de licencias por nodos anterior sigue disponible para clientes existentes que ya han adquirido una licencia o que tienen una suscripción activa a Marketplace.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre estas opciones de licencia"^]
