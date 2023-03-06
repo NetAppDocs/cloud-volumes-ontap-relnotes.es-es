@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.12.1 incluye una nueva mejora. 
+summary: Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora. 
 ---
-= Novedades de Cloud Volumes ONTAP 9.12.1
+= Novedades de Cloud Volumes ONTAP 9.13.0
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,59 +14,43 @@ summary: Cloud Volumes ONTAP 9.12.1 incluye una nueva mejora.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.12.1 incluye nuevas mejoras.
+Cloud Volumes ONTAP 9.13.0 incluye nuevas mejoras.
 
 También se incluyen funciones y mejoras adicionales en las versiones más recientes de BlueXP (anteriormente Cloud Manager). Consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notas de la versión de BlueXP"^] para obtener más detalles.
 
 
 
-== 9.12.1 GA (9 de febrero de 2023)
+== 9.13.0 GA (5 de marzo de 2023)
 
-La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.12.1 ya está disponible en AWS, Azure y Google Cloud. La versión de GA incluye correcciones de errores.
-
-
-
-== 9.12.1 RC1 (8 de diciembre de 2022)
-
-La primera versión candidata al lanzamiento de Cloud Volumes ONTAP 9.12.1 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.
+La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.13.0 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.
 
 
 
-=== Licencia de ONTAP S3 en GCP
+=== Flash Cache y una alta velocidad de escritura en Google Cloud
 
-Ahora se incluye una licencia de ONTAP S3 en los sistemas Cloud Volumes ONTAP nuevos y existentes que ejecutan la versión 9.12.1 o posterior en Google Cloud Platform.
+Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.
 
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"^]
-
-
-
-=== Compatibilidad con NVMe-TCP en Cloud Volumes ONTAP
-
-NVMe-TCP es compatible con los proveedores de cloud si utiliza Cloud Volumes ONTAP versión 9.12.1 o posterior. BlueXP no ofrece funcionalidades de gestión para NVMe-TCP.
-
-Para obtener más información sobre cómo configurar NVMe mediante ONTAP, consulte link:https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["Configure una máquina virtual de almacenamiento para NVMe"^].
+Más información acerca de link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configuraciones compatibles con licencia para Google Cloud"^].
 
 
 
-=== Alta disponibilidad de Azure en una zona de disponibilidad única con discos gestionados compartidos
+=== Verificación de imágenes en Google Cloud
 
-Ahora puede implementar una configuración de alta disponibilidad de Cloud Volumes ONTAP usando el almacenamiento redundante local (LRS) de Microsoft Azure que se ejecuta sobre discos gestionados compartidos. El sistema de almacenamiento redundante local replica sus datos tres veces en un solo centro de datos de la misma región.
+Las funciones de seguridad mejoradas ahora están disponibles para verificar firmas de archivos de imagen Cloud Volumes ONTAP exportados a través de Google Cloud.
 
-Para obtener más información sobre los componentes y la arquitectura de configuración de alta disponibilidad, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Pares de alta disponibilidad en Azure"^].
-
-Cuando implemente un nuevo par de alta disponibilidad en Azure en una única zona de disponibilidad, ahora utilizará discos gestionados compartidos LRS en lugar de Blobs de página para el almacenamiento. No hay ningún cambio en el asistente de entorno de trabajo. Solo tiene que elegir una única zona de disponibilidad para utilizar esta nueva configuración. Para obtener más información, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en Azure"^].
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-gcp-image-verification.html["Más información acerca de la verificación de imágenes de Google Cloud"^].
 
 
 
-=== Alta disponibilidad de Azure en varias zonas de disponibilidad con discos gestionados compartidos
+=== Compatibilidad de nuevas instancias en Google Cloud
 
-Ahora puede implementar una configuración de alta disponibilidad de Cloud Volumes ONTAP utilizando varias zonas de disponibilidad de Azure en una región. La nueva configuración protege contra el fallo del centro de datos y mantiene la disponibilidad de las aplicaciones con el uso de discos gestionados compartidos de almacenamiento redundante de zonas (ZRS) de Azure. Esta función está disponible actualmente sólo en las regiones de Europa Occidental 2, Europa Occidental, Europa del Norte y Francia Central.
+Freemium, PAYGO Premium, licencias basadas en nodos BYOL y basadas en capacidad admiten ahora dos nuevos tipos de instancias para las implementaciones de nodo único de Cloud Volumes ONTAP y alta disponibilidad en Google Cloud.
 
-Para obtener más información sobre los componentes y la arquitectura de configuración de alta disponibilidad, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Pares de alta disponibilidad en Azure"^].
+* n2-estándar-48
+* n2-estándar-64
 
-Para utilizar esta nueva configuración, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en Azure"^].
 
-Para obtener más información acerca del almacenamiento redundante de zonas para discos administrados, consulte link:https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["Documentación de Microsoft Azure."]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Obtenga más información sobre las configuraciones compatibles en Google Cloud"^].
 
 
 
@@ -80,19 +64,19 @@ Lea estas notas para obtener más información acerca de cómo actualizar a esta
 
 Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No debe actualizar Cloud Volumes ONTAP con System Manager o CLI. Hacerlo puede afectar a la estabilidad del sistema.
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Obtenga información sobre cómo actualizar cuando BlueXP lo notifique"^].
+link:http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Obtenga información sobre cómo actualizar cuando BlueXP lo notifique"^].
 
 
 
 === Ruta de actualización admitida
 
-Puede actualizar a Cloud Volumes ONTAP 9.12.1 desde las versiones 9.12.0 y 9.11.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
+Puede actualizar a Cloud Volumes ONTAP 9.13.0 desde la versión 9.12.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
 
 
 
 === Versión necesaria del conector
 
-El conector BlueXP debe estar ejecutando la versión 3.9.24 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.12.1 y actualizar los sistemas existentes a la versión 9.12.1.
+El conector BlueXP debe estar ejecutando la versión 3.9.26 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.13.0 y actualizar los sistemas existentes a la versión 9.13.0.
 
 
 TIP: Las actualizaciones automáticas del conector están habilitadas de forma predeterminada, por lo que debería estar ejecutando la última versión.
@@ -109,7 +93,7 @@ TIP: Las actualizaciones automáticas del conector están habilitadas de forma p
 
 === las instancias c4, m4 y r4 ya no son compatibles
 
-En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5.
+En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Aprenda a cambiar el tipo de instancia de EC2 para Cloud Volumes ONTAP"^].
 

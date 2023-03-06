@@ -106,7 +106,6 @@ Cloud Volumes ONTAP no admite las siguientes funciones:
 +
 Si se habilita la verificación multi-administrador en Cloud Volumes ONTAP, se genera una configuración no compatible.
 
-* ONTAP S3 en Google Cloud (el protocolo S3 es compatible con Azure y AWS).
 * RAID4, RAID-DP, RAID-TEC (compatible con RAID0)
 * Procesador de servicios
 * Modos empresariales y cumplimiento de normativas para SnapLock (solo es compatible WORM de cloud)
