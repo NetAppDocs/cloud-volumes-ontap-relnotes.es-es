@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
   <head class="at-element-marker">
-  <title>Novedades de Cloud Volumes ONTAP 9.12.1 | NetApp Documentation</title>
+  <title>Novedades de Cloud Volumes ONTAP 9.13.0 | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Novedades de Cloud Volumes ONTAP 9.12.1 | NetApp Documentation" />
+  <meta property="og:title" content="Novedades de Cloud Volumes ONTAP 9.13.0 | NetApp Documentation" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-new.html" />
-	<meta property="og:description" content="Cloud Volumes ONTAP 9.12.1 incluye una nueva mejora." />
+	<meta property="og:description" content="Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora." />
   <meta property="og:image" content="https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP 9.12.1 incluye una nueva mejora.">
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora.">
   <meta name="keywords" content=" what"s new, new, features, release notes, enhancements"><!-- Icons -->
   <link rel="icon" href="/es-es/cloud-volumes-ontap-relnotes/images/favicon.ico" type="image/x-icon">
 
@@ -79,11 +79,17 @@
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/es-es/cloud-volumes-ontap-relnotes/js/na-search.js'></script><script src='/es-es/cloud-volumes-ontap-relnotes/js/na-pagenav.js'></script><script src='/es-es/cloud-volumes-ontap-relnotes/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/es-es/cloud-volumes-ontap-relnotes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/es-es/cloud-volumes-ontap-relnotes/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/es-es/cloud-volumes-ontap-relnotes/js/na-utility.js'></script> -->
   <script src='/es-es/cloud-volumes-ontap-relnotes/js/clouddocs.js'></script>
   <script src='/es-es/cloud-volumes-ontap-relnotes/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src='/es-es/cloud-volumes-ontap-relnotes/js/toc.js'></script>
-  <script src='/es-es/cloud-volumes-ontap-relnotes/js/customscripts.js'></script><script>
+  <!-- <script src='/es-es/cloud-volumes-ontap-relnotes/js/toc.js'></script> -->
+  <!-- <script src='/es-es/cloud-volumes-ontap-relnotes/js/customscripts.js'></script> --><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -148,7 +154,7 @@
   <script src='/es-es/cloud-volumes-ontap-relnotes/js/FileSaver.min.js'></script>
   <script src='/es-es/cloud-volumes-ontap-relnotes/js/jszip-utils.min.js'></script>
   <script src='/es-es/cloud-volumes-ontap-relnotes/js/jszip.min.js'></script>
-  <script src='/es-es/cloud-volumes-ontap-relnotes/js/pdf-ux.js'></script>
+  <!-- <script src='/es-es/cloud-volumes-ontap-relnotes/js/pdf-ux.js'></script> -->
 </head>
 
 
@@ -161,9 +167,9 @@
   <!-- Start Page Toolbar -->
   
   <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
-  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.12.1">
+  <div class="custom-dropdown-select unselected" title="Cloud Volumes ONTAP 9.13.0">
     <label>Versión</label>
-    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.12.1</span>
+    <span translate="no" class="notranslate">Cloud Volumes ONTAP 9.13.0</span>
     <img src="/es-es/cloud-volumes-ontap-relnotes/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
     <img src="/es-es/cloud-volumes-ontap-relnotes/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
   </div>
@@ -171,6 +177,13 @@
   <ul class="custom-dropdown-menu"><li>
       
       <a href="https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-new.html" target="_self">
+        <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.13.0</span></span>
+      </a>
+                     
+    </li>
+    <li>
+      
+      <a href="https://docs.netapp.com/es-es/cloud-volumes-ontap-9121-relnotes/reference-new.html" target="_self">
         <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.12.1</span></span>
       </a>
                      
@@ -268,7 +281,7 @@
     </li>
     
   </ul>
-</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/issues/new?body=Page%3A%20[Novedades de Cloud Volumes ONTAP 9.12.1](https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-new.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/es-es/cloud-volumes-ontap-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />Solicitar cambios en el documento</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/blob/main/reference-new.adoc" class="page-nav-contribute-link" role="button"><img src="/es-es/cloud-volumes-ontap-relnotes/images/edit-sm.svg" alt="" class="github-icon" />Editar en GitHub</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/es-es/cloud-volumes-ontap-relnotes/images/article-sm.svg" alt="" class="github-icon" />Guía del colaborador</a></div>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/issues/new?body=Page%3A%20[Novedades de Cloud Volumes ONTAP 9.13.0](https://docs.netapp.com/es-es/cloud-volumes-ontap-relnotes/reference-new.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/es-es/cloud-volumes-ontap-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />Solicitar cambios en el documento</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/blob/main/reference-new.adoc" class="page-nav-contribute-link" role="button"><img src="/es-es/cloud-volumes-ontap-relnotes/images/edit-sm.svg" alt="" class="github-icon" />Editar en GitHub</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/es-es/cloud-volumes-ontap-relnotes/images/article-sm.svg" alt="" class="github-icon" />Guía del colaborador</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">EN ESTA PÁGINA</div>
@@ -329,7 +342,7 @@
           <span class="n-property-bar__menu-toggle-text">Menu</span>
           <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
             <title>bars</title>
-            <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#bars"></use>
+            <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#bars"></use>
           </svg>
         </a>
       </div>
@@ -338,11 +351,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
               <title>netapp-logo</title>
-              <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
         </a>
@@ -368,7 +381,7 @@
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#search"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#search"></use>
             </svg>
           </button>
         </div>
@@ -382,7 +395,7 @@
       <span class="lang-name">Español</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#globe"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
@@ -430,7 +443,7 @@
         
         
         
-        <a target="_blank" href="/es-es/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Notas_de_la_versión_de_Cloud_Volumes_ONTAP_9_12_1.pdf" >
+        <a target="_blank" href="/es-es/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Notas_de_la_versión_de_Cloud_Volumes_ONTAP_9_13_0.pdf" >
           <img src="/es-es/cloud-volumes-ontap-relnotes/images/pdf.png" alt="" width="16" height="16"/>PDF de este sitio de documentos</a>
 
 
@@ -752,7 +765,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/es-es/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.12.1&nbsp;release&nbsp;notes</a>
+          <a href="/es-es/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.13.0&nbsp;release&nbsp;notes</a>
         </li>
 
       </ul>
@@ -766,7 +779,7 @@
     <div class="ie-nmt-disclaimer-container">
       <div class="ie-nmt-disclaimer-icon">
         <svg class="luci-icon" aria-hidden="true">
-          <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#circle-info">
+          <use xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#circle-info">
         </svg>
       </div>
       <div class="ie-nmt-disclaimer-content">
@@ -776,14 +789,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Novedades de Cloud Volumes ONTAP 9.12.1</h1>
+  <h1 class="n-doc__component-detail-heading">Novedades de Cloud Volumes ONTAP 9.13.0</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2023-02-20 16:47:12 +0000">02/20/2023</time>
+    <time datetime="2023-03-06 21:18:16 +0000">03/06/2023</time>
     
   
 
@@ -796,7 +809,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Cloud Volumes ONTAP 9.12.1 incluye nuevas mejoras.</p>
+<p>Cloud Volumes ONTAP 9.13.0 incluye nuevas mejoras.</p>
 </div>
 <div class="paragraph">
 <p>También se incluyen funciones y mejoras adicionales en las versiones más recientes de BlueXP (anteriormente Cloud Manager). Consulte <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Notas de la versión de BlueXP"</a> para obtener más detalles.</p>
@@ -804,62 +817,46 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="9-12-1-ga-9-de-febrero-de-2023">9.12.1 GA (9 de febrero de 2023)</h2>
+<h2 id="9-13-0-ga-5-de-marzo-de-2023">9.13.0 GA (5 de marzo de 2023)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.12.1 ya está disponible en AWS, Azure y Google Cloud. La versión de GA incluye correcciones de errores.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="9-12-1-rc1-8-de-diciembre-de-2022">9.12.1 RC1 (8 de diciembre de 2022)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>La primera versión candidata al lanzamiento de Cloud Volumes ONTAP 9.12.1 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.</p>
+<p>La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.13.0 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.</p>
 </div>
 <div class="sect2">
-<h3 id="licencia-de-ontap-s3-en-gcp">Licencia de ONTAP S3 en GCP</h3>
+<h3 id="flash-cache-y-una-alta-velocidad-de-escritura-en-google-cloud">Flash Cache y una alta velocidad de escritura en Google Cloud</h3>
 <div class="paragraph">
-<p>Ahora se incluye una licencia de ONTAP S3 en los sistemas Cloud Volumes ONTAP nuevos y existentes que ejecutan la versión 9.12.1 o posterior en Google Cloud Platform.</p>
+<p>Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/ontap/object-storage-management/index.html" target="_blank" rel="noopener">"Aprenda a configurar y gestionar los servicios de almacenamiento de objetos S3 en ONTAP"</a></p>
+<p>Más información acerca de <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html" target="_blank" rel="noopener">"Configuraciones compatibles con licencia para Google Cloud"</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="compatibilidad-con-nvme-tcp-en-cloud-volumes-ontap">Compatibilidad con NVMe-TCP en Cloud Volumes ONTAP</h3>
+<h3 id="verificación-de-imágenes-en-google-cloud">Verificación de imágenes en Google Cloud</h3>
 <div class="paragraph">
-<p>NVMe-TCP es compatible con los proveedores de cloud si utiliza Cloud Volumes ONTAP versión 9.12.1 o posterior. BlueXP no ofrece funcionalidades de gestión para NVMe-TCP.</p>
+<p>Las funciones de seguridad mejoradas ahora están disponibles para verificar firmas de archivos de imagen Cloud Volumes ONTAP exportados a través de Google Cloud.</p>
 </div>
 <div class="paragraph">
-<p>Para obtener más información sobre cómo configurar NVMe mediante ONTAP, consulte <a href="https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html" target="_blank" rel="noopener">"Configure una máquina virtual de almacenamiento para NVMe"</a>.</p>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-gcp-image-verification.html" target="_blank" rel="noopener">"Más información acerca de la verificación de imágenes de Google Cloud"</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="alta-disponibilidad-de-azure-en-una-zona-de-disponibilidad-única-con-discos-gestionados-compartidos">Alta disponibilidad de Azure en una zona de disponibilidad única con discos gestionados compartidos</h3>
+<h3 id="compatibilidad-de-nuevas-instancias-en-google-cloud">Compatibilidad de nuevas instancias en Google Cloud</h3>
 <div class="paragraph">
-<p>Ahora puede implementar una configuración de alta disponibilidad de Cloud Volumes ONTAP usando el almacenamiento redundante local (LRS) de Microsoft Azure que se ejecuta sobre discos gestionados compartidos. El sistema de almacenamiento redundante local replica sus datos tres veces en un solo centro de datos de la misma región.</p>
+<p>Freemium, PAYGO Premium, licencias basadas en nodos BYOL y basadas en capacidad admiten ahora dos nuevos tipos de instancias para las implementaciones de nodo único de Cloud Volumes ONTAP y alta disponibilidad en Google Cloud.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>n2-estándar-48</p>
+</li>
+<li>
+<p>n2-estándar-64</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Para obtener más información sobre los componentes y la arquitectura de configuración de alta disponibilidad, consulte <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html" target="_blank" rel="noopener">"Pares de alta disponibilidad en Azure"</a>.</p>
-</div>
-<div class="paragraph">
-<p>Cuando implemente un nuevo par de alta disponibilidad en Azure en una única zona de disponibilidad, ahora utilizará discos gestionados compartidos LRS en lugar de Blobs de página para el almacenamiento. No hay ningún cambio en el asistente de entorno de trabajo. Solo tiene que elegir una única zona de disponibilidad para utilizar esta nueva configuración. Para obtener más información, consulte <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">"Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en Azure"</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="alta-disponibilidad-de-azure-en-varias-zonas-de-disponibilidad-con-discos-gestionados-compartidos">Alta disponibilidad de Azure en varias zonas de disponibilidad con discos gestionados compartidos</h3>
-<div class="paragraph">
-<p>Ahora puede implementar una configuración de alta disponibilidad de Cloud Volumes ONTAP utilizando varias zonas de disponibilidad de Azure en una región. La nueva configuración protege contra el fallo del centro de datos y mantiene la disponibilidad de las aplicaciones con el uso de discos gestionados compartidos de almacenamiento redundante de zonas (ZRS) de Azure. Esta función está disponible actualmente sólo en las regiones de Europa Occidental 2, Europa Occidental, Europa del Norte y Francia Central.</p>
-</div>
-<div class="paragraph">
-<p>Para obtener más información sobre los componentes y la arquitectura de configuración de alta disponibilidad, consulte <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html" target="_blank" rel="noopener">"Pares de alta disponibilidad en Azure"</a>.</p>
-</div>
-<div class="paragraph">
-<p>Para utilizar esta nueva configuración, consulte <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">"Iniciar una pareja de alta disponibilidad de Cloud Volumes ONTAP en Azure"</a>.</p>
-</div>
-<div class="paragraph">
-<p>Para obtener más información acerca del almacenamiento redundante de zonas para discos administrados, consulte <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks">"Documentación de Microsoft Azure."</a></p>
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html" target="_blank" rel="noopener">"Obtenga más información sobre las configuraciones compatibles en Google Cloud"</a>.</p>
 </div>
 </div>
 </div>
@@ -882,13 +879,13 @@
 <div class="sect2">
 <h3 id="ruta-de-actualización-admitida">Ruta de actualización admitida</h3>
 <div class="paragraph">
-<p>Puede actualizar a Cloud Volumes ONTAP 9.12.1 desde las versiones 9.12.0 y 9.11.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.</p>
+<p>Puede actualizar a Cloud Volumes ONTAP 9.13.0 desde la versión 9.12.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="versión-necesaria-del-conector">Versión necesaria del conector</h3>
 <div class="paragraph">
-<p>El conector BlueXP debe estar ejecutando la versión 3.9.24 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.12.1 y actualizar los sistemas existentes a la versión 9.12.1.</p>
+<p>El conector BlueXP debe estar ejecutando la versión 3.9.26 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.13.0 y actualizar los sistemas existentes a la versión 9.13.0.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -919,7 +916,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
 <div class="sect2">
 <h3 id="las-instancias-c4-m4-y-r4-ya-no-son-compatibles">las instancias c4, m4 y r4 ya no son compatibles</h3>
 <div class="paragraph">
-<p>En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5.</p>
+<p>En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html" target="_blank" rel="noopener">"Aprenda a cambiar el tipo de instancia de EC2 para Cloud Volumes ONTAP"</a>.</p>
@@ -980,7 +977,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                   <title>blog@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#blog"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#blog"></use>
                 </svg>
               </a>
             </li>
@@ -991,7 +988,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
                   <title>community@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#comments"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#comments"></use>
                 </svg>
               </a>
             </li>
@@ -1002,7 +999,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                   <title>twitter@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#twitter"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -1013,7 +1010,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
                   <title>facebook@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#facebook"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -1024,7 +1021,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
                   <title>linkedin@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#linkedin"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -1035,7 +1032,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                   <title>youtube@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#youtube"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -1046,7 +1043,7 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
                 <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
                   <title>slideshare@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#slideshare"></use>
+                    xlink:href="/es-es/cloud-volumes-ontap-relnotes/images/sprite.svg#slideshare"></use>
                 </svg>
               </a>
             </li>
@@ -1070,7 +1067,6 @@ Las actualizaciones automáticas del conector están habilitadas de forma predet
       cookieLaw.euCountry = "US";
       cookieLaw.invoke = function(){return false;}
     </script>
-    <script src='/es-es/cloud-volumes-ontap-relnotes/js/www-ntap.js'></script>
     <script src='/es-es/cloud-volumes-ontap-relnotes/js/tabbed-blocks.js'></script>
     <script src='/es-es/cloud-volumes-ontap-relnotes/js/sidebar.js'></script>
   </body></html>
