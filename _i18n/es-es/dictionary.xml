@@ -684,8 +684,6 @@
   <block id="08a6d92c67ddca491cb942b3dad79c36" category="paragraph">La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.13.0 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.</block>
   <block id="98f6dc87e7c206ec16da559a2af45beb" category="section-title">Flash Cache y una alta velocidad de escritura en Google Cloud</block>
   <block id="77e5d57bae938bc31208cded57756dc8" category="paragraph">Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.</block>
-  <block id="80d41628bf38145af2326ce3d52d8e91" category="inline-link-macro">Configuraciones compatibles con licencia para Google Cloud</block>
-  <block id="0a623de488b37ca75333d521fccaa559" category="paragraph">Más información acerca de <block ref="cdeafd55498169f22d9d7a55ffee4ff4" category="inline-link-macro-rx"></block>.</block>
   <block id="a8c4c892aed6484fe804ae459960a806" category="section-title">Verificación de imágenes en Google Cloud</block>
   <block id="ea34816f3c506620775a84c7a17f65bb" category="paragraph">Las funciones de seguridad mejoradas ahora están disponibles para verificar firmas de archivos de imagen Cloud Volumes ONTAP exportados a través de Google Cloud.</block>
   <block id="af10bd89b3d2714a711373f227970f8d" category="inline-link-macro">Más información acerca de la verificación de imágenes de Google Cloud</block>
@@ -706,4 +704,8 @@
   <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash Cache_, el modo de escritura alta y un valor MTU de 8,896 dependen de las funciones y no se pueden deshabilitar individualmente dentro de una instancia configurada.</block>
   <block id="dc0f989b2f6bd3e7bf961fb6ea788d85" category="summary">En estas notas de la versión, se describen las nuevas funciones, las limitaciones y los problemas conocidos de Cloud Volumes ONTAP 9.13.0.</block>
   <block id="f53ab0fd2ad9b3e113196ed1a6d6792a" category="doc">Notas de la versión de Cloud Volumes ONTAP 9.13.0</block>
+  <block id="0bd47e4dae550ba8bfd133248f3efde6" category="list-text">16 TIB (solo discos gestionados)</block>
+  <block id="e976f9591845e426a456344d35bd0caf" category="list-text">32 TIB (solo discos gestionados)</block>
+  <block id="32830aa4ef4df4b9d8e47549047e69c8" category="inline-link-macro">Configuraciones compatibles con licencia en Google Cloud</block>
+  <block id="84be1484c7ac300bd9e0b83a7535caeb" category="paragraph">Más información acerca de <block ref="2e8eda968169518df52bf6fcb01f61cf" category="inline-link-macro-rx"></block>.</block>
 </blocks>

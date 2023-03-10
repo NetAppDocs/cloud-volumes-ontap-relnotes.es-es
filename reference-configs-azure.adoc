@@ -346,4 +346,6 @@ Se admiten los siguientes tamaños de disco:
 * 2 TIB
 * 4 TIB
 * 8 TIB
+* 16 TIB (solo discos gestionados)
+* 32 TIB (solo discos gestionados)
 
