@@ -60,8 +60,6 @@ sidebar:
     url: "/index.html"
   - title: Novedades
     url: "/reference-new.html"
-  - title: Otras versiones
-    url: "/reference-other-versions.html"
   - title: Información general sobre las licencias
     url: "/concept-licensing.html"
   - title: Configuraciones admitidas
