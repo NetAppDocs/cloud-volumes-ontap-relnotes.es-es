@@ -235,3 +235,10 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 | *Portsets* | Máximo por nodo | 256 
 |===
+
+
+== Los pares de alta disponibilidad de Cloud Volumes ONTAP no admiten la devolución inmediata del almacenamiento
+
+Cuando un nodo se reinicia, el partner debe sincronizar los datos para que puedan devolver el almacenamiento. El tiempo que tarda en resincronizar los datos depende de la cantidad de datos escritos por los clientes mientras el nodo estaba inactivo y de la velocidad de escritura de datos durante el momento de la restauración.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-google-cloud.html["Descubra cómo funciona el almacenamiento en una pareja de ha de Cloud Volumes ONTAP que se ejecuta en Google Cloud"^].
