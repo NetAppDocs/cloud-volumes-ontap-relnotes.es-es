@@ -484,12 +484,6 @@
   <block id="71674eaa07f12640df0ea0be77ecd9ac" category="inline-link">Aprenda a usar Cloud Backup Service para realizar backups y restaurar datos de ONTAP</block>
   <block id="e81db3857b1943249df996fe0b3ed679" category="paragraph"><block ref="935fff627382fb455a98804a9e37d559" category="inline-link-rx"></block>.</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">Los puntos de consistencia de ONTAP del sistema de archivos WAFL determinan la coherencia de datos. Solo ONTAP puede desactivar el sistema de archivos WAFL para realizar un backup consistente con los fallos.</block>
-  <block id="d302a39827e370146d2861389e98e60c" category="section-title">Apoyo en las regiones de China</block>
-  <block id="da059bd73f7531380888607adbbd03aa" category="paragraph">Cloud Volumes ONTAP cuenta con el siguiente apoyo en las regiones de China.</block>
-  <block id="cbf02fb0cb394b4b19fb0788f9b62554" category="list-text">Cloud Volumes ONTAP 9.6 es compatible en las regiones de AWS China.</block>
-  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">Los sistemas de un solo nodo son compatibles.</block>
-  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Se admiten las licencias adquiridas directamente en NetApp.</block>
-  <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">No se admiten el resto de ubicaciones, versiones, configuraciones y licencias.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP admite instancias de máquinas virtuales reservadas y bajo demanda</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten otros tipos de instancias de VM.</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">No deben utilizarse soluciones automáticas de gestión de recursos de aplicaciones</block>
@@ -561,7 +555,6 @@
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Limitaciones de Google Private Service Connect</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">Extremos API de BlueXP</block>
-  <block id="e86e72989c257fb5c6ba8da24c2c7c48" category="paragraph">Si aprovecha<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> En el VPC al que se va a implementar Cloud Volumes ONTAP, deberá implementar registros de DNS que reenvíe el tráfico al requerido<block ref="85f106dabc925307c90ceeec8d21a18f" category="inline-link-rx"></block>.</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Actualmente, los datos por niveles de Cloud Volumes ONTAP en un bloque de almacenamiento de Google Cloud no son compatibles con Private Service Connect.</block>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Hay varias opciones de licencia disponibles para Cloud Volumes ONTAP. Cada opción le permite elegir una configuración que cumpla sus necesidades.</block>
   <block id="be02aeef4770b69cefbe40935aba2797" category="doc">Licencias para Cloud Volumes ONTAP</block>
@@ -710,4 +703,5 @@
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">Estas máquinas virtuales solo son compatibles con las implementaciones de Cloud Volumes ONTAP 9.11.1 o versiones anteriores. Con estos tipos de máquinas virtuales, puede actualizar una implementación BLOB de página existente de Cloud Volumes ONTAP 9.11.1 a 9.12.1. No se pueden realizar implementaciones BLOB de página nuevas con Cloud Volumes ONTAP 9.12.1 o versiones posteriores.</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Descubra cómo funciona el almacenamiento en una pareja de ha de Cloud Volumes ONTAP que se ejecuta en Google Cloud</block>
   <block id="e14f9eb0a41dc045a4d5568d18e8170e" category="paragraph"><block ref="50d9731ce0bfc8e3757cc819b5895c1f" category="inline-link-rx"></block>.</block>
+  <block id="1201140e917505446359a76c53a69515" category="paragraph">Si aprovecha<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> En el VPC al que se va a implementar Cloud Volumes ONTAP, deberá implementar registros de DNS que reenvíe el tráfico al requerido<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>.</block>
 </blocks>
