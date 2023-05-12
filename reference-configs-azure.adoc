@@ -128,17 +128,17 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 Notas:
 
 . Con PAYGO Explore, los datos en niveles en el almacenamiento de Azure Blob no son compatibles.
-. Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
-. Estos tipos de VM utilizan https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["SSD ultra"^] Para VNVRAM, que proporciona un mejor rendimiento de escritura.
+. Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://["Leer más"^].
+. Estos tipos de VM utilizan https://["SSD ultra"^] Para VNVRAM, que proporciona un mejor rendimiento de escritura.
 +
 Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.
 
 +
 A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.
 
-. Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
+. Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
 . El rendimiento de escritura mejorado se habilita al usar SSD.
-. Para obtener información sobre la compatibilidad con Azure region, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].
+. Para obtener información sobre la compatibilidad con Azure region, consulte https://["Regiones globales de Cloud Volumes"^].
 . Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
 
 
@@ -221,7 +221,7 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 |===
 Notas:
 
-. Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
+. Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
 . Esta máquina virtual se recomienda solo cuando se necesite el control de mantenimiento de Azure. No está recomendado para ningún otro caso de uso debido a que los precios son más elevados.
 . Estas máquinas virtuales solo son compatibles con las implementaciones de Cloud Volumes ONTAP 9.11.1 o versiones anteriores. Con estos tipos de máquinas virtuales, puede actualizar una implementación BLOB de página existente de Cloud Volumes ONTAP 9.11.1 a 9.12.1. No se pueden realizar implementaciones BLOB de página nuevas con Cloud Volumes ONTAP 9.12.1 o versiones posteriores.
 
@@ -279,11 +279,11 @@ Notas:
 |===
 Notas:
 
-. Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
+. Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
 . Esta máquina virtual se recomienda solo cuando se necesite el control de mantenimiento de Azure. No está recomendado para ningún otro caso de uso debido a que los precios son más elevados.
 . Estos tipos de máquinas virtuales solo son compatibles con pares de alta disponibilidad en una configuración de zona de disponibilidad única que se ejecuta en discos gestionados compartidos.
 . Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos.
-. Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
+. Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://["Leer más"^].
 
 
 

@@ -18,4 +18,4 @@ Los problemas conocidos identifican problemas por los que el uso correcto de est
 
 No existen problemas conocidos en esta versión específicos de Cloud Volumes ONTAP.
 
-Es posible encontrar problemas conocidos del software ONTAP en el https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de la versión de ONTAP"^].
+Es posible encontrar problemas conocidos del software ONTAP en el https://["Notas de la versión de ONTAP"^].

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">Notas de la versión de BlueXP</block>
-  <block id="7b266e39bb1d33ceb7866245509e3615" category="paragraph">También se incluyen funciones y mejoras adicionales en las versiones más recientes de BlueXP (anteriormente Cloud Manager). Consulte<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> para obtener más detalles.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">Notas de actualización</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">Lea estas notas para obtener más información acerca de cómo actualizar a esta versión.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Cómo actualizar</block>
@@ -479,8 +478,6 @@
   <block id="55daffc7827b6ec74240106a8f647473" category="paragraph">El número máximo de transferencias simultáneas de SnapMirror o SnapVault para Cloud Volumes ONTAP es 100 por nodo, independientemente del tipo de instancia o de tipo de máquina.</block>
   <block id="6678cc30386be959db340cbdd54ecbda" category="section-title">No se deben usar copias Snapshot de proveedores de cloud para sus planes de backup y recuperación</block>
   <block id="f6fdc425c22fbe91b4cd43c5702c7923" category="paragraph">No debería usar las copias Snapshot de su proveedor de cloud como parte de su plan de backup y recuperación de datos de Cloud Volumes ONTAP. Debería usar siempre copias Snapshot de ONTAP o soluciones de backup de terceros para realizar backups y restaurar datos alojados en Cloud Volumes ONTAP.</block>
-  <block id="71674eaa07f12640df0ea0be77ecd9ac" category="inline-link">Aprenda a usar Cloud Backup Service para realizar backups y restaurar datos de ONTAP</block>
-  <block id="e81db3857b1943249df996fe0b3ed679" category="paragraph"><block ref="935fff627382fb455a98804a9e37d559" category="inline-link-rx"></block>.</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">Los puntos de consistencia de ONTAP del sistema de archivos WAFL determinan la coherencia de datos. Solo ONTAP puede desactivar el sistema de archivos WAFL para realizar un backup consistente con los fallos.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP admite instancias de máquinas virtuales reservadas y bajo demanda</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten otros tipos de instancias de VM.</block>
@@ -704,4 +701,7 @@
   <block id="1201140e917505446359a76c53a69515" category="paragraph">Si aprovecha<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> En el VPC al que se va a implementar Cloud Volumes ONTAP, deberá implementar registros de DNS que reenvíe el tráfico al requerido<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>.</block>
   <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3 ^2^</block>
   <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3 ^2^</block>
+  <block id="468539119bbdc1adf73b917e2900aee4" category="inline-link">Descubre cómo utilizar el backup y la recuperación de datos de BlueXP para realizar backups y restauraciones de datos de ONTAP</block>
+  <block id="97f2669f2be89519b70ab300a23d78bf" category="paragraph"><block ref="dd0e067e6a9ee59d9a054d0786a54cd0" category="inline-link-rx"></block>.</block>
+  <block id="619c180e46c9dec776a0347d35298e14" category="paragraph">Las últimas versiones de BlueXP también incluyen funciones y mejoras adicionales. Consulte<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> para obtener más detalles.</block>
 </blocks>

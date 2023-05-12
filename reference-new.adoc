@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora.
 [role="lead"]
 Cloud Volumes ONTAP 9.13.0 incluye nuevas mejoras.
 
-También se incluyen funciones y mejoras adicionales en las versiones más recientes de BlueXP (anteriormente Cloud Manager). Consulte https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notas de la versión de BlueXP"^] para obtener más detalles.
+Las últimas versiones de BlueXP también incluyen funciones y mejoras adicionales. Consulte https://["Notas de la versión de BlueXP"^] para obtener más detalles.
 
 
 
