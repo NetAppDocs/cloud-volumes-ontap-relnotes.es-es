@@ -393,7 +393,6 @@
   <block id="a59ad4f9735c6c90fea48ef6e88441ac" category="cell">c5n.9xgrande</block>
   <block id="26657d5ff9020d2abefe558796b99584" category="cell">96</block>
   <block id="2d3e51e89d3f05d2abe99df631cb0b4c" category="cell">c5a.12xlarge</block>
-  <block id="1688c903113006683515d0a4aabfc6d1" category="cell">48 hacia 4</block>
   <block id="c5349a9d783e985390617543cf910af4" category="cell">c5.18xlarge</block>
   <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
   <block id="99a85ba98f759e2af5b37706147521a4" category="cell">19,000</block>
@@ -415,7 +414,6 @@
   <block id="ea501cab10ad53ac25a0413ab3b40e3b" category="list-text">Algunos tipos de instancias incluyen almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es eficaz para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache.<block ref="f318540a9100d71afa67f65db482ff92" category="inline-link-rx"></block>.</block>
   <block id="ecaae8a00365bc31bac2a2e1afa5c71d" category="list-text">Cloud Volumes ONTAP es compatible con una alta velocidad de escritura con la mayoría de los tipos de instancias cuando se utiliza un par de alta disponibilidad. Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="8e6a2ebba2f4ad1a560224744383ef97" category="list-text">El tipo de instancia r5.12xLarge tiene una limitación conocida con compatibilidad. Si un nodo se reinicia de forma inesperada debido a una caída de alarma, es posible que el sistema no recopile los archivos de núcleo utilizados para solucionar los problemas y raíz provocando el problema. El cliente acepta los riesgos y los términos de soporte limitados y asume toda responsabilidad de soporte si se produce esta condición. Esta limitación afecta a los pares de alta disponibilidad recién puestos en marcha y a los pares de alta disponibilidad actualizados desde 9.8. La limitación no afecta a los sistemas de un solo nodo recién puestos en marcha.</block>
-  <block id="f18904153dfcf72e0d6ca5f227644b87" category="list-text">Aunque estos tipos de instancias EC2 admiten más de 48 vCPU, Cloud Volumes ONTAP admite hasta 48 vCPU.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">Al seleccionar un tipo de instancia de EC2, puede especificar si es una instancia compartida o una instancia dedicada.</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">Cloud Volumes ONTAP puede ejecutarse en una instancia de EC2 reservada o bajo demanda. No se admiten soluciones que usan otros tipos de instancia.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">Regiones admitidas</block>
@@ -704,4 +702,6 @@
   <block id="468539119bbdc1adf73b917e2900aee4" category="inline-link">Descubre cómo utilizar el backup y la recuperación de datos de BlueXP para realizar backups y restauraciones de datos de ONTAP</block>
   <block id="97f2669f2be89519b70ab300a23d78bf" category="paragraph"><block ref="dd0e067e6a9ee59d9a054d0786a54cd0" category="inline-link-rx"></block>.</block>
   <block id="619c180e46c9dec776a0347d35298e14" category="paragraph">Las últimas versiones de BlueXP también incluyen funciones y mejoras adicionales. Consulte<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> para obtener más detalles.</block>
+  <block id="f5d86d667fcde1b9fc5b1c45e55d135e" category="cell">64 ^4^</block>
+  <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">Aunque estos tipos de instancia EC2 admiten más de 64 vCPU, Cloud Volumes ONTAP solo admite hasta 64 vCPU.</block>
 </blocks>

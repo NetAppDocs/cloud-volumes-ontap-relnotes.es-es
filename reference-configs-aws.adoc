@@ -160,13 +160,13 @@ Los anchos de banda que se muestran en la tabla siguiente coinciden con los lím
 | c5n.9xgrande | 36 | 96 | No admitido | 50 | 9,500 | Compatible 
 
 
-| c5a.12xlarge | 48 hacia 4 | 96 | No admitido | 12 | 4,750 | Compatible 
+| c5a.12xlarge | 48 | 96 | No admitido | 12 | 4,750 | Compatible 
 
 
-| c5.18xlarge | 48 hacia 4 | 144 | No admitido | 25 | 19,000 | Compatible 
+| c5.18xlarge | 64 ^4^ | 144 | No admitido | 25 | 19,000 | Compatible 
 
 
-| c5d.18xlarge | 48 hacia 4 | 144 | Compatible | 25 | 19,000 | Compatible 
+| c5d.18xlarge | 64 ^4^ | 144 | Compatible | 25 | 19,000 | Compatible 
 
 
 | m5d.12xlarge | 48 | 192 | Compatible | 12 | 9,500 | Compatible 
@@ -175,27 +175,27 @@ Los anchos de banda que se muestran en la tabla siguiente coinciden con los lím
 | m5dn.12xlarge | 48 | 192 | Compatible | 50 | 9,500 | Compatible 
 
 
-| c5n.18xgrande | 48 hacia 4 | 192 | No admitido | 100 | 19,000 | Compatible 
+| c5n.18xgrande | 64 ^4^ | 192 | No admitido | 100 | 19,000 | Compatible 
 
 
-| m5a.16xlarge | 48 hacia 4 | 256 | No admitido | 12 | 9,500 | Compatible 
+| m5a.16xlarge | 64 | 256 | No admitido | 12 | 9,500 | Compatible 
 
 
-| m5.16xlarge | 48 hacia 4 | 256 | No admitido | 20 | 13,600 | Compatible 
+| m5.16xlarge | 64 | 256 | No admitido | 20 | 13,600 | Compatible 
 
 
 | r5.12xlarge hacia arriba 3 | 48 | 384 | No admitido | 10 | 9,500 | Compatible 
 
 
-| m5dn.24xgrande | 48 hacia 4 | 384 | Compatible | 100 | 19,000 | Compatible 
+| m5dn.24xgrande | 64 ^4^ | 384 | Compatible | 100 | 19,000 | Compatible 
 
 
-| m6id.32xlarge | 48 hacia 4 | 512 | Compatible | 50 | 40,000 | Compatible 
+| m6id.32xlarge | 64 ^4^ | 512 | Compatible | 50 | 40,000 | Compatible 
 |===
 . Algunos tipos de instancias incluyen almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es eficaz para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache. https://["Obtenga más información sobre Flash Cache"^].
 . Cloud Volumes ONTAP es compatible con una alta velocidad de escritura con la mayoría de los tipos de instancias cuando se utiliza un par de alta disponibilidad. Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. https://["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
 . El tipo de instancia r5.12xLarge tiene una limitación conocida con compatibilidad. Si un nodo se reinicia de forma inesperada debido a una caída de alarma, es posible que el sistema no recopile los archivos de núcleo utilizados para solucionar los problemas y raíz provocando el problema. El cliente acepta los riesgos y los términos de soporte limitados y asume toda responsabilidad de soporte si se produce esta condición. Esta limitación afecta a los pares de alta disponibilidad recién puestos en marcha y a los pares de alta disponibilidad actualizados desde 9.8. La limitación no afecta a los sistemas de un solo nodo recién puestos en marcha.
-. Aunque estos tipos de instancias EC2 admiten más de 48 vCPU, Cloud Volumes ONTAP admite hasta 48 vCPU.
+. Aunque estos tipos de instancia EC2 admiten más de 64 vCPU, Cloud Volumes ONTAP solo admite hasta 64 vCPU.
 . Al seleccionar un tipo de instancia de EC2, puede especificar si es una instancia compartida o una instancia dedicada.
 . Cloud Volumes ONTAP puede ejecutarse en una instancia de EC2 reservada o bajo demanda. No se admiten soluciones que usan otros tipos de instancia.
 
