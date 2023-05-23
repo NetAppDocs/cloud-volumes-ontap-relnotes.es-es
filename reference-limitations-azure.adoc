@@ -24,7 +24,7 @@ Algunos tipos de máquinas virtuales incluyen almacenamiento NVMe local, que Clo
 
 * La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache hasta Cloud Volumes ONTAP 9.12.0. Cuando ponga en marcha o actualice a Cloud Volumes ONTAP 9.12.1, no es necesario desactivar la compresión.
 +
-No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o puede crear un volumen y, a continuación, hacerlo http://["Deshabilite la compresión de datos mediante la CLI"^].
+No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o puede crear un volumen y, a continuación, hacerlo http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["Deshabilite la compresión de datos mediante la CLI"^].
 
 * Cloud Volumes ONTAP no admite el recalentamiento de la caché después de un reinicio.
 
@@ -35,4 +35,4 @@ No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o 
 
 En algunas regiones no se admiten pares DE HA.
 
-https://["Consulte la lista de regiones de Azure admitidas"^].
+https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista de regiones de Azure admitidas"^].

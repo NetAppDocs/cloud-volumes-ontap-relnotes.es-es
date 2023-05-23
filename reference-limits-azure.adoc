@@ -100,7 +100,7 @@ Los límites no incluyen el disco raíz, el disco principal y el VNVRAM.
 
 === Límites para licencias basadas en capacidad
 
-Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad. https://["Obtenga información sobre las opciones de licencias de Cloud Volumes ONTAP"^]
+Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Obtenga información sobre las opciones de licencias de Cloud Volumes ONTAP"^]
 
 
 
@@ -259,7 +259,7 @@ Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP q
 
 Si utiliza la licencia basada en nodo, puede adquirir varias licencias basadas en nodos para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad.
 
-El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^].
+El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^].
 
 
 
@@ -491,7 +491,7 @@ Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento 
 
 Estos son los límites probados. Aunque teóricamente es posible configurar más equipos virtuales de almacenamiento, no lo es.
 
-https://["Aprenda a crear máquinas virtuales de almacenamiento adicionales"^].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["Aprenda a crear máquinas virtuales de almacenamiento adicionales"^].
 
 [cols="2*"]
 |===
