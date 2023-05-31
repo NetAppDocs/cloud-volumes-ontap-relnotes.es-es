@@ -34,4 +34,4 @@ La carga se basa en el tamaño de la capacidad comprometida de uno o varios pare
 
 El modelo de licencias por nodos anterior sigue disponible para clientes existentes que ya han adquirido una licencia o que tienen una suscripción activa a Marketplace.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre estas opciones de licencia"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Obtenga más información sobre estas opciones de licencia"^]
