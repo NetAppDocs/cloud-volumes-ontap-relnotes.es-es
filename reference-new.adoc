@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora. 
+summary: Cloud Volumes ONTAP 9.13.1 incluye una nueva mejora. 
 ---
-= Novedades de Cloud Volumes ONTAP 9.13.0
+= Novedades en Cloud Volumes ONTAP 9.13.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,43 +14,15 @@ summary: Cloud Volumes ONTAP 9.13.0 incluye una nueva mejora.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.13.0 incluye nuevas mejoras.
+Cloud Volumes ONTAP 9.13.1 incluye nuevas mejoras.
 
 Las últimas versiones de BlueXP también incluyen funciones y mejoras adicionales. Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notas de la versión de BlueXP"^] para obtener más detalles.
 
 
 
-== 9.13.0 GA (5 de marzo de 2023)
+== 9.13.1 RC1 (26 de junio de 2023)
 
-La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.13.0 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye las siguientes funciones y mejoras nuevas.
-
-
-
-=== Flash Cache y una alta velocidad de escritura en Google Cloud
-
-Ahora se admite Flash Cache, alta velocidad de escritura y una unidad de transmisión máxima (MTU) alta de 8,896 bytes para instancias seleccionadas con la versión Cloud Volumes ONTAP 9.13.0.
-
-Más información acerca de link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configuraciones compatibles con licencia en Google Cloud"^].
-
-
-
-=== Verificación de imágenes en Google Cloud
-
-Las funciones de seguridad mejoradas ahora están disponibles para verificar firmas de archivos de imagen Cloud Volumes ONTAP exportados a través de Google Cloud.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-gcp-image-verification.html["Más información acerca de la verificación de imágenes de Google Cloud"^].
-
-
-
-=== Compatibilidad de nuevas instancias en Google Cloud
-
-Freemium, PAYGO Premium, licencias basadas en nodos BYOL y basadas en capacidad admiten ahora dos nuevos tipos de instancias para las implementaciones de nodo único de Cloud Volumes ONTAP y alta disponibilidad en Google Cloud.
-
-* n2-estándar-48
-* n2-estándar-64
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Obtenga más información sobre las configuraciones compatibles en Google Cloud"^].
+El candidato al lanzamiento 1 de Cloud Volumes ONTAP 9.13.1 ya está disponible en AWS, Azure y Google Cloud. Esta versión incluye la siguiente función.
 
 
 
@@ -70,13 +42,13 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Ruta de actualización admitida
 
-Puede actualizar a Cloud Volumes ONTAP 9.13.0 desde la versión 9.12.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
+Puede actualizar a Cloud Volumes ONTAP 9.13.1 desde las versiones 9.12.1 y 9.13.0. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
 
 
 
 === Versión necesaria del conector
 
-El conector BlueXP debe estar ejecutando la versión 3.9.26 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.13.0 y actualizar los sistemas existentes a la versión 9.13.0.
+El conector BlueXP debe ejecutar la versión 3.9.26 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.13.1 y actualizar los sistemas existentes a la versión 9.13.1.
 
 
 TIP: Las actualizaciones automáticas del conector están habilitadas de forma predeterminada, por lo que debería estar ejecutando la última versión.
