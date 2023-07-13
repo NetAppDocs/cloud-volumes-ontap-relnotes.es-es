@@ -79,7 +79,6 @@ Cloud Volumes ONTAP no admite las siguientes funciones:
 
 * Deduplicación inline a nivel de agregado
 * Deduplicación en segundo plano a nivel de agregado
-* Antiransomware
 * Centro de mantenimiento de discos
 * El saneamiento de disco
 * Mirroring de FabricPool
