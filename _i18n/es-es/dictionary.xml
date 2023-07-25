@@ -43,7 +43,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-estándar-16</block>
   <block id="8f66358785ed8f4d9a356630a4ee515c" category="list-text">n2-estándar-32</block>
   <block id="233d7152c6f49c17f5310a33fd5a0139" category="cell">Tipos de disco compatibles con esta versión 4</block>
-  <block id="8fb6e38745600f700e7342cdd70e43f5" category="cell">Discos persistentes zonales (SSD, equilibrado y estándar)</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">Notas:</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">organización en niveles de los datos inactivos en el almacenamiento de objetos</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Más información acerca de los límites de discos en Google Cloud</block>
@@ -683,4 +682,6 @@
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1,4,5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1,4,5^</block>
   <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">El candidato al lanzamiento 1 de Cloud Volumes ONTAP 9.13.1 ya está disponible en AWS, Azure y Google Cloud.</block>
+  <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Discos persistentes equilibrados ^4^, discos persistentes Performance (SSD) ^4^ y discos persistentes Standard (HDD).</block>
+  <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">El rendimiento de escritura mejorado se habilita cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).</block>
 </blocks>

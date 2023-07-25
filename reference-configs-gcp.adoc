@@ -79,7 +79,7 @@ No se admite la actualización de un sistema de un solo nodo a un par de alta di
 
 
 
-| Tipos de disco compatibles con esta versión 4 6+| Discos persistentes zonales (SSD, equilibrado y estándar) 
+| Tipos de disco admitidos 6+| Discos persistentes equilibrados ^4^, discos persistentes Performance (SSD) ^4^ y discos persistentes Standard (HDD). 
 |===
 Notas:
 
@@ -92,7 +92,7 @@ link:reference-limits-gcp.html["Más información acerca de los límites de disc
 +
 Si ya tiene un sistema en funcionamiento en este tipo de máquina, puede seguir utilizándolo, pero le recomendamos cambiar al tipo de máquina n2-standard-4.
 
-. El rendimiento de escritura mejorado se habilita al usar SSD.
+. El rendimiento de escritura mejorado se habilita cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).
 . La interfaz BlueXP muestra un tipo de máquina adicional compatible para Standard y BYOL: n1-Highmem-4. Sin embargo, este tipo de máquina no está pensado para entornos de producción. Lo hemos puesto a disposición únicamente para entornos específicos de laboratorio.
 . Para obtener información sobre la compatibilidad con la región de Google Cloud Platform, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].
 . Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
