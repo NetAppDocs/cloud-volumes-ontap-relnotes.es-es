@@ -20,6 +20,12 @@ Las últimas versiones de BlueXP también incluyen funciones y mejoras adicional
 
 
 
+== 9.13.1 GA (26 de julio de 2023)
+
+El lanzamiento de disponibilidad general de Cloud Volumes ONTAP 9.13.1 ya está disponible en AWS, Azure y Google Cloud.
+
+
+
 == 9.13.1 RC1 (26 de junio de 2023)
 
 El candidato al lanzamiento 1 de Cloud Volumes ONTAP 9.13.1 ya está disponible en AWS, Azure y Google Cloud.
