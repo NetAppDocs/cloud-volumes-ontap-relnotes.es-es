@@ -146,7 +146,7 @@ A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de e
 . El rendimiento de escritura mejorado se habilita al usar SSD.
 . Para obtener información sobre la compatibilidad con Azure region, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].
 . Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
-. SN solo admite discos gestionados LRS para SSD estándar, HDD y SSD Premium.
+. Las implementaciones de un solo nodo admiten discos gestionados de almacenamiento redundante a nivel local (LRS) para SSD y HDD estándar, y SSD Premium.
 
 
 
