@@ -170,6 +170,8 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E80ids_v4 hacia 1,2,4
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
  a| 
 * E8DS_v4 hacia 4
@@ -180,6 +182,8 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E80ids_v4 hacia 1,2,4
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
  a| 
 * E8DS_v4 hacia 4
@@ -188,6 +192,8 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E80ids_v4 hacia 1,2,4
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
  a| 
 * E8DS_v4 hacia 4
@@ -196,6 +202,8 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E80ids_v4 hacia 1,2,4
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
+* L48s_v3 ^1,4,5^
+* L64s_v3 ^1,4,5^
 
 
 
