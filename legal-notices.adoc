@@ -47,7 +47,7 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.
 
-* link:media/notice-aws.pdf["Aviso para el mediador de Cloud Volumes ONTAP 9.12.1 en AWS"^]
-* link:media/notice-google-cloud.pdf["Aviso para el mediador de Cloud Volumes ONTAP 9.12.1 en Google Cloud"^]
+* link:media/notice-aws.pdf["Aviso para el mediador de Cloud Volumes ONTAP 9.14.0 en AWS"^]
+* link:media/notice-google-cloud.pdf["Aviso para el mediador de Cloud Volumes ONTAP 9.14.0 en Google Cloud"^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["Aviso sobre ONTAP"^]
 
