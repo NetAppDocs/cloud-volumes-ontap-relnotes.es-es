@@ -126,8 +126,6 @@
   <block id="ec74a96b5afa8d112b06af3bec8272c2" category="list-text">16 TIB</block>
   <block id="d556a98bff3e1e758e87dd72b174feca" category="list-text">32 TIB</block>
   <block id="d47eab2f6c8443515b4726d2c0efbcec" category="list-text">100 GIB</block>
-  <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">Los pares de ALTA DISPONIBILIDAD usan discos gestionados. (Los BLOB de página son compatibles con parejas de alta disponibilidad implementadas antes de la versión 9.12.1).</block>
-  <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">Se admiten los siguientes tamaños de disco:</block>
   <block id="00341a78c2eaf7d804cfe027a2f67870" category="summary">Cloud Volumes ONTAP tiene límites de configuración de almacenamiento en AWS para proporcionar operaciones fiables. Para obtener el mejor rendimiento, no configure el sistema con los valores máximos.</block>
   <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="doc">Límites de almacenamiento en AWS</block>
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="paragraph">Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para proporcionar operaciones fiables. Para obtener el mejor rendimiento, no configure el sistema con los valores máximos.</block>
@@ -694,4 +692,7 @@
   <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
   <block id="373d3eec6a8460edd6d29008332349e5" category="summary">En estas notas de la versión, se describen las nuevas funciones, las limitaciones y los problemas conocidos de Cloud Volumes ONTAP 9.14.0.</block>
   <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Notas de la versión de Cloud Volumes ONTAP 9.14.0</block>
+  <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">Los pares de ALTA disponibilidad utilizan discos gestionados de Azure. Se admiten los siguientes tipos y tamaños de disco.</block>
+  <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">(Los BLOB de página son compatibles con parejas de alta disponibilidad implementadas antes de la versión 9.12.1).</block>
+  <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">*SSD Premium*</block>
 </blocks>

@@ -271,9 +271,11 @@ Los sistemas de un solo nodo usan discos gestionados de Azure. Se admiten los si
 
 === Parejas de HA
 
-Los pares de ALTA DISPONIBILIDAD usan discos gestionados. (Los BLOB de página son compatibles con parejas de alta disponibilidad implementadas antes de la versión 9.12.1).
+Los pares de ALTA disponibilidad utilizan discos gestionados de Azure. Se admiten los siguientes tipos y tamaños de disco.
 
-Se admiten los siguientes tamaños de disco:
+(Los BLOB de página son compatibles con parejas de alta disponibilidad implementadas antes de la versión 9.12.1).
+
+*SSD Premium*
 
 * 500 GIB
 * 1 TIB
