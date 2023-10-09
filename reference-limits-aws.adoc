@@ -43,7 +43,7 @@ En algunas configuraciones, los límites de discos impiden que llegue al límite
 | PAYGO Premium | 368 TIB 
 
 
-| Licencia basada en nodos | 368 TIB por licencia 
+| Licencia basada en nodos | 2 PIB (requiere varias licencias) 
 
 
 | Licencia basada en capacidad | 2 PIB 
@@ -162,11 +162,9 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 
 Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP que utilizan licencias basadas en nodos, que es el modelo de licencias de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. La licencia basada en nodos sigue estando disponible para los clientes existentes.
 
-* Si utiliza la licencia basada en nodo, puede adquirir varias licencias basadas en nodos para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad.
-+
-El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^].
+Puede comprar varias licencias basadas en nodos para un sistema de nodo único BYOL de Cloud Volumes ONTAP o de parejas de alta disponibilidad para asignar más de 368 TiB de capacidad, hasta el límite máximo de capacidad del sistema probado y compatible de 2 PIB. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^]. Aunque Cloud Volumes ONTAP admite hasta la capacidad del sistema máxima probada y admitida de 2 PIB, si se supera el límite de 2 PIB, la configuración del sistema no es compatible.
 
-
+AWS Secret Cloud y las regiones Top Secret Cloud admiten la compra de múltiples licencias basadas en nodos a partir de Cloud Volumes ONTAP 9.12.1.
 
 
 
@@ -202,14 +200,14 @@ El número de licencias que se pueden comprar para un único sistema de nodo o p
 2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
 
 
-| instancias c5, m5 y r5 | 21 hacia 1 | 336 TIB | 368 TIB | 336 TIB | 368 TIB x cada licencia 
+| instancias c5, m5 y r5 | 21 hacia 1 | 336 TIB | 368 TIB | 336 TIB | 2 PIB 
 
 
  a| 
 * m5dn.24xgrande
 * m6id.32xlarge
 
-| 19 hacia 2 | 304 TIB | 368 TIB | 304 TIB | 368 TIB x cada licencia 
+| 19 hacia 2 | 304 TIB | 368 TIB | 304 TIB | 2 PIB 
 |===
 . 21 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 22 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
 . Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.
@@ -249,14 +247,14 @@ El número de licencias que se pueden comprar para un único sistema de nodo o p
 2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
 
 
-| instancias c5, m5 y r5 | 18 hacia 1 | 288 TIB | 368 TIB | 288 TIB | 368 TIB x cada licencia 
+| instancias c5, m5 y r5 | 18 hacia 1 | 288 TIB | 368 TIB | 288 TIB | 2 PIB 
 
 
  a| 
 * m5dn.24xgrande
 * m6id.32xlarge
 
-| 16 hacia 2 | 256 TIB | 368 TIB | 256 TIB | 368 TIB x cada licencia 
+| 16 hacia 2 | 256 TIB | 368 TIB | 256 TIB | 2 PIB 
 |===
 . 18 discos de datos son el límite para las implementaciones _new_ de Cloud Volumes ONTAP. Si actualiza un sistema creado con la versión 9.7 o anterior, el sistema sigue admitiendo 19 discos. Los nuevos sistemas que utilizan estos tipos de instancia admiten un disco de datos menos debido a la adición de un disco principal a partir de la versión 9.8.
 . Este tipo de instancia tiene más discos NVMe locales que otros tipos de instancia, lo que significa que se admite una cantidad menor de discos de datos.

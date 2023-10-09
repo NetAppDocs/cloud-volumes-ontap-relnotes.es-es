@@ -41,7 +41,7 @@ NetApp no admite superar el límite de capacidad del sistema. Si alcanza el lím
 | PAYGO Premium | 368 TIB 
 
 
-| Licencia basada en nodos | 368 TIB por licencia 
+| Licencia basada en nodos | 2 PIB (requiere varias licencias) 
 
 
 | Licencia basada en capacidad | 2 PIB 
@@ -275,9 +275,7 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 
 Los siguientes límites de disco se aplican a los sistemas Cloud Volumes ONTAP que utilizan licencias basadas en nodos, que es el modelo de licencias de la generación anterior que le permitió obtener licencias de Cloud Volumes ONTAP por nodo. La licencia basada en nodos sigue estando disponible para los clientes existentes.
 
-Si utiliza la licencia basada en nodo, puede adquirir varias licencias basadas en nodos para un sistema BYOL de Cloud Volumes ONTAP con el fin de asignar más de 368 TIB de capacidad.
-
-El número de licencias que se pueden comprar para un único sistema de nodo o par de alta disponibilidad es ilimitado. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^].
+Puede comprar varias licencias basadas en nodos para un sistema de nodo único BYOL de Cloud Volumes ONTAP o de parejas de alta disponibilidad para asignar más de 368 TiB de capacidad, hasta el límite máximo de capacidad del sistema probado y compatible de 2 PIB. Tenga en cuenta que los límites de disco pueden impedir que llegue al límite de capacidad utilizando solo discos. Puede superar el límite de discos mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Aprenda a añadir licencias de sistema adicionales a Cloud Volumes ONTAP"^]. Aunque Cloud Volumes ONTAP admite hasta la capacidad del sistema máxima probada y admitida de 2 PIB, si se supera el límite de 2 PIB, la configuración del sistema no es compatible.
 
 
 
@@ -331,52 +329,52 @@ Un único nodo tiene dos opciones de licencia basadas en nodos: PAYGO Premium y 
 2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
 
 
-| DS4_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| DS4_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS5_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS13_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| DS13_v2 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS14_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| DS15_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| L8S_v2 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x cada licencia 
+| L8S_v2 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E4s_v3 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x cada licencia 
+| E4s_v3 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
 
 
-| E8s_v3 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x cada licencia 
+| E8s_v3 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E32S_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E32S_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E48s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E48s_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E64is_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E64is_v3 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E4ds_v4 | 5 | 160 TIB | 368 TIB | 160 TIB | 368 TIB x cada licencia 
+| E4ds_v4 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
 
 
-| E8ds_v4 | 13 | 368 TIB | 368 TIB | 416 TIB | 368 TIB x cada licencia 
+| E8ds_v4 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E32ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E48ds_v4 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 
 
-| E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 368 TIB x cada licencia 
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 |===
 ====
 
@@ -445,37 +443,37 @@ Las parejas de ALTA DISPONIBILIDAD tienen dos tipos de configuración: BLOB de p
 2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
 
 
-| DS4_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x cada licencia 
+| DS4_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| DS5_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x cada licencia 
+| DS5_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| DS13_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x cada licencia 
+| DS13_v2 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| DS14_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x cada licencia 
+| DS14_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| DS15_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x cada licencia 
+| DS15_v2 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 
 
-| E8s_v3 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x cada licencia 
+| E8s_v3 | 13 | 104 TIB | 368 TIB | 104 TIB | 2 PIB 
 
 
-| E48s_v3 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x cada licencia 
+| E48s_v3 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E8ds_v4 | 13 | 104 TIB | 368 TIB | 104 TIB | 368 TIB x cada licencia 
+| E8ds_v4 | 13 | 104 TIB | 368 TIB | 104 TIB | 2 PIB 
 
 
-| E32ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x cada licencia 
+| E32ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E48ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 368 TIB x cada licencia 
+| E48ds_v4 | 29 | 232 TIB | 368 TIB | 232 TIB | 2 PIB 
 
 
-| E80ids_v4 | 61 | 368 TIB | 368 TIB | 488 TIB | 368 TIB x cada licencia 
+| E80ids_v4 | 61 | 368 TIB | 368 TIB | 488 TIB | 2 PIB 
 |===
 ====
 .BYOL: Pares de ALTA DISPONIBILIDAD en una configuración de zona de disponibilidad múltiples con discos gestionados compartidos
@@ -489,16 +487,16 @@ Las parejas de ALTA DISPONIBILIDAD tienen dos tipos de configuración: BLOB de p
 2+|  | *Solo discos* | *Discos + organización en niveles de datos* | *Solo discos* | *Discos + organización en niveles de datos* 
 
 
-| E8ds_v4 | 12 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x cada licencia 
+| E8ds_v4 | 12 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E32ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x cada licencia 
+| E32ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E48ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x cada licencia 
+| E48ds_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 
 
-| E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 368 TIB x cada licencia 
+| E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 |===
 ====
 
