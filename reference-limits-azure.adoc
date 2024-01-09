@@ -264,6 +264,12 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
 
 
+| L16s_v3 | 28 | 896 TIB | 2 PIB 
+
+
+| L32s_v3 | 28 | 896 TIB | 2 PIB 
+
+
 | L48s_v3 | 28 | 896 TIB | 2 PIB 
 
 

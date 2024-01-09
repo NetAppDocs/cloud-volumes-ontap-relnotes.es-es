@@ -113,7 +113,6 @@
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4 hacia 1,2,4</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">Discos gestionados</block>
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">Estos tipos de máquinas virtuales solo son compatibles con pares de alta disponibilidad en una configuración de zona de disponibilidad única que se ejecuta en discos gestionados compartidos.</block>
-  <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos.</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">En Azure, un agregado puede contener hasta 12 discos con el mismo tamaño y tipo.</block>
   <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">Los sistemas de un solo nodo usan discos gestionados de Azure. Se admiten los siguientes tamaños de disco:</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">SSD premium</block>
@@ -689,10 +688,6 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">Blobs de página</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">Estas máquinas virtuales solo son compatibles con las implementaciones de Cloud Volumes ONTAP 9.11.1 o versiones anteriores. Con estos tipos de máquinas virtuales, puede actualizar una implementación BLOB de página existente de Cloud Volumes ONTAP 9.11.1 a 9.12.1. No se pueden realizar implementaciones BLOB de página nuevas con Cloud Volumes ONTAP 9.12.1 o versiones posteriores.</block>
-  <block id="573ba387c27d105c1e3fd20266d13123" category="list-text">L16s_v3 hacia 1,3,5</block>
-  <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3 ^1,3,5^</block>
-  <block id="6074c6f3226593d830e2700ab7f3f365" category="list-text">L48s_v3 ^1,3,5^</block>
-  <block id="1da7ab1581b8dde8d8bbb3d70c613cd5" category="list-text">L64s_v3 ^1,3,5^</block>
   <block id="fd03e656adaf90d76d9f033d590bdd69" category="summary">En estas notas de la versión, se describen las nuevas funciones, las limitaciones y los problemas conocidos de Cloud Volumes ONTAP 9.14.1.</block>
   <block id="3f93d29b3f8dc957c8b9ced853857b76" category="doc">Notas de la versión de Cloud Volumes ONTAP 9.14.1</block>
   <block id="ac49adbb868ecf707179d04fceda2832" category="summary">Cloud Volumes ONTAP 9.14.1 incluye una nueva mejora.</block>
@@ -702,4 +697,9 @@
   <block id="08c5c3a5955675754c56665896b714d2" category="paragraph">El candidato al lanzamiento 1 de Cloud Volumes ONTAP 9.14.1 ya está disponible en AWS, Azure y Google Cloud.</block>
   <block id="0ba3961acf8d8dd9d18bfabbbbc00cc5" category="paragraph">Puede actualizar a Cloud Volumes ONTAP 9.14.1 desde versiones 9.13.1 y 9.14.0. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.</block>
   <block id="c61efd7d56545088713b3c7d2e07cadd" category="paragraph">El conector BlueXP debe ejecutar la versión 3.9.27 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.14.1 y actualizar los sistemas existentes a la versión 9.14.1.</block>
+  <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3 ^1,4,5^</block>
+  <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3 ^1,4,5^</block>
+  <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 ^1,4,5^</block>
+  <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 ^1,4,5^</block>
+  <block id="885a1d815cf042f25bd0893361642b6e" category="list-text">Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos. Para los tipos de máquinas virtuales LS_v3, el soporte de varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP.</block>
 </blocks>
