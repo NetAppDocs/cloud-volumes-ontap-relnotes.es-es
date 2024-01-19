@@ -559,7 +559,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 | Almacenamiento lógico | Parámetro | Límite 
 
 
-.2+| *Archivos* | Tamaño máximo | 16 TIB 
+.2+| *Archivos* | Tamaño máximo ^2^ | 128 TB 
 
 
 | Máximo por volumen | Depende del tamaño del volumen, hasta 2000 millones 
@@ -574,7 +574,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 | Tamaño mínimo | 20 MB 
 
 
-| Tamaño máximo | 100 TIB 
+| Tamaño máximo ^3^ | 300 TiB 
 
 
 | *Qtrees* | Máximo por volumen FlexVol | 4,995 
@@ -583,6 +583,13 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 | *Copias Snapshot* | Máximo por volumen FlexVol | 1,023 
 |===
 . La profundidad de clon jerárquica es la profundidad máxima de una jerarquía anidada de volúmenes FlexClone que se pueden crear a partir de un único volumen de FlexVol.
+. Comenzando con ONTAP 9.12.1P2, el límite es 128 TB. En ONTAP 9.11.1 y versiones anteriores, el límite es de 16 TB.
+. La creación de volúmenes FlexVol hasta un tamaño máximo de 300 TiB se admite mediante las siguientes herramientas y las versiones mínimas:
++
+** System Manager y la interfaz de línea de comandos de ONTAP a partir de Cloud Volumes ONTAP 9.12.1 P2 y 9.13.0 P2
+** BlueXP a partir de Cloud Volumes ONTAP 9.13.1
+
+
 
 
 
