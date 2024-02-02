@@ -24,6 +24,8 @@ Cloud Volumes ONTAP está disponible en Azure como un único sistema de nodo y c
 
 No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.
 
+Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
+
 
 
 === Sistemas de un solo nodo
@@ -49,11 +51,17 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32S_v3 hacia 3
 * E48s_v3 3
 * E64is_v3 hacia 3
-* E4ds_esta versión 3
-* E8DS_v4 hacia 3
+* E4ds_v4
+* E8ds_v4
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+* E4ds_v5
+* E8ds_v5
+* E20s_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8S_v3 hacia 2
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -85,12 +93,14 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
  a| 
 * E4s_v3
 * E4ds_esta versión 3
+* E4ds_v5
 
  a| 
 * DS4_v2
 * DS13_v2
 * E8s_v3
 * E8DS_v4 hacia 3
+* E8ds_v5
 * L8S_v3 hacia 2
 
  a| 
@@ -103,6 +113,10 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
  a| 
 * DS4_v2
@@ -120,6 +134,12 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+* E4ds_v5
+* E8ds_v5
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 * L8S_v3 hacia 2
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -137,16 +157,9 @@ Notas:
 . Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
 . Estos tipos de VM utilizan https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["SSD ultra"^] Para VNVRAM, que proporciona un mejor rendimiento de escritura.
 +
-Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.
-
-+
-A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.
+Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM.
 
 . Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
-. El rendimiento de escritura mejorado se habilita al usar SSD.
-. Para obtener información sobre la compatibilidad con Azure region, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].
-. Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
-. Las implementaciones de un solo nodo admiten discos gestionados de almacenamiento redundante a nivel local (LRS) para SSD y HDD estándar, y SSD Premium.
 
 
 
@@ -179,6 +192,11 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
  a| 
 * DS4_v2
@@ -192,12 +210,18 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 
  a| 
 * DS4_v2
 * DS13_v2
 * E8s_v3
 * E8DS_v4 hacia 3
+* E8ds_v5
 
  a| 
 * DS5_hacia 2 1
@@ -207,6 +231,10 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
  a| 
 * DS4_v2
@@ -220,6 +248,12 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+* E4ds_v5
+* E8ds_v5
+* E20ds_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
 
 
 
@@ -252,6 +286,11 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
@@ -262,6 +301,11 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
@@ -269,11 +313,16 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 
  a| 
 * E8DS_v4 hacia 4
+* E8ds_v5
 
  a| 
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
@@ -284,6 +333,12 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
+* E4ds_v5
+* E8ds_v5
+* E20s_v5 ^1^
+* E32ds_v5 ^1^
+* E48ds_v5 ^1^
+* E64ds_v5 ^1^
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
@@ -299,7 +354,7 @@ Notas:
 . Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
 . Esta máquina virtual se recomienda solo cuando se necesite el control de mantenimiento de Azure. No está recomendado para ningún otro caso de uso debido a que los precios son más elevados.
 . Estos tipos de máquinas virtuales solo son compatibles con pares de alta disponibilidad en una configuración de zona de disponibilidad única que se ejecuta en discos gestionados compartidos.
-. Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos. Para los tipos de máquinas virtuales LS_v3, el soporte de varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP.
+. Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos. Para los tipos de máquinas virtuales LS_v3, el soporte de varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP. Para los tipos de máquinas virtuales Eds_v5, el soporte de varias zonas de disponibilidad comienza desde la versión 9.14.1 RC1 de ONTAP.
 . Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
 
 
@@ -369,3 +424,9 @@ Los pares de ALTA disponibilidad utilizan discos gestionados de Azure. Se admite
 * 16 TIB (solo discos gestionados)
 * 32 TIB (solo discos gestionados)
 
+
+
+
+== Regiones admitidas
+
+Para obtener información sobre la compatibilidad con Azure region, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].

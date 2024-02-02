@@ -156,6 +156,24 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 | E80ids_v4 | 61 | 896 TIB | 2 PIB 
 
 
+| E4ds_v5 | 5 | 160 TIB | 2 PIB 
+
+
+| E8ds_v5 | 13 | 416 TIB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
 | L8S_v3 | 12 | 384 TIB | 2 PIB 
 
 
@@ -232,6 +250,21 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
 
 
+| E8ds_v5 | 12 | 384 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
 | L16s_v3 | 28 | 896 TIB | 2 PIB 
 
 
@@ -262,6 +295,21 @@ Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTA
 
 
 | E80ids_v4 | 28 | 896 TIB | 2 PIB 
+
+
+| E8ds_v5 | 12 | 384 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
 
 
 | L16s_v3 | 28 | 896 TIB | 2 PIB 
@@ -322,6 +370,18 @@ Un único nodo tiene dos opciones de licencia basadas en nodos: PAYGO Premium y 
 
 
 | E80ids_v4 | 61 | 368 TIB | 368 TIB 
+
+
+| E20ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 896 TIB | 2 PIB 
 |===
 ====
 .Un nodo único con BYOL
@@ -381,6 +441,24 @@ Un único nodo tiene dos opciones de licencia basadas en nodos: PAYGO Premium y 
 
 
 | E80ids_v4 | 61 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E4ds_v5 | 5 | 160 TIB | 368 TIB | 160 TIB | 2 PIB 
+
+
+| E8ds_v5 | 13 | 368 TIB | 368 TIB | 416 TIB | 2 PIB 
+
+
+| E20ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 29 | 368 TIB | 368 TIB | 896 TIB | 2 PIB 
 |===
 ====
 
@@ -436,6 +514,18 @@ Las parejas de ALTA DISPONIBILIDAD tienen dos tipos de configuración: BLOB de p
 
 
 | E80ids_v4 | 28 | 368 TIB | 368 TIB 
+
+
+| E20ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 896 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 896 TIB | 2 PIB 
 |===
 ====
 .BYOL: Pares de ALTA DISPONIBILIDAD en una sola zona de disponibilidad con Blobs de página
@@ -503,6 +593,21 @@ Las parejas de ALTA DISPONIBILIDAD tienen dos tipos de configuración: BLOB de p
 
 
 | E80ids_v4 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E8ds_v5 | 12 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E20ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E32ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E48ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
+
+
+| E64ds_v5 | 28 | 368 TIB | 368 TIB | 368 TIB | 2 PIB 
 |===
 ====
 
