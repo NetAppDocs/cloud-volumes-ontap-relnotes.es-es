@@ -19,7 +19,6 @@
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud admite varias configuraciones de Cloud Volumes ONTAP.</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Configuraciones compatibles en Google Cloud</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">Configuraciones admitidas por licencia</block>
-  <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">Cloud Volumes ONTAP está disponible en Google Cloud Platform como un único sistema de nodo y como par de nodos de alta disponibilidad para tareas de tolerancia a fallos y operaciones sin interrupciones.</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="cell"></block>
   <block id="d8fe59d93325a956d9b5fd3e85bb96d8" category="cell">Freemium</block>
@@ -33,7 +32,6 @@
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2 TB HACIA ARRIBA 2</block>
   <block id="1191f788083da9194f8eef9400d10898" category="cell">10 TB</block>
   <block id="86eaddcad9cef8a014b014a3ad2afb9c" category="cell">368 TB</block>
-  <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">368 TB por licencia</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PIB</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">Tipos de máquina compatibles con esta versión 3</block>
   <block id="0cd9470795b4cb3063783195b32f04ac" category="list-text">n1-estándar-8</block>
@@ -52,7 +50,6 @@
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">Si ya tiene un sistema en funcionamiento en este tipo de máquina, puede seguir utilizándolo, pero le recomendamos cambiar al tipo de máquina n2-standard-4.</block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">La interfaz BlueXP muestra un tipo de máquina adicional compatible para Standard y BYOL: n1-Highmem-4. Sin embargo, este tipo de máquina no está pensado para entornos de producción. Lo hemos puesto a disposición únicamente para entornos específicos de laboratorio.</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Regiones globales de Cloud Volumes</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">Para obtener información sobre la compatibilidad con la región de Google Cloud Platform, consulte<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">Tamaños de disco admitidos</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">En Google Cloud, un agregado puede contener hasta 6 discos con el mismo tipo y tamaño. Se admiten los siguientes tamaños de disco:</block>
@@ -68,7 +65,6 @@
   <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">Cloud Volumes ONTAP está disponible en Azure como un único sistema de nodo y como par de nodos de alta disponibilidad para tolerancia a fallos y operaciones no disruptivas.</block>
   <block id="ffe182d798fac96ff130cb1500052036" category="paragraph">No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.</block>
   <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">Sistemas de un solo nodo</block>
-  <block id="c817f6adbd40857622b1c5875284dccf" category="paragraph">Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volumes ONTAP como un sistema de un solo nodo en Azure:</block>
   <block id="e02cfa40e076b3e2d41b29974af36f06" category="cell">Capacidad máxima del sistema (discos + almacenamiento de objetos)</block>
   <block id="5930fa6915753c61e8ef266f7efef7f6" category="cell">500 GIB</block>
   <block id="4493785e0b2d5a6ea8c24204ebf19dc5" category="cell">2 TIB hacia 1</block>
@@ -705,12 +701,20 @@
   <block id="24dbf97d0023e83cab10de240d1d2054" category="list-text">E32ds_v5 ^3^</block>
   <block id="b911e2432937ce8e1c8ac00664872f8b" category="list-text">E48ds_v5 ^3^</block>
   <block id="6f223a60d36f80343c253128f00e82ce" category="list-text">E64ds_v5 ^3^</block>
-  <block id="b29992b09572a94f43a61f1b5fd810e9" category="paragraph">Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM.</block>
   <block id="c0cc08e6c7e64a5531dd51afd8a3ed6e" category="list-text">E20s_v5 ^1^</block>
   <block id="e002cc59f5a826e5838dde797b6a9f2b" category="list-text">E32ds_v5 ^1^</block>
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5 ^1^</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5 ^1^</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">Estos tipos de máquinas virtuales son compatibles con pares de alta disponibilidad en una sola zona de disponibilidad y con configuraciones de zonas de disponibilidad múltiples que se ejecutan en discos gestionados compartidos. Para los tipos de máquinas virtuales LS_v3, el soporte de varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP. Para los tipos de máquinas virtuales Eds_v5, el soporte de varias zonas de disponibilidad comienza desde la versión 9.14.1 RC1 de ONTAP.</block>
-  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5 ^1^</block>
+  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP está disponible en Google Cloud como un sistema de nodo único y como par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones no disruptivas.</block>
+  <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">Licencias basadas en capacidad</block>
+  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">Optimizado</block>
+  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">Licencia basada en la capacidad (Essentials, Professional y Edge Cache)</block>
+  <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">Licencias basadas en nodos</block>
+  <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">Para obtener soporte de región de Google Cloud, consulte<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
+  <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Puede elegir entre las siguientes configuraciones de licencias basadas en nodos o basadas en la capacidad al poner en marcha Cloud Volumes ONTAP como un sistema de nodo único en Azure.</block>
+  <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.</block>
+  <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.</block>
+  <block id="5063d3259058d90bbca06465957626d7" category="list-text">El rendimiento de escritura mejorado se habilita al usar SSD.</block>
 </blocks>
