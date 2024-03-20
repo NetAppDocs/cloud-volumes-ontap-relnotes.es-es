@@ -438,7 +438,6 @@
   <block id="6678cc30386be959db340cbdd54ecbda" category="section-title">No se deben usar copias Snapshot de proveedores de cloud para sus planes de backup y recuperación</block>
   <block id="f6fdc425c22fbe91b4cd43c5702c7923" category="paragraph">No debería usar las copias Snapshot de su proveedor de cloud como parte de su plan de backup y recuperación de datos de Cloud Volumes ONTAP. Debería usar siempre copias Snapshot de ONTAP o soluciones de backup de terceros para realizar backups y restaurar datos alojados en Cloud Volumes ONTAP.</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">Los puntos de consistencia de ONTAP del sistema de archivos WAFL determinan la coherencia de datos. Solo ONTAP puede desactivar el sistema de archivos WAFL para realizar un backup consistente con los fallos.</block>
-  <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP admite instancias de máquinas virtuales reservadas y bajo demanda</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten otros tipos de instancias de VM.</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">No deben utilizarse soluciones automáticas de gestión de recursos de aplicaciones</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">Las soluciones de administración automática de recursos de aplicaciones no deben gestionar los sistemas Cloud Volumes ONTAP. Si lo hace, puede provocar un cambio en una configuración no compatible. Por ejemplo, la solución puede cambiar Cloud Volumes ONTAP por un tipo de instancia de máquina virtual no compatible.</block>
@@ -718,4 +717,7 @@
   <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA (5 de marzo de 2024)</block>
   <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">El lanzamiento de disponibilidad general de Cloud Volumes ONTAP 9.14.1 ya está disponible en AWS, Azure y Google Cloud.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
+  <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP solo admite instancias de máquinas virtuales reservadas y bajo demanda</block>
+  <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">Limitaciones con agentes y extensiones de terceros</block>
+  <block id="605271a7347a8df6508582f58efcf1ef" category="paragraph">Los agentes de terceros y las extensiones de VM no son compatibles con las instancias de máquina virtual de Cloud Volumes ONTAP.</block>
 </blocks>

@@ -20,6 +20,34 @@ Las siguientes limitaciones se aplican a Cloud Volumes ONTAP en todos los provee
 
 
 
+== Funciones ONTAP no compatibles
+
+Cloud Volumes ONTAP no admite las siguientes funciones:
+
+* Deduplicación inline a nivel de agregado
+* Deduplicación en segundo plano a nivel de agregado
+* Centro de mantenimiento de discos
+* El saneamiento de disco
+* Mirroring de FabricPool
+* Fibre Channel (FC)
+* Flash Pool
+* Infinite Volume
+* Grupos de interfaces
+* Conmutación al nodo de respaldo LIF de Itranode
+* MetroCluster
+* Verificación de varios administradores
++
+Si se habilita la verificación multi-administrador en Cloud Volumes ONTAP, se genera una configuración no compatible.
+
+* RAID4, RAID-DP, RAID-TEC (compatible con RAID0)
+* Procesador de servicios
+* Modos empresariales y cumplimiento de normativas para SnapLock (solo es compatible WORM de cloud)
+* SnapMirror síncrono
+* VLAN
+
+
+
+
 == Máximo de operaciones de replicación simultáneas
 
 El número máximo de transferencias simultáneas de SnapMirror o SnapVault para Cloud Volumes ONTAP es 100 por nodo, independientemente del tipo de instancia o de tipo de máquina.
@@ -37,7 +65,7 @@ NOTE: Los puntos de consistencia de ONTAP del sistema de archivos WAFL determina
 
 
 
-== Cloud Volumes ONTAP admite instancias de máquinas virtuales reservadas y bajo demanda
+== Cloud Volumes ONTAP solo admite instancias de máquinas virtuales reservadas y bajo demanda
 
 Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten otros tipos de instancias de VM.
 
@@ -73,28 +101,6 @@ Las licencias de SnapManager por servidor son compatibles con Cloud Volumes ONTA
 
 
 
-== Funciones ONTAP no compatibles
+== Limitaciones con agentes y extensiones de terceros
 
-Cloud Volumes ONTAP no admite las siguientes funciones:
-
-* Deduplicación inline a nivel de agregado
-* Deduplicación en segundo plano a nivel de agregado
-* Centro de mantenimiento de discos
-* El saneamiento de disco
-* Mirroring de FabricPool
-* Fibre Channel (FC)
-* Flash Pool
-* Infinite Volume
-* Grupos de interfaces
-* Conmutación al nodo de respaldo LIF de Itranode
-* MetroCluster
-* Verificación de varios administradores
-+
-Si se habilita la verificación multi-administrador en Cloud Volumes ONTAP, se genera una configuración no compatible.
-
-* RAID4, RAID-DP, RAID-TEC (compatible con RAID0)
-* Procesador de servicios
-* Modos empresariales y cumplimiento de normativas para SnapLock (solo es compatible WORM de cloud)
-* SnapMirror síncrono
-* VLAN
-
+Los agentes de terceros y las extensiones de VM no son compatibles con las instancias de máquina virtual de Cloud Volumes ONTAP.
