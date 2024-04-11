@@ -88,6 +88,9 @@ Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No de
 Los cambios realizados en una configuración de Cloud Volumes ONTAP desde la consola del proveedor de cloud dan como resultado una configuración no compatible. Cualquier cambio en los recursos de Cloud Volumes ONTAP que BlueXP crea y gestiona puede afectar a la estabilidad del sistema y a la capacidad de BlueXP para gestionar el sistema.
 
 
+NOTE: Después de la implementación inicial, se admite la modificación del nombre de la suscripción de Azure utilizado para los recursos de Cloud Volumes ONTAP.
+
+
 
 == Los discos y agregados deben gestionarse desde BlueXP
 
