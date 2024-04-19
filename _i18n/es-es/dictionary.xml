@@ -733,4 +733,8 @@
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">Consulte la lista de errores corregidos en el parche P1</block>
   <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
   <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">Después de la implementación inicial, se admite la modificación del nombre de la suscripción de Azure utilizado para los recursos de Cloud Volumes ONTAP.</block>
+  <block id="09c468ad8c70fae44d482bf0d2aa0f97" category="section-title">9.14.1 P2 (18 de abril de 2024)</block>
+  <block id="595490a543bba780b40f8b48736870a0" category="paragraph">El parche 9.14.1 P2 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">Consulte la lista de errores solucionados en la revisión P2</block>
+  <block id="fe80ff34632bdc174d0d3a2e265b5e0c" category="paragraph"><block ref="25faf8057d466be20595f224ab406816" category="inline-link-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
 </blocks>
