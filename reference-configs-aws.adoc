@@ -45,7 +45,7 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 
 
 | Tipos de disco admitidos  a| 
-* SSD de uso general (gp3 y gp2) hacia 3
+* SSD de uso general (GP3 y GP2) ^3^,^5^
 * SSD de IOPS aprovisionado (io1) para cloud 3
 * HDD optimizado para el rendimiento (st1) hacia 4
 
@@ -58,6 +58,7 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
 . El rendimiento de escritura mejorado se habilita al usar unidades SSD con todas las configuraciones de Cloud Volumes ONTAP, excepto PAYGO Explore.
 . No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
+. Las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
 
 
 
@@ -108,6 +109,8 @@ En AWS, un agregado puede contener hasta 6 discos con el mismo tamaño. Sin emba
 
 Cada licencia de Cloud Volumes ONTAP admite diferentes tipos de instancias de EC2. Para su comodidad, la siguiente tabla muestra vCPU, RAM y ancho de banda para cada tipo de instancia compatible. https://aws.amazon.com/ec2/instance-types/["Consulte AWS para obtener los detalles completos y más recientes de los tipos de instancia de EC2"^].
 
+Cloud Volumes ONTAP puede ejecutarse en una instancia de EC2 reservada o bajo demanda. No se admiten soluciones que usan otros tipos de instancia.
+
 Los anchos de banda que se muestran en la tabla siguiente coinciden con los límites de AWS documentados para cada tipo de instancia. Estos límites no están completamente en línea con lo que puede proporcionar Cloud Volumes ONTAP. Para obtener información sobre el rendimiento esperado, consulte https://www.netapp.com/us/media/tr-4383.pdf["Informe técnico de NetApp 4383: Caracterización del rendimiento de Cloud Volumes ONTAP en Amazon Web Services con cargas de trabajo de las aplicaciones"^].
 
 [cols="8*"]
@@ -115,31 +118,31 @@ Los anchos de banda que se muestran en la tabla siguiente coinciden con los lím
 | Licencia | Instancia compatible | VCPU | RAM | Flash Cache hacia arriba 1 | Ancho de banda de red (Gbps) | Ancho de banda de EBS (MB/s) | Alta velocidad de escritura hacia hacia 2 
 
 
-| *Explore o cualquier otra licencia* | m5.xlarge | 4 | 16 | No admitido | Hasta 10 | Hasta 4,750 | Compatible (solo nodo único) 
+| *Explore o cualquier otra licencia* | m5.xlarge ^6^ | 4 | 16 | No admitido | Hasta 10 | Hasta 4,750 | Compatible (solo nodo único) 
 
 
-.3+| *Estándar o cualquier otra licencia* | r5.xlarge | 4 | 32 | No admitido | Hasta 10 | Hasta 4,750 | Compatible (solo nodo único) 
+.3+| *Estándar o cualquier otra licencia* | r5.xlarge ^6^ | 4 | 32 | No admitido | Hasta 10 | Hasta 4,750 | Compatible (solo nodo único) 
 
 
 | m5a.2xgrande | 8 | 32 | No admitido | Hasta 10 | Hasta 2,880 | Compatible 
 
 
-| m5,2xgrande | 8 | 32 | No admitido | Hasta 10 | Hasta 4,750 | Compatible 
+| m5,2xlarge ^6^ | 8 | 32 | No admitido | Hasta 10 | Hasta 4,750 | Compatible 
 
 
 .22+| *Premium o cualquier otra licencia* | m5n.2xgrande | 8 | 32 | No admitido | Hasta 25 | Hasta 4,750 | Compatible 
 
 
-| r5,2xgrande | 8 | 64 | No admitido | Hasta 10 | Hasta 4,750 | Compatible 
+| r5,2xlarge ^6^ | 8 | 64 | No admitido | Hasta 10 | Hasta 4,750 | Compatible 
 
 
 | r5d.2xgrande | 8 | 64 | Compatible | Hasta 10 | Hasta 4,750 | Compatible 
 
 
-| c5d.4 x grande | 16 | 32 | Compatible | Hasta 10 | 4,570 | Compatible 
+| c5d.4xlarge ^6^ | 16 | 32 | Compatible | Hasta 10 | 4,570 | Compatible 
 
 
-| m5.4xgrande | 16 | 64 | No admitido | Hasta 10 | 4,750 | Compatible 
+| m5,4xlarge ^6^ | 16 | 64 | No admitido | Hasta 10 | 4,750 | Compatible 
 
 
 | m5dn.4xgran | 16 | 64 | Compatible | Hasta 25 | 4,750 | Compatible 
@@ -197,7 +200,10 @@ Los anchos de banda que se muestran en la tabla siguiente coinciden con los lím
 . El tipo de instancia r5.12xLarge tiene una limitación conocida con compatibilidad. Si un nodo se reinicia de forma inesperada debido a una caída de alarma, es posible que el sistema no recopile los archivos de núcleo utilizados para solucionar los problemas y raíz provocando el problema. El cliente acepta los riesgos y los términos de soporte limitados y asume toda responsabilidad de soporte si se produce esta condición. Esta limitación afecta a los pares de alta disponibilidad recién puestos en marcha y a los pares de alta disponibilidad actualizados desde 9.8. La limitación no afecta a los sistemas de un solo nodo recién puestos en marcha.
 . Aunque estos tipos de instancia EC2 admiten más de 64 vCPU, Cloud Volumes ONTAP solo admite hasta 64 vCPU.
 . Al seleccionar un tipo de instancia de EC2, puede especificar si es una instancia compartida o una instancia dedicada.
-. Cloud Volumes ONTAP puede ejecutarse en una instancia de EC2 reservada o bajo demanda. No se admiten soluciones que usan otros tipos de instancia.
+. Las zonas locales de AWS son compatibles con las siguientes familias de tipos de instancia EC2 con tamaños xlarge a 4xlarge: M5, C5, C5d, R5 y R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Debe consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia de EC2 admitidos en las zonas locales"^].
++
+La alta velocidad de escritura no se admite con estos tipos de instancias en las zonas locales de AWS.
+
 
 
 
