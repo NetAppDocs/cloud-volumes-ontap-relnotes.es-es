@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.14.1 incluye una nueva mejora. 
+summary: Cloud Volumes ONTAP 9.15.0 incluye una nueva mejora. 
 ---
-= Novedades en Cloud Volumes ONTAP 9.14.1
+= Novedades en Cloud Volumes ONTAP 9.15.0
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,37 +14,33 @@ summary: Cloud Volumes ONTAP 9.14.1 incluye una nueva mejora.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.14.1 incluye nuevas mejoras.
+Cloud Volumes ONTAP 9.15.0 incluye nuevas mejoras.
 
 Las últimas versiones de BlueXP también incluyen funciones y mejoras adicionales. Consulte https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Notas de la versión de BlueXP"^] para obtener más detalles.
 
 
 
-== 9.14.1 P2 (18 de abril de 2024)
+== 9.15.0 P1 (10 de junio de 2024)
 
-El parche 9.14.1 P2 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.
+Cloud Volumes ONTAP 9.15.0 P1 ya está disponible en AWS, Azure y Google Cloud. La versión P1 está disponible para la implementación y la actualización.
 
-https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.1P2["Consulte la lista de errores solucionados en la revisión P2"^] (Se requiere inicio de sesión en el sitio de soporte de NetApp).
-
-
-
-== 9.14.1 P1 (1 de abril de 2024)
-
-El parche 9.14.1 P1 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.
-
-https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.1P1["Consulte la lista de errores corregidos en el parche P1"^] (Se requiere inicio de sesión en el sitio de soporte de NetApp).
+Esta versión incluye una nueva función y una mejora.
 
 
 
-== 9.14.1 GA (5 de marzo de 2024)
+=== Verificación de imágenes en Azure
 
-El lanzamiento de disponibilidad general de Cloud Volumes ONTAP 9.14.1 ya está disponible en AWS, Azure y Google Cloud.
+Ahora hay disponibles características de seguridad mejoradas para verificar firmas de archivos de imagen Cloud Volumes ONTAP exportados a través de Azure.
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html["Más información sobre la verificación de imágenes de Azure"^].
 
 
 
-== 9.14.1 RC1 (6 de diciembre de 2023)
+=== Los blobs de páginas de Azure ya no son compatibles con las nuevas implementaciones de pares de alta disponibilidad
 
-El candidato al lanzamiento 1 de Cloud Volumes ONTAP 9.14.1 ya está disponible en AWS, Azure y Google Cloud.
+A partir de Cloud Volumes ONTAP 9.15.0 P1, los blobs de página de Azure ya no son compatibles con las nuevas implementaciones de pares de alta disponibilidad. Si actualmente utiliza blobs de página de Azure en implementaciones de pares de alta disponibilidad existentes, puede migrar a tipos de instancia de máquinas virtuales más recientes en las máquinas virtuales de la serie Edsv4 y las máquinas virtuales de la serie Edsv5.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Obtenga más información sobre las configuraciones compatibles en Azure"^].
 
 
 
@@ -64,16 +60,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Ruta de actualización admitida
 
-Puede actualizar a Cloud Volumes ONTAP 9.14.1 desde versiones 9.13.1 y 9.14.0. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
-
-
-
-=== Versión necesaria del conector
-
-El conector BlueXP debe ejecutar la versión 3.9.27 o posterior para implementar nuevos sistemas Cloud Volumes ONTAP 9.14.1 y actualizar los sistemas existentes a la versión 9.14.1.
-
-
-TIP: Las actualizaciones automáticas del conector están habilitadas de forma predeterminada, por lo que debería estar ejecutando la última versión.
+Puede actualizar a Cloud Volumes ONTAP 9.15.0 desde la versión 9.14.1. BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP aptos a esta versión.
 
 
 

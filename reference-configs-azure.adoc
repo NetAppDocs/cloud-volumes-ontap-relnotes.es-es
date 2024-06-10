@@ -231,6 +231,9 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 
 ==== Pares DE ALTA DISPONIBILIDAD con blob de página
 
+
+NOTE: Puede usar las siguientes configuraciones con las implementaciones BLOB de página de alta disponibilidad de Cloud Volumes ONTAP existentes en Azure. Los blobs de página no están soportados para nuevos despliegues.
+
 [role="tabbed-block"]
 ====
 .Licencias basadas en capacidad
