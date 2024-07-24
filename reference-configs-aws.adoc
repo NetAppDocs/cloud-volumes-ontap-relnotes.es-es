@@ -111,7 +111,7 @@ Cada licencia de Cloud Volumes ONTAP admite diferentes tipos de instancias de EC
 
 Cloud Volumes ONTAP puede ejecutarse en una instancia de EC2 reservada o bajo demanda. No se admiten soluciones que usan otros tipos de instancia.
 
-Los anchos de banda que se muestran en la tabla siguiente coinciden con los límites de AWS documentados para cada tipo de instancia. Estos límites no están completamente en línea con lo que puede proporcionar Cloud Volumes ONTAP. Para obtener información sobre el rendimiento esperado, consulte https://www.netapp.com/us/media/tr-4383.pdf["Informe técnico de NetApp 4383: Caracterización del rendimiento de Cloud Volumes ONTAP en Amazon Web Services con cargas de trabajo de las aplicaciones"^].
+Los anchos de banda que se muestran en la tabla siguiente coinciden con los límites de AWS documentados para cada tipo de instancia. Estos límites no están completamente en línea con lo que puede proporcionar Cloud Volumes ONTAP. Para conocer el rendimiento esperado, consulte https://www.netapp.com/pdf.html?item=/media/9088-tr4383pdf.pdf["Informe técnico de NetApp 4383: Caracterización del rendimiento de Cloud Volumes ONTAP en Amazon Web Services con cargas de trabajo de las aplicaciones"^].
 
 [cols="8*"]
 |===
