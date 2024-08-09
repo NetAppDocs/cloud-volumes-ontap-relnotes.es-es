@@ -20,13 +20,9 @@ Las siguientes limitaciones conocidas son específicas de Cloud Volumes ONTAP en
 
 == Limitaciones de Flash Cache
 
-Algunos tipos de máquinas virtuales incluyen almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Tenga en cuenta las siguientes limitaciones para Flash Cache:
+Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de máquinas virtuales como _Flash Cache_. Tenga en cuenta esta limitación:
 
-* La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache hasta Cloud Volumes ONTAP 9.12.0. Cuando ponga en marcha o actualice a Cloud Volumes ONTAP 9.12.1, no es necesario desactivar la compresión.
-+
-No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o puede crear un volumen y, a continuación, hacerlo http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["Deshabilite la compresión de datos mediante la CLI"^].
-
-* Cloud Volumes ONTAP no admite el recalentamiento de la caché después de un reinicio.
+* No se admite el recalentamiento de la caché tras un reinicio.
 
 
 

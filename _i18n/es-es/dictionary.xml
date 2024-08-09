@@ -411,7 +411,6 @@
   <block id="a22f9146e3d3f141a5a11a5aadc4ace1" category="inline-link-macro">Limitaciones para Cloud Volumes ONTAP en todos los proveedores de cloud</block>
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">Las siguientes limitaciones conocidas son específicas de Cloud Volumes ONTAP en Microsoft Azure. No olvide revisar también <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
   <block id="a0cf071b9038a23221cd589c25d7e392" category="section-title">Limitaciones de Flash Cache</block>
-  <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">Algunos tipos de máquinas virtuales incluyen almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Tenga en cuenta las siguientes limitaciones para Flash Cache:</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache hasta Cloud Volumes ONTAP 9.12.0. Cuando ponga en marcha o actualice a Cloud Volumes ONTAP 9.12.1, no es necesario desactivar la compresión.</block>
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">Deshabilite la compresión de datos mediante la CLI</block>
   <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o puede crear un volumen y, a continuación, hacerlo<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>.</block>
@@ -688,7 +687,6 @@
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP está disponible en Google Cloud como un sistema de nodo único y como par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones no disruptivas.</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">Licencias basadas en capacidad</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">Optimizado</block>
-  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">Licencia basada en la capacidad (Essentials, Professional y Edge Cache)</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">Licencias basadas en nodos</block>
   <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">Para obtener soporte de región de Google Cloud, consulte<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Puede elegir entre las siguientes configuraciones de licencias basadas en nodos o basadas en la capacidad al poner en marcha Cloud Volumes ONTAP como un sistema de nodo único en Azure.</block>
@@ -756,4 +754,9 @@
   <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">El parche 9.15.0 P2 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">Consulte la lista de errores solucionados en la revisión P2</block>
   <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
+  <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">Licencia basada en la capacidad (Essentials y Professional)</block>
+  <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">La versión mínima de ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA.</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="list-text">A partir de Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) superior de 8.896 bytes, están disponibles para las siguientes instancias de puesta en marcha de par de alta disponibilidad:</block>
+  <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de máquinas virtuales como _Flash Cache_. Tenga en cuenta esta limitación:</block>
+  <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">No se admite el recalentamiento de la caché tras un reinicio.</block>
 </blocks>

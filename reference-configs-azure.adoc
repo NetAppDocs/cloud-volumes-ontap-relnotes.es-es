@@ -40,7 +40,7 @@ Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reserv
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials, Professional y Edge Cache) 
+|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials y Professional) 
 
 
 | Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
@@ -121,6 +121,9 @@ Notas:
 
 . Con PAYGO Explore, los datos en niveles en el almacenamiento de Azure Blob no son compatibles.
 . Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
++
+La versión mínima de ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA.
+
 . Estos tipos de VM utilizan https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["SSD ultra"^] Para VNVRAM, que proporciona un mejor rendimiento de escritura.
 +
 Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.
@@ -240,7 +243,7 @@ NOTE: Puede usar las siguientes configuraciones con las implementaciones BLOB de
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials, Professional y Edge Cache) 
+|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials y Professional) 
 
 
 | Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
@@ -377,7 +380,7 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 --
 [cols="h,d,d,d"]
 |===
-|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials, Professional y Edge Cache) 
+|  | Freemium | Optimizado | Licencia basada en la capacidad (Essentials y Professional) 
 
 
 | Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
