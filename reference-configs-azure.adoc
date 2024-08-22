@@ -115,7 +115,7 @@ Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reserv
 
 
 
-| Tipos de disco compatibles con esta versión 4 3+| Discos duros estándar gestionados, discos SSD estándar gestionados y discos SSD premium gestionados 
+| Tipos de disco compatibles con esta versión 4 3+| Discos gestionados HDD estándar, discos gestionados SSD estándar, discos gestionados SSD premium y discos gestionados SSD premium de v2 TB. 
 |===
 Notas:
 
@@ -126,7 +126,7 @@ La versión mínima de ONTAP requerida para configurar Flash Cache en Azure es 9
 
 . Estos tipos de VM utilizan https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["SSD ultra"^] Para VNVRAM, que proporciona un mejor rendimiento de escritura.
 +
-Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.
+Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD. Del mismo modo, cuando se implementa un nuevo sistema Cloud Volumes ONTAP, no se puede cambiar el tipo de máquina virtual por uno que _no_ admita los discos gestionados v2 SSD premium.
 
 +
 A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.
@@ -421,6 +421,9 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 * L64s_v3 ^1,3,5^
 
 
+
+
+| Tipos de disco admitidos 3+| Discos gestionados HDD estándar, discos gestionados SSD estándar, discos gestionados SSD premium y discos gestionados SSD premium de v2 TB. 
 |===
 Notas:
 
