@@ -59,7 +59,7 @@ Si alguno de estos criterios no se cumple, se aplica el modo de implementación 
 
 === Compatibilidad con Virtual Machines Scale Sets para unificar todos los tipos de alta disponibilidad de Azure
 
-Cloud Volumes ONTAP 9.15.1 aprovecha los conjuntos de escala de máquinas virtuales en el modo de orquestación flexible de Azure para implementar instancias de máquinas virtuales (VM) en zonas de disponibilidad únicas para pares de alta disponibilidad (HA). Cubre todos los tipos del modo HA, Pageblob, LRS, almacenamiento redundante de zona (ZRS) o multizona, y zona LRS (AZ única).
+Cloud Volumes ONTAP 9.15.1 aprovecha los conjuntos de escala de máquinas virtuales en el modo de orquestación flexible de Azure para implementar instancias de máquinas virtuales (VM) en zonas de disponibilidad únicas para pares de alta disponibilidad (HA). Cubre todos los tipos del modo HA, Page blob, LRS, almacenamiento redundante de zona (ZRS) o multizona, y LRS zonal (AZ única).
 
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Documentación de Microsoft Azure: Documentación de Virtual Machine Scale Sets"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Obtenga información sobre pares de alta disponibilidad en Azure"^].
