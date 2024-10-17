@@ -52,7 +52,7 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 
 
 
-| Organización en niveles de datos inactivos en S3 | Compatible | No admitido 4+| Compatible 
+| Organización en niveles de datos inactivos en S3 6+| Compatible 
 |===
 . Para un par de alta disponibilidad, el límite de capacidad es para todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TIB de capacidad entre ambos nodos.
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
