@@ -36,12 +36,54 @@ Cloud Volumes ONTAP admite varios tipos de discos EBS y almacenamiento de objeto
 
 Cada licencia admite una capacidad máxima diferente del sistema. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos. NetApp no admite superar este límite.
 
-[cols="h,d,d,d,d,d,d"]
+[role="tabbed-block"]
+====
+.Licencias basadas en capacidad
+--
+[cols="h,d,d"]
 |===
-|  | Freemium | Licencia basada en capacidad | PAYGO Explora | Norma PAYGO | PAYGO Premium | BYOL basado en nodos 
+|  | Freemium | Licencia basada en capacidad 
 
 
-| Capacidad máxima del sistema (discos + almacenamiento de objetos) esta 1 | 500 GIB | 2 PIB hacia 2 | 2 TIB | 10 TIB | 368 TIB hacia esta 2 | 368 TIB por licencia hacia 2 
+ a| 
+*Capacidad máxima del sistema* (discos + almacenamiento de objetos) ^1^
+| 500 GIB | 2 PIB hacia 2 
+
+
+ a| 
+* Tipos de disco compatibles *
+ a| 
+* SSD de uso general (GP3 y GP2) ^3^,^5^
+* SSD de IOPS aprovisionado (io1) para cloud 3
+* HDD optimizado para el rendimiento (st1) hacia 4
+
+
+
+
+ a| 
+* Organización en niveles de datos fríos a S3 *
+ a| 
+Compatible
+
+|===
+Notas:
+
+. Para un par de alta disponibilidad, el límite de capacidad es para todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TIB de capacidad entre ambos nodos.
+. En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
+. El rendimiento de escritura mejorado se habilita cuando se usan SSD con todas las configuraciones Cloud Volumes ONTAP.
+. No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
+. Las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
+
+
+--
+.Licencias basadas en nodos
+--
+[cols="h,d,d,d,d"]
+|===
+|  | PAYGO Explora | Norma PAYGO | PAYGO Premium | BYOL basado en nodos 
+
+
+| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 2 TIB | 10 TIB | 368 TIB hacia esta 2 | 368 TIB por licencia hacia 2 
 
 
 | Tipos de disco admitidos  a| 
@@ -52,8 +94,10 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 
 
 
-| Organización en niveles de datos inactivos en S3 2+| Compatible | No admitido 3+| Compatible 
+| Organización en niveles de datos inactivos en S3 | No admitido 3+| Compatible 
 |===
+Notas:
+
 . Para un par de alta disponibilidad, el límite de capacidad es para todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TIB de capacidad entre ambos nodos.
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
 . El rendimiento de escritura mejorado se habilita al usar unidades SSD con todas las configuraciones de Cloud Volumes ONTAP, excepto PAYGO Explore.
@@ -61,6 +105,8 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 . Las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
 
 
+--
+====
 
 
 === Tamaños de disco admitidos
