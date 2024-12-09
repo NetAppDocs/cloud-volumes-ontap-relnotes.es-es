@@ -30,8 +30,6 @@
   <block id="86eaddcad9cef8a014b014a3ad2afb9c" category="cell">368 TB</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PIB</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">Tipos de máquina compatibles con esta versión 3</block>
-  <block id="0cd9470795b4cb3063783195b32f04ac" category="list-text">n1-estándar-8</block>
-  <block id="12f53e222fe53c58560223e660dcae57" category="list-text">n1-estándar-32</block>
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">n2-estándar-4</block>
   <block id="056d5ee0191954b71fbb1a0eec04a22a" category="list-text">n2-estándar-8</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">n2-estándar-16</block>
@@ -41,7 +39,6 @@
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">organización en niveles de los datos inactivos en el almacenamiento de objetos</block>
   <block id="f30cabe0a77d16d16cf1ef723d8eb186" category="inline-link-macro">Más información acerca de los límites de discos en Google Cloud</block>
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
-  <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">Con PAYGO Explore, los datos en niveles en Google Cloud Storage no son compatibles.</block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">La interfaz BlueXP muestra un tipo de máquina adicional compatible para Standard y BYOL: n1-Highmem-4. Sin embargo, este tipo de máquina no está pensado para entornos de producción. Lo hemos puesto a disposición únicamente para entornos específicos de laboratorio.</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Regiones globales de Cloud Volumes</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.</block>
@@ -61,7 +58,6 @@
   <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">Sistemas de un solo nodo</block>
   <block id="e02cfa40e076b3e2d41b29974af36f06" category="cell">Capacidad máxima del sistema (discos + almacenamiento de objetos)</block>
   <block id="5930fa6915753c61e8ef266f7efef7f6" category="cell">500 GIB</block>
-  <block id="4493785e0b2d5a6ea8c24204ebf19dc5" category="cell">2 TIB hacia 1</block>
   <block id="4a67bdd5f30eeac9ad064fc6433dc926" category="cell">10 TIB</block>
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368 TIB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">368 TIB por licencia</block>
@@ -73,9 +69,6 @@
   <block id="f09d01e9299f4f1d66eff1fb0b840c5c" category="list-text">DS15_v2</block>
   <block id="31e15d90597db8f67574c519a0e03cff" category="list-text">E4s_v3</block>
   <block id="aa1cf82517b500e91f431051f2593e87" category="list-text">E8s_v3</block>
-  <block id="bd0bb2474f914a7c17554d85d8cb6d26" category="list-text">E32S_v3 hacia 3</block>
-  <block id="1624f99ad88b51c43999963b229ba280" category="list-text">E48s_v3 3</block>
-  <block id="d9af7f53ca0f2c89d44909998314253e" category="list-text">E64is_v3 hacia 3</block>
   <block id="e5f50792b91a7ddfe1598a0b1b794d50" category="list-text">E4ds_esta versión 3</block>
   <block id="ddcb1aa3060beebabe2a5c45c6c9e439" category="list-text">E8DS_v4 hacia 3</block>
   <block id="75cf995c16e77b49815f8da9d6034987" category="list-text">E32ds_v4 hacia 3</block>
@@ -83,10 +76,8 @@
   <block id="3fecdd68da3f6d241960a66e0625a507" category="list-text">E80ids_v4 hacia 3</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8S_v3 hacia 2</block>
   <block id="19482872b5fad6ff5e1e34947a759a98" category="cell">Discos duros estándar gestionados, discos SSD estándar gestionados y discos SSD premium gestionados</block>
-  <block id="24aa50b65a436c4efc843ed62aab1f03" category="list-text">Con PAYGO Explore, los datos en niveles en el almacenamiento de Azure Blob no son compatibles.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
   <block id="11509498a3f1573cdde878f927dc10bd" category="inline-link">SSD ultra</block>
-  <block id="9147ab73e7498660eae7ed2b4b8cca5c" category="list-text">Estos tipos de VM utilizan<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> Para VNVRAM, que proporciona un mejor rendimiento de escritura.</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">Obtenga más información sobre cómo elegir una velocidad de escritura</block>
   <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">Para obtener información sobre la compatibilidad con Azure region, consulte<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">Parejas de HA</block>
@@ -602,7 +593,6 @@
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">Los siguientes límites de disco se aplican a los sistemas de Cloud Volumes ONTAP que utilizan un paquete de licencias basado en capacidad.<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
-  <block id="efb78221b5926bd89d824f8dec9a7ed2" category="list-text">Los límites de disco pueden impedir que llegue al límite máximo de capacidad del sistema usando solo discos. Es posible alcanzar el límite de capacidad mediante<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
   <block id="df25654d93147d2e6dc5b5b1fd1a4b82" category="paragraph">Puede activar _Flash Cache_ y una alta velocidad de escritura al implementar un tipo de instancia elegible. Para habilitar la unidad de transmisión máxima más alta de 8,896 bytes, debe seleccionar VPC-1, VPC-2 o VPC-3 para la puesta en marcha. El MTU más alto permite un mayor rendimiento de la red. Para obtener más información sobre el lanzamiento de una de estas implementaciones, consulte<block ref="663913c4edf07faddf2fc43cb75f2fe2" category="inline-link-rx"></block>.</block>
   <block id="396e70da46ca6b8f2dd7d352ab5d7f16" category="paragraph">En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. Es posible alcanzar el límite de capacidad mediante<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. Consulte los siguientes límites de discos para obtener más información.</block>
   <block id="769a653e8483d7efc5ec7ad2044e739c" category="paragraph"><block ref="b8246ed4559cd25bd4b019aae2787f00" category="inline-link-rx"></block>.</block>
@@ -615,12 +605,10 @@
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>.</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
-  <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">Cloud Volumes ONTAP admite una alta velocidad de escritura con estos tipos de máquinas virtuales cuando se utiliza una pareja de alta disponibilidad. Puede activar una alta velocidad de escritura desde BlueXP durante la implementación o en cualquier momento posterior.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3 ^2^</block>
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3 ^2^</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">Discos persistentes equilibrados ^4^, discos persistentes Performance (SSD) ^4^ y discos persistentes Standard (HDD).</block>
-  <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">El rendimiento de escritura mejorado se habilita cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -682,7 +670,6 @@
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Puede elegir entre las siguientes configuraciones de licencias basadas en nodos o basadas en la capacidad al poner en marcha Cloud Volumes ONTAP como un sistema de nodo único en Azure.</block>
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud Volumes ONTAP, no puede cambiar a otro tipo de VM que _no_ utilice un Ultra SSD para VNVRAM. Por ejemplo, no puede cambiar de E8ds_v4 a E8s_v3, pero puede cambiar de E8ds_v4 a E32ds_v4 porque ambos tipos de VM utilizan Ultra SSD.</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.</block>
-  <block id="5063d3259058d90bbca06465957626d7" category="list-text">El rendimiento de escritura mejorado se habilita al usar SSD.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5 ^3^</block>
   <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP solo admite instancias de máquinas virtuales reservadas y bajo demanda</block>
   <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">Limitaciones con agentes y extensiones de terceros</block>
@@ -721,7 +708,6 @@
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">Debe consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia de EC2 admitidos en las zonas locales</block>
   <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">Las zonas locales de AWS son compatibles con las siguientes familias de tipos de instancia EC2 con tamaños xlarge a 4xlarge: M5, C5, C5d, R5 y R5d. <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
   <block id="4133f4256c016927cb270503c43adeb6" category="paragraph">La alta velocidad de escritura no se admite con estos tipos de instancias en las zonas locales de AWS.</block>
-  <block id="910e1bdd6baebdae0421711258065197" category="admonition">Puede usar las siguientes configuraciones con las implementaciones BLOB de página de alta disponibilidad de Cloud Volumes ONTAP existentes en Azure. Los blobs de página no están soportados para nuevos despliegues.</block>
   <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">Los anchos de banda que se muestran en la tabla siguiente coinciden con los límites de AWS documentados para cada tipo de instancia. Estos límites no están completamente en línea con lo que puede proporcionar Cloud Volumes ONTAP. Para conocer el rendimiento esperado, consulte<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>.</block>
   <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">Licencia basada en la capacidad (Essentials y Professional)</block>
   <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">La versión mínima de ONTAP requerida para configurar Flash Cache en Azure es 9.13.1 GA.</block>
@@ -768,12 +754,8 @@
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Consulte la lista de errores solucionados en la revisión P2</block>
   <block id="46a5c1839a6c9667da9a201d204a30d8" category="paragraph"><block ref="8043c70c5f9f22a2d553b5b35821b45f" category="inline-link-macro-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">Tipos de máquina compatibles hacia esta 1</block>
-  <block id="bb748564d3fa0104390bb3440623c489" category="cell">Tipos de disco admitidos^2^</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">Discos persistentes equilibrados ^3^, discos persistentes Performance (SSD) ^3^ y discos persistentes Standard (HDD).</block>
-  <block id="f443009bc7891aa0df061674e73b08e5" category="list-text">Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">El tipo de máquina personalizado-4-16384 ya no es compatible con los nuevos sistemas Cloud Volumes ONTAP. Si ya tiene un sistema en funcionamiento en este tipo de máquina, puede seguir utilizándolo, pero le recomendamos cambiar al tipo de máquina n2-standard-4.</block>
-  <block id="4a700ade71b64bf589360a1f52b0bdd0" category="paragraph">A partir de Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) superior de 8.896 bytes, están disponibles para las siguientes instancias de puesta en marcha de parejas de alta disponibilidad: * n2-STANDARD-64 * n2-STANDARD-32 * n2-STANDARD-48 * n2-STANDARD-16</block>
-  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="list-text">Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
   <block id="7e2d62fe36583822ef49e7ee658d8b17" category="section-title">9.15.1 P3 (29 de octubre de 2024)</block>
   <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">El parche 9.15.1 P3 ya está disponible para Cloud Volumes ONTAP para todos los proveedores de cloud. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Consulte la lista de errores solucionados en la revisión P3</block>
@@ -798,4 +780,32 @@
   <block id="34756beb20b44cc3e732425639fae228" category="inline-link">Documentos de almacenamiento en caché de volúmenes de BlueXP </block>
   <block id="fadeb5a0a5453e49f671ad12a304756a" category="paragraph">Para obtener más información sobre cómo gestiona BlueXP  los volúmenes de FlexCache, consulte<block ref="4df7bdb090af4efb3896a25128ffcee3" category="inline-link-rx"></block> .</block>
   <block id="9136e486881930be99a49d333eddb2ba" category="sidebar">Notas de la versión de Cloud Volumes ONTAP 9.15.1</block>
+  <block id="5e02a792172b179afc36359c80581d87" category="list-text">DS4_v2 ^1^</block>
+  <block id="837d17a1b64de221e0265c2f7da393f0" category="list-text">DS13_v2 ^1^</block>
+  <block id="14b3e8da6869b2f214b7efc306aea775" category="list-text">E4s_v3 ^1^</block>
+  <block id="3e25b8eaf9ed482edf1d7cc1aa7dd3f1" category="list-text">E8s_v3 ^1^</block>
+  <block id="475a08176fc17d0c6254ca6f0c476b75" category="list-text">E32s_v3 ^1,3^</block>
+  <block id="c88c885a2fefa2da765b4c347fda5ae4" category="list-text">E48s_v3 ^1,3^</block>
+  <block id="4692ba0d874f9b133db280379656a9ce" category="list-text">E64is_v3 ^1,3^</block>
+  <block id="a63ee61a82be26dabec71dbc1e3c06a5" category="list-text">^1^ Las familias de máquinas DS_v2 y Es_v3 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Azure. Estas familias solo serán retenidas y apoyadas en sistemas antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles en Azure a partir de la versión 9.12.1. Le recomendamos que cambie a Es_v4 o a cualquier otra serie compatible con Cloud Volumes ONTAP 9.12.1 y posterior. Sin embargo, las máquinas de las series DS_v2 y Es_v3 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
+  <block id="99b1f6d00bfb2ab2985a552648f9e5c1" category="list-text">^2^ Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico o servicios de archivos.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
+  <block id="9ea31caa0e1962ae75e1a321be9430b7" category="list-text">^3^ Estos tipos de VM utilizan un<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> para VNVRAM, que proporciona un mejor rendimiento de escritura.</block>
+  <block id="8b3b87610bfcad95c57bd42409dfca29" category="list-text">^4^ La alta velocidad de escritura se admite con todos los tipos de instancias cuando se utiliza un sistema de nodo único. Es posible habilitar la alta velocidad de escritura desde BlueXP  durante la implementación o en cualquier momento posterior.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. El rendimiento de escritura mejorado se habilita al usar SSD.</block>
+  <block id="24559871a19879472a902be1674774bd" category="cell">2 TIB hacia 5</block>
+  <block id="85133a824a7524ff6b8a398dd3816914" category="list-text">^5^La organización en niveles de datos en el almacenamiento de Azure Blob no es compatible con PAYGO Explore.</block>
+  <block id="10b45e1c6ef2fa44200d515d2a6fc694" category="paragraph">Puede usar las siguientes configuraciones con las implementaciones BLOB de página de alta disponibilidad de Cloud Volumes ONTAP existentes en Azure.</block>
+  <block id="f9651e2727f6a117e21e37fdefa0c6b2" category="admonition">Los blobs de páginas de Azure no son compatibles con ninguna nueva implementación.</block>
+  <block id="bd4a13e4ffdffbf6589318b707665ee9" category="list-text">n1-standard-8 ^1^</block>
+  <block id="2adbdb8a41a872c39f798f0f7e1d4a41" category="list-text">n1-standard-32 ^1^</block>
+  <block id="fd19b4f8d16fbd446f92c206592bcc85" category="cell">Tipos de disco compatibles hacia esta 2</block>
+  <block id="5d3dde9c211a10976121e86b1e72361e" category="list-text">^1^ Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
+  <block id="c819caf9beab404b5f2223fbcc970eb7" category="list-text">^2^ Los límites de disco pueden impedir que alcance el límite máximo de capacidad del sistema utilizando discos solos. Puede alcanzar el límite de capacidad en<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
+  <block id="827de26590a8eaf472a57d852b9725a4" category="list-text">^3^ El rendimiento de escritura mejorado se activa cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="paragraph">A partir de Cloud Volumes ONTAP 9.13.0, _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) superior de 8.896 bytes, están disponibles para las siguientes instancias de puesta en marcha de par de alta disponibilidad:</block>
+  <block id="c42b3fdcbb4cdcddd43699859073f178" category="list-text">n1-standard-8 ^3^</block>
+  <block id="6b5bde370fd32f6d8d3a5e33315ee222" category="list-text">n1-standard-32 ^3^</block>
+  <block id="634926381cf0a7884523c112877267d0" category="list-text">^1^ Los límites de disco pueden impedir que alcance el límite máximo de capacidad del sistema utilizando discos solos. Puede alcanzar el límite de capacidad en<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.</block>
+  <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">^2^ La organización en niveles de datos en Google Cloud Storage no es compatible con PAYGO Explore.</block>
+  <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">^3^ Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
+  <block id="31269d00cd277adf90f42f882afbd293" category="list-text">^4^ El rendimiento de escritura mejorado se activa cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).</block>
 </blocks>
