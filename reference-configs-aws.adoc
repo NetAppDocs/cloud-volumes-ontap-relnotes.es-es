@@ -256,4 +256,4 @@ La alta velocidad de escritura no se admite con estos tipos de instancias en las
 
 == Regiones admitidas
 
-Para obtener información sobre compatibilidad con regiones de AWS, consulte https://cloud.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].
+Para obtener soporte de región de AWS, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Regiones globales de Cloud Volumes"^].

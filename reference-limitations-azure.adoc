@@ -37,4 +37,4 @@ Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de má
 
 En algunas regiones no se admiten pares DE HA.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista de regiones de Azure admitidas"^].
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consulte la lista de regiones de Azure admitidas"^].
