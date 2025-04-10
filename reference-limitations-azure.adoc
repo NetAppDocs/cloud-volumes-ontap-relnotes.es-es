@@ -4,7 +4,7 @@ permalink: reference-limitations-azure.html
 keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
 summary: Estas limitaciones conocidas son específicas de Cloud Volumes ONTAP en Microsoft Azure. 
 ---
-= Limitaciones conocidas de Azure
+= Limitaciones conocidas de Cloud Volumes ONTAP en Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

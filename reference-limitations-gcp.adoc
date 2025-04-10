@@ -4,7 +4,7 @@ permalink: reference-limitations-gcp.html
 keywords: limitations, google cloud platform, gcp, psc, private service connect 
 summary: Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente. 
 ---
-= Limitaciones conocidas de Google Cloud
+= Limitaciones conocidas de Cloud Volumes ONTAP en Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

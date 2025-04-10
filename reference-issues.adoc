@@ -4,7 +4,7 @@ permalink: reference-issues.html
 keywords: issues, bugs, known issues 
 summary: Los problemas conocidos identifican problemas por los que el uso correcto de esta versión del producto puede resultar imposible. 
 ---
-= Problemas conocidos
+= Problemas conocidos de Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: reference-configs-aws.html
 keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package 
 summary: Se admiten varias configuraciones de Cloud Volumes ONTAP en AWS. 
 ---
-= Configuraciones compatibles en AWS
+= Configuraciones admitidas para Cloud Volumes ONTAP en AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -72,7 +72,7 @@ Notas:
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
 . El rendimiento de escritura mejorado se habilita cuando se usan SSD con todas las configuraciones Cloud Volumes ONTAP.
 . No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
-. Las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
+. Las configuraciones de Cloud Volumes ONTAP en las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
 
 
 --
@@ -102,7 +102,7 @@ Notas:
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
 . El rendimiento de escritura mejorado se habilita al usar unidades SSD con todas las configuraciones de Cloud Volumes ONTAP, excepto PAYGO Explore.
 . No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
-. Las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
+. Las configuraciones de Cloud Volumes ONTAP en las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2).
 
 
 --
