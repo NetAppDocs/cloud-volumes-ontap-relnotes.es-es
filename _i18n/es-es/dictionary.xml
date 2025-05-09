@@ -393,8 +393,6 @@
   <block id="405cb575e50b611a22ec99d1abb3f202" category="inline-link">Deshabilite la compresión de datos mediante la CLI</block>
   <block id="38575f0fc0d26dc67b2a72ebc7d0e845" category="paragraph">No puede elegir eficiencia de almacenamiento al crear un volumen desde BlueXP o puede crear un volumen y, a continuación, hacerlo<block ref="41233aab48d70287f1bbc60d78ce6eab" category="inline-link-rx"></block>.</block>
   <block id="444f10b28a63ab25d9664d0647602d07" category="list-text">Cloud Volumes ONTAP no admite el recalentamiento de la caché después de un reinicio.</block>
-  <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitaciones de ALTA DISPONIBILIDAD</block>
-  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">En algunas regiones no se admiten pares DE HA.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">Consulte la lista de regiones de Azure admitidas</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Las limitaciones conocidas identifican plataformas, dispositivos o funciones que no son compatibles con esta versión del producto o cuya interoperabilidad con esta no es óptima. Revise estas limitaciones detenidamente.</block>
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">Las siguientes limitaciones se aplican a Cloud Volumes ONTAP en todos los proveedores de cloud: AWS, Azure y Google Cloud.</block>
@@ -781,4 +779,10 @@
   <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">La revisión 9.16.1 P1 ahora puede ponerse en marcha y actualizarse para Cloud Volumes ONTAP en Azure y Google Cloud. Sin embargo, esta versión no está disponible para implementar y actualizar en AWS. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">Consulte la lista de errores solucionados en la revisión P1</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
+  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">Limitaciones de las puestas en marcha de alta disponibilidad</block>
+  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">Los pares de alta disponibilidad (HA) no se admiten en algunas regiones.</block>
+  <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">Limitaciones de las puestas en marcha de alta disponibilidad en zonas de disponibilidad únicas</block>
+  <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Ponga en marcha pares de alta disponibilidad en zonas de disponibilidad individuales de Azure</block>
+  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partir de Cloud Volumes ONTAP 9.15.1, puede poner en marcha instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad única (AZs) en Azure. Para obtener más información sobre los criterios que admiten esta función, consulte<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block> .</block>
+  <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Si la versión de Cloud Volumes ONTAP es anterior a la 9.15.1 o si no se cumple alguna de estas condiciones, se aplica el modelo de puesta en marcha anterior que utiliza conjuntos de disponibilidad. Esto sólo se aplica a configuraciones de alta disponibilidad.</block>
 </blocks>

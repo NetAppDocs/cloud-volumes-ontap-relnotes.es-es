@@ -33,8 +33,16 @@ Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de má
 
 
 
-== Limitaciones de ALTA DISPONIBILIDAD
+== Limitaciones de las puestas en marcha de alta disponibilidad
 
-En algunas regiones no se admiten pares DE HA.
+Los pares de alta disponibilidad (HA) no se admiten en algunas regiones.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["Consulte la lista de regiones de Azure admitidas"^].
+
+
+
+== Limitaciones de las puestas en marcha de alta disponibilidad en zonas de disponibilidad únicas
+
+A partir de Cloud Volumes ONTAP 9.15.1, puede poner en marcha instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad única (AZs) en Azure. Para obtener más información sobre los criterios que admiten esta función, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Ponga en marcha pares de alta disponibilidad en zonas de disponibilidad individuales de Azure"^] .
+
+Si la versión de Cloud Volumes ONTAP es anterior a la 9.15.1 o si no se cumple alguna de estas condiciones, se aplica el modelo de puesta en marcha anterior que utiliza conjuntos de disponibilidad. Esto sólo se aplica a configuraciones de alta disponibilidad.
