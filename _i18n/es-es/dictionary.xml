@@ -785,4 +785,8 @@
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Ponga en marcha pares de alta disponibilidad en zonas de disponibilidad individuales de Azure</block>
   <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">A partir de Cloud Volumes ONTAP 9.15.1, puede poner en marcha instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad única (AZs) en Azure. Para obtener más información sobre los criterios que admiten esta función, consulte<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block> .</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Si la versión de Cloud Volumes ONTAP es anterior a la 9.15.1 o si no se cumple alguna de estas condiciones, se aplica el modelo de puesta en marcha anterior que utiliza conjuntos de disponibilidad. Esto sólo se aplica a configuraciones de alta disponibilidad.</block>
+  <block id="2b0112a3fe8db72b28cea3e10ddba401" category="section-title">9.16.1 P3 (29 de mayo de 2025)</block>
+  <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">La revisión 9.16.1 P3 ahora puede ponerse en marcha y actualizarse para Cloud Volumes ONTAP en Azure y Google Cloud. Sin embargo, esta versión no está disponible para implementar y actualizar en AWS. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
+  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Consulte la lista de errores solucionados en la revisión P3</block>
+  <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
 </blocks>
