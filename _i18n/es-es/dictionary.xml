@@ -10,8 +10,6 @@
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">La actualización de un único sistema de nodos desconecta el sistema hasta 25 minutos, durante los cuales se interrumpe la I/O.</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">las instancias c4, m4 y r4 ya no son compatibles</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Aprenda a cambiar el tipo de instancia de EC2 para Cloud Volumes ONTAP</block>
-  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">Soporte de NetApp</block>
-  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">Consulte <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> para obtener más información acerca del fin de la disponibilidad y la compatibilidad con estos tipos de instancia.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud admite varias configuraciones de Cloud Volumes ONTAP.</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">Configuraciones admitidas por licencia</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.</block>
@@ -555,7 +553,6 @@
   <block id="9a3a0c4b2afbb088e029484d4b34ba8b" category="sidebar">Limitaciones en Google Cloud</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">n2-estándar-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">n2-estándar-64</block>
-  <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.</block>
   <block id="8e8865183ac138d80e1eac90bc023d09" category="list-text">A partir de la versión 9.13.0 del software Cloud Volumes ONTAP, _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) superior de 8,896 bytes, están disponibles para las siguientes instancias de implementación de parejas de alta disponibilidad:</block>
   <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">Lanzamiento de una pareja de alta disponibilidad en Google Cloud</block>
   <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash Cache_, el modo de escritura alta y un valor MTU de 8,896 dependen de las funciones y no se pueden deshabilitar individualmente dentro de una instancia configurada.</block>
@@ -789,4 +786,25 @@
   <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">La revisión 9.16.1 P3 ahora puede ponerse en marcha y actualizarse para Cloud Volumes ONTAP en Azure y Google Cloud. Sin embargo, esta versión no está disponible para implementar y actualizar en AWS. BlueXP le solicitará que actualice sus sistemas existentes a esta versión de revisión.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">Consulte la lista de errores solucionados en la revisión P3</block>
   <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (Se requiere inicio de sesión en el sitio de soporte de NetApp).</block>
+  <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">Las configuraciones de Cloud Volumes ONTAP en las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2). No se admiten otros tipos de discos en Cloud Volumes ONTAP en AWS Local Zones.</block>
+  <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">Cloud Volumes ONTAP ya no admite las instancias EC2 c4, m4 y r4 en AWS. Si su sistema utiliza una instancia c4, m4 o r4, cámbiela a una instancia c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.</block>
+  <block id="2f8299f876158db323c08455b12b585a" category="paragraph">Para obtener más información, consulte:</block>
+  <block id="304f5226697d03123fa4611d02bf8546" category="inline-link">Artículo de la base de conocimientos (KB): Conversión de una instancia de AWS Xen CVO a Nitro KVM</block>
+  <block id="0dc3c417fc362585e0e7b3798f00b8bb" category="list-text"><block ref="0dc3c417fc362585e0e7b3798f00b8bb" category="inline-link-rx"></block></block>
+  <block id="b5dc3ce37b75c52be2427ecee207d24f" category="inline-link">Artículo de Knowledge Base: No se puede cambiar el tipo de instancia de r4 a r5 con un error de recuento de discos</block>
+  <block id="9ed042e52baa279a92fcf5c7a432ecf5" category="list-text"><block ref="9ed042e52baa279a92fcf5c7a432ecf5" category="inline-link-rx"></block></block>
+  <block id="ee47ffaac80894c9307ca443c334cf79" category="inline-link-macro">Obtenga más información sobre el fin de la disponibilidad y el soporte para estos tipos de instancias</block>
+  <block id="c0857a6c0ade184c3afe7f293fc01755" category="list-text"><block ref="c0857a6c0ade184c3afe7f293fc01755" category="inline-link-macro-rx"></block></block>
+  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Documentación de Microsoft Azure</block>
+  <block id="e2f4ab859b01d65da06c213f94a69131" category="paragraph">Para conocer las especificaciones de las instancias admitidas, consulte la <block ref="84495d3a9882d3bd6b6590d973db25e5" category="inline-link-rx"></block> .</block>
+  <block id="5639612d2f12168c8a83a7d9f034340d" category="inline-link">Azure (nodo único)</block>
+  <block id="88e2312354057a90322664c2df9708ae" category="list-text">^4^ Para obtener información sobre los tipos de discos admitidos en implementaciones de nodo único, consulte <block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Es posible habilitar la alta velocidad de escritura desde BlueXP  durante la implementación o en cualquier momento posterior.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. El rendimiento de escritura mejorado se habilita al usar SSD.</block>
+  <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">Tipos de disco compatibles con esta versión 6</block>
+  <block id="70ed196a226ad517ee4fecdca325036d" category="inline-link">Azure (pareja de alta disponibilidad)</block>
+  <block id="129a14de9bbb8e2dc343a37a19f5ea3d" category="list-text">Para obtener información sobre los tipos de discos compatibles con implementaciones de alta disponibilidad (HA) en zonas de disponibilidad únicas y múltiples, consulte <block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
+  <block id="7ec816bcf3858e037c57a46bfa8643ba" category="paragraph">Para obtener más información sobre tipos de máquinas específicas, consulte la documentación de Google Cloud:</block>
+  <block id="7f53645b2b3a6e77999ceeea01208792" category="inline-link">Tipos de máquinas de uso general de la serie n1</block>
+  <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
+  <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">Tipos de máquinas de uso general de la serie N2</block>
+  <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
 </blocks>

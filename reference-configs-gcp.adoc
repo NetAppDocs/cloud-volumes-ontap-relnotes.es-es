@@ -164,6 +164,12 @@ NOTE: _Flash Cache_, el modo de escritura alta y un valor MTU de 8,896 dependen 
 
 --
 ====
+Para obtener más información sobre tipos de máquinas específicas, consulte la documentación de Google Cloud:
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["Tipos de máquinas de uso general de la serie n1"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["Tipos de máquinas de uso general de la serie N2"^]
+
+
 
 
 == Tamaños de disco admitidos

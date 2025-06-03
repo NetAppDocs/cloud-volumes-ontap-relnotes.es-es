@@ -78,13 +78,3 @@ NOTE: Para AWS, no se le pedirá esta actualización. AWS no admite la actualiza
 * La actualización de un único sistema de nodos desconecta el sistema hasta 25 minutos, durante los cuales se interrumpe la I/O.
 * Actualizar un par de alta disponibilidad es sin interrupciones y las I/O no interrumpen. Durante este proceso de actualización no disruptivo, cada nodo se actualiza en tándem para continuar sirviendo I/O a los clientes.
 
-
-
-
-=== las instancias c4, m4 y r4 ya no son compatibles
-
-En AWS, los tipos de instancias c4, m4 y r4 EC2 ya no son compatibles con Cloud Volumes ONTAP. Si tiene un sistema existente que se ejecuta en un tipo de instancia c4, m4 o r4, debe cambiar a un tipo de instancia en la familia de instancias c5, m5 o r5. No puede actualizar a esta versión hasta que cambie el tipo de instancia.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Aprenda a cambiar el tipo de instancia de EC2 para Cloud Volumes ONTAP"^].
-
-Consulte link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["Soporte de NetApp"^] para obtener más información acerca del fin de la disponibilidad y la compatibilidad con estos tipos de instancia.

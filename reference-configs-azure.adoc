@@ -26,6 +26,8 @@ No se admite la actualización de un sistema de un solo nodo a un par de alta di
 
 Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
 
+Para conocer las especificaciones de las instancias admitidas, consulte la  https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview["Documentación de Microsoft Azure"^] .
+
 
 
 === Sistemas de un solo nodo
@@ -131,7 +133,7 @@ Si elige cualquiera de estos tipos de VM al implementar un nuevo sistema Cloud V
 +
 A la inversa, si puso en marcha Cloud Volumes ONTAP con cualquier otro tipo de equipo virtual, no podrá cambiar a un tipo de equipo virtual que utilice un Ultra SSD para NVRAM. Por ejemplo, no puede cambiar de E8s_v3 a E8ds_v4.
 
-. ^4^ La alta velocidad de escritura se admite con todos los tipos de instancias cuando se utiliza un sistema de nodo único. Es posible habilitar la alta velocidad de escritura desde BlueXP  durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^]. El rendimiento de escritura mejorado se habilita al usar SSD.
+. ^4^ Para obtener información sobre los tipos de discos admitidos en implementaciones de nodo único, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node["Azure (nodo único)"^] . Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. Es posible habilitar la alta velocidad de escritura desde BlueXP  durante la implementación o en cualquier momento posterior. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^]. El rendimiento de escritura mejorado se habilita al usar SSD.
 
 
 --
@@ -424,7 +426,7 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 
 
 
-| Tipos de disco admitidos 3+| Discos gestionados HDD estándar, discos gestionados SSD estándar, discos gestionados SSD premium y discos gestionados SSD premium de v2 TB. 
+| Tipos de disco compatibles con esta versión 6 3+| Discos gestionados HDD estándar, discos gestionados SSD estándar, discos gestionados SSD premium y discos gestionados SSD premium de v2 TB. 
 |===
 Notas:
 
@@ -433,6 +435,7 @@ Notas:
 . El soporte para varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP.
 . El soporte para varias zonas de disponibilidad comienza desde la versión 9.14.1 RC1 de ONTAP.
 . Este tipo de máquina virtual incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
+. Para obtener información sobre los tipos de discos compatibles con implementaciones de alta disponibilidad (HA) en zonas de disponibilidad únicas y múltiples, consulte  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Azure (pareja de alta disponibilidad)"^] .
 
 
 --
