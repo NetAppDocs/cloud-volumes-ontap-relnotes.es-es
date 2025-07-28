@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-provider-integrations.html 
-keywords: maintenance event, azure maintenance event, cloud provider, issues, support 
+keywords: maintenance event, azure maintenance event, cloud provider, issues, support, SMB CA in CVO 
 summary: En esta página se describe cómo funciona NetApp con proveedores de cloud para resolver los problemas que puedan surgir. 
 ---
 = Colaboración con proveedores de cloud para Cloud Volumes ONTAP
@@ -34,4 +34,7 @@ La gestión especial de los eventos de mantenimiento es compatible con los pares
 
 Cuando se anuncia la ventana de mantenimiento, el nodo asociado del nodo objetivo realizará una toma de control. Una vez finalizado el mantenimiento, se inicia una devolución. Tras la devolución, se espera que la pareja de ha vuelva a estar en buen estado. Si esto no sucede, comuníquese con el soporte de NetApp para obtener ayuda. Tenga en cuenta que los eventos de mantenimiento se dirigen a una de las máquinas virtuales de un par de alta disponibilidad a la vez y que, normalmente, ambos nodos se dirigen a un periodo de tiempo relativamente corto.
 
-Los clientes CIFS/SMB que utilizan recursos compartidos CIFS Cloud Volumes ONTAP de disponibilidad no continua perderán una sesión tanto cuando se produzca la conmutación por error como cuando el agregado que utiliza la sesión se vuelva al nodo raíz del agregado. Esta es una limitación impuesta por el propio protocolo CIFS/SMB. Es posible que los clientes deseen utilizar productos de terceros para evitar problemas que puedan derivarse de la toma de control y la devolución. Si desea obtener más ayuda, póngase en contacto con el soporte de NetApp.
+Los clientes CIFS/SMB que utilizan recursos compartidos CIFS de Cloud Volumes ONTAP con disponibilidad no continua experimentarán una pérdida de sesión tanto al producirse una toma de control como al devolverse el agregado que utiliza la sesión a su nodo de origen. Esta es una limitación impuesta por el propio protocolo CIFS/SMB. Puede utilizar productos de terceros aprobados para evitar problemas derivados de la toma de control y la devolución. Para obtener más ayuda, póngase en contacto con el soporte técnico de NetApp .
+
+
+NOTE: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Acciones SMB disponibles continuamente"^] Las operaciones no disruptivas no son compatibles con Cloud Volumes ONTAP.

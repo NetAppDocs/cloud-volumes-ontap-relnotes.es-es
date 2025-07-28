@@ -44,6 +44,10 @@ Si se habilita la verificación multi-administrador en Cloud Volumes ONTAP, se g
 * Modos empresariales y cumplimiento de normativas para SnapLock (solo es compatible WORM de cloud)
 * SnapMirror síncrono
 * VLAN
+* Disponibilidad continua (CA) para PYMES
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["Acciones SMB disponibles continuamente"^] No se admiten operaciones no disruptivas.
+
 
 
 
