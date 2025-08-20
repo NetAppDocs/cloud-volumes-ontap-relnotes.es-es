@@ -47,7 +47,7 @@ Cada licencia admite una capacidad máxima diferente del sistema. La capacidad m
 
  a| 
 *Capacidad máxima del sistema* (discos + almacenamiento de objetos) ^1^
-| 500 GIB | 2 PIB hacia 2 
+| 500 GIB | Flexible ^2^ 
 
 
  a| 
@@ -70,6 +70,9 @@ Notas:
 
 . Para un par de alta disponibilidad, el límite de capacidad es para todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TIB de capacidad entre ambos nodos.
 . En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Para obtener más información acerca de los límites de disco, consulte link:reference-limits-aws.html["límites de almacenamiento"].
++
+Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.
+
 . El rendimiento de escritura mejorado se habilita cuando se usan SSD con todas las configuraciones Cloud Volumes ONTAP.
 . No se recomienda la organización en niveles de los datos para el almacenamiento de objetos cuando se utilizan unidades HDD optimizadas para el rendimiento (st1).
 . Las configuraciones de Cloud Volumes ONTAP en las zonas locales de AWS solo admiten el tipo de disco SSD de uso general (GP2). No se admiten otros tipos de discos en Cloud Volumes ONTAP en AWS Local Zones.

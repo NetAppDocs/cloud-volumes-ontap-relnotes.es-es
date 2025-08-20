@@ -26,6 +26,12 @@ NetApp no admite superar el límite de capacidad del sistema. Si alcanza el lím
 
 En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. Es posible alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Consulte los siguientes límites de discos para obtener más información.
 
+.Límite de capacidad para licencias basadas en capacidad
+Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles. Consulte la  https://cloud.google.com/storage/docs/buckets["Documentación de Google Cloud"^] Para más información.
+
+Límites de capacidad para otros tipos de licencias::
+
+
 [cols="25,75"]
 |===
 | Licencia | Capacidad máxima del sistema (discos + almacenamiento de objetos) 
@@ -44,15 +50,12 @@ En algunas configuraciones, los límites de discos impiden que llegue al límite
 
 
 | Licencia basada en nodos | 2 PIB (requiere varias licencias) 
-
-
-| Licencia basada en capacidad | 2 PIB 
 |===
 .En el caso de un par de alta disponibilidad, ¿el límite de capacidad con licencia por nodo o para todo el par de alta disponibilidad?
 El límite de capacidad corresponde a todo el par de alta disponibilidad. No es por nodo. Por ejemplo, si utiliza la licencia Premium, puede tener hasta 368 TB de capacidad entre ambos nodos.
 
 .En el caso de un par de alta disponibilidad, ¿cuentan los datos reflejados con respecto al límite de capacidad con licencia?
-No, no lo hace. Los datos de un par de alta disponibilidad se replican de forma síncrona entre los nodos, de modo que los datos estén disponibles en caso de fallo en Google Cloud. Por ejemplo, si compra un disco de 8 TB en el nodo A, BlueXP también asigna un disco de 8 TB en el nodo B que se utiliza para datos reflejados. Si bien se aprovisionaron 16 TB de capacidad, solo 8 TB se contabiliza respecto al límite de licencia.
+No, no lo es.  Los datos de un par HA se reflejan de forma sincrónica entre los nodos para que estén disponibles en caso de falla en Google Cloud.  Por ejemplo, si compra un disco de 8 TB en el nodo A, BlueXP también asigna un disco de 8 TB en el nodo B que se utiliza para datos reflejados.  Si bien se configuran 16 TB de capacidad, solo 8 TB cuentan para el límite de la licencia.
 
 
 
@@ -83,7 +86,7 @@ Cloud Volumes ONTAP agrupa los discos de Google Cloud Platform en _aggregates_. 
 Notas:
 
 . El número máximo de agregados de datos no incluye el agregado raíz.
-. El límite de capacidad del agregado se basa en los discos que componen el agregado. El límite no incluye el almacenamiento de objetos utilizado para la organización en niveles de datos.
+. Los discos que componen el agregado determinan el límite de capacidad del agregado.  Este límite no incluye el almacenamiento de objetos utilizado para la clasificación de datos.
 . Todos los discos de un agregado deben tener el mismo tamaño.
 
 
@@ -121,7 +124,7 @@ Este límite está definido por los límites de la máquina virtual en Google Cl
 
 Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
 
-Estos son los límites probados. Aunque teóricamente es posible configurar más equipos virtuales de almacenamiento, no lo es.
+Éstos son los límites probados.  No se admite la configuración de más máquinas virtuales de almacenamiento.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Aprenda a crear máquinas virtuales de almacenamiento adicionales"^].
 
@@ -153,7 +156,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 |===
 . Estos 24 equipos virtuales de almacenamiento pueden proporcionar datos o configurarse para recuperación ante desastres (DR).
 . Para las licencias basadas en la capacidad, no hay costes de licencias adicionales para equipos virtuales de almacenamiento adicionales, pero hay un cargo mínimo de capacidad de 4 TIB por equipo virtual de almacenamiento. Por ejemplo, si crea dos VM de almacenamiento y cada una tiene 2 TIB de capacidad aprovisionada, se le cobrará un total de 8 TIB.
-. Para BYOL basado en nodos, se requiere una licencia complementaria para cada equipo virtual de almacenamiento que _data-sirviendo_ adicional más allá de la primera máquina virtual de almacenamiento que se suministra con Cloud Volumes ONTAP de forma predeterminada. Póngase en contacto con el equipo de cuenta para obtener una licencia adicional de máquina virtual de almacenamiento.
+. Para BYOL basado en nodos, se requiere una licencia complementaria para cada máquina virtual de almacenamiento _de servicio de datos_ adicional más allá de la primera máquina virtual de almacenamiento que viene con Cloud Volumes ONTAP de manera predeterminada.  Comuníquese con su equipo de cuentas para obtener una licencia complementaria de máquina virtual de almacenamiento.
 +
 Los equipos virtuales de almacenamiento que configure para la recuperación ante desastres (DR) no requieren una licencia adicional (son gratuitos), sino que cuentan con el límite de equipos virtuales de almacenamiento. Por ejemplo, si tiene 12 máquinas virtuales de almacenamiento que sirven datos y 12 máquinas virtuales de almacenamiento configuradas para recuperación ante desastres, ha alcanzado el límite y no puede crear ningún equipo virtual de almacenamiento adicional.
 

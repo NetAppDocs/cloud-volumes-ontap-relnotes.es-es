@@ -45,7 +45,9 @@ Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reserv
 |  | Freemium | Optimizado ^5^ | Licencia basada en la capacidad (Essentials y Professional) 
 
 
-| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
+| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB  a| 
+Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.
+
 
 
 | Tipos de máquina virtual admitidos  a| 
@@ -250,7 +252,9 @@ NOTE: Los blobs de páginas de Azure no son compatibles con ninguna nueva implem
 |  | Freemium | Optimizado ^4^ | Licencia basada en la capacidad (Essentials y Professional) 
 
 
-| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
+| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB  a| 
+Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.
+
 
 
 | Tipos de máquina virtual admitidos  a| 
@@ -388,7 +392,9 @@ Puede elegir entre las siguientes configuraciones al poner en marcha Cloud Volum
 |  | Freemium | Optimizado ^7^ | Licencia basada en la capacidad (Essentials y Professional) 
 
 
-| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB | 2 PIB | 2 PIB 
+| Capacidad máxima del sistema (discos + almacenamiento de objetos) | 500 GIB  a| 
+Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.
+
 
 
 | Tipos de máquina virtual admitidos  a| 
