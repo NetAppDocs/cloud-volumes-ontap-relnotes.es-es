@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache; limitations in HA deployment in MAZ, SAZ, multiple availability xone, single availability zone Azure CVO, PSSDv2, premium SSD v2 limitation in CVO, flash cache limitation in CVO 
 summary: Estas limitaciones conocidas son específicas de Cloud Volumes ONTAP en Microsoft Azure. 
 ---
 = Limitaciones conocidas de Cloud Volumes ONTAP en Azure
@@ -26,6 +26,34 @@ A partir del 14 de julio de 2025, NetApp enviará correos electrónicos y le not
 
 
 
+== Limitaciones de los discos SSD v2 Premium para configuraciones de alta disponibilidad
+
+Los discos administrados SSD v2 Premium tienen las siguientes limitaciones para implementaciones de alta disponibilidad (HA) en Azure:
+
+* No compatible con implementaciones de alta disponibilidad en regiones no zonales.
+* No compatible con implementaciones de alta disponibilidad en múltiples zonas de disponibilidad.
+* Solo compatible con configuraciones de alta disponibilidad implementadas dentro de zonas de disponibilidad únicas.
+
+
+Para utilizar discos administrados Premium SSD v2 con configuraciones de alta disponibilidad de Cloud Volumes ONTAP , asegúrese de que se cumplan los siguientes requisitos:
+
+* La versión de Cloud Volumes ONTAP es 9.15.1 o posterior.
+* La implementación de HA se realiza en una zona de disponibilidad única de Azure.
+* Las regiones y zonas seleccionadas admiten discos administrados Premium SSD v2.  Para obtener información sobre las regiones admitidas, consulte la https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Sitio web de Microsoft Azure: Productos disponibles por región"^] .
+
+
+Para más información, consulte  https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#support-for-premium-ssd-v2-managed-disks-in-azure["Compatibilidad con discos administrados SSD Premium v2 en Azure"^] .
+
+
+
+== Limitaciones de las puestas en marcha de alta disponibilidad en zonas de disponibilidad únicas
+
+A partir de Cloud Volumes ONTAP 9.15.1, puede implementar instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad (AZ) únicas en Azure. Para obtener información sobre los criterios que respaldan esta función, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure["Ponga en marcha pares de alta disponibilidad en zonas de disponibilidad individuales de Azure"^] .
+
+Si la versión de Cloud Volumes ONTAP es anterior a la 9.15.1 o si no se cumple alguna de estas condiciones, se aplica el modelo de puesta en marcha anterior que utiliza conjuntos de disponibilidad. Esto sólo se aplica a configuraciones de alta disponibilidad.
+
+
+
 == Limitaciones de Flash Cache
 
 Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de máquinas virtuales como _Flash Cache_. Tenga en cuenta esta limitación:
@@ -35,16 +63,8 @@ Cloud Volumes ONTAP utiliza el almacenamiento NVMe local en algunos tipos de má
 
 
 
-== Limitaciones de las puestas en marcha de alta disponibilidad
+== Limitaciones con las implementaciones de alta disponibilidad
 
-Los pares de alta disponibilidad (HA) no se admiten en algunas regiones.
+Los pares HA no son compatibles en algunas regiones.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["Consulte la lista de regiones de Azure admitidas"^].
-
-
-
-== Limitaciones de las puestas en marcha de alta disponibilidad en zonas de disponibilidad únicas
-
-A partir de Cloud Volumes ONTAP 9.15.1, puede poner en marcha instancias de máquinas virtuales (VM) en modo HA en zonas de disponibilidad única (AZs) en Azure. Para obtener más información sobre los criterios que admiten esta función, consulte https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Ponga en marcha pares de alta disponibilidad en zonas de disponibilidad individuales de Azure"^] .
-
-Si la versión de Cloud Volumes ONTAP es anterior a la 9.15.1 o si no se cumple alguna de estas condiciones, se aplica el modelo de puesta en marcha anterior que utiliza conjuntos de disponibilidad. Esto sólo se aplica a configuraciones de alta disponibilidad.
