@@ -32,15 +32,15 @@ Lea estas notas para obtener más información acerca de cómo actualizar a esta
 
 === Cómo actualizar
 
-Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No debe actualizar Cloud Volumes ONTAP con System Manager o CLI. Hacerlo puede afectar a la estabilidad del sistema.
+Las actualizaciones de Cloud Volumes ONTAP deben completarse desde la consola de NetApp . No debe actualizar Cloud Volumes ONTAP mediante el Administrador del sistema o la CLI. Hacerlo puede afectar la estabilidad del sistema.
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Obtenga información sobre cómo actualizar cuando BlueXP lo notifique"^].
+link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Aprende cómo actualizar cuando la consola te lo notifique"^] .
 
 
 
 === Ruta de actualización admitida
 
-Puede actualizar a Cloud Volumes ONTAP 9.17.1 RC1 desde la versión 9.16.1 en Azure y Google Cloud.  BlueXP le solicitará que actualice los sistemas Cloud Volumes ONTAP elegibles a esta versión.
+Puede actualizar a Cloud Volumes ONTAP 9.17.1 RC1 desde la versión 9.16.1 en Azure y Google Cloud. La consola le solicitará que actualice los sistemas Cloud Volumes ONTAP elegibles a esta versión.
 
 
 NOTE: En el caso de AWS, no se le solicitará esta actualización.  La actualización a Cloud Volumes ONTAP 9.17.1 RC1 no es compatible con AWS.

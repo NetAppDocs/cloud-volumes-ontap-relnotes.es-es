@@ -71,7 +71,7 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 |===
 Notas:
 
-. ^1^ Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
+. ^1^ Las máquinas de la serie n1 ya no están disponibles para su selección en la consola de NetApp al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 se conservarán y recibirán soporte únicamente en sistemas más antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9.8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9.8 y versiones posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
 +
 El tipo de máquina personalizado-4-16384 ya no es compatible con los nuevos sistemas Cloud Volumes ONTAP. Si ya tiene un sistema en funcionamiento en este tipo de máquina, puede seguir utilizándolo, pero le recomendamos cambiar al tipo de máquina n2-standard-4.
 
@@ -147,14 +147,14 @@ Notas:
 link:reference-limits-gcp.html["Más información acerca de los límites de discos en Google Cloud"].
 
 . ^2^ La organización en niveles de datos en Google Cloud Storage no es compatible con PAYGO Explore.
-. ^3^ Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
+. ^3^ Las máquinas de la serie n1 ya no están disponibles para su selección en la consola al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 se conservarán y recibirán soporte únicamente en sistemas más antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9.8. Le recomendamos que cambie a las máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9.8 y versiones posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.
 +
 El tipo de máquina personalizado-4-16384 ya no es compatible con los nuevos sistemas Cloud Volumes ONTAP. Si ya tiene un sistema en funcionamiento en este tipo de máquina, puede seguir utilizándolo, pero le recomendamos cambiar al tipo de máquina n2-standard-4.
 
 . ^4^ El rendimiento de escritura mejorado se activa cuando se utilizan discos persistentes equilibrados y discos persistentes de rendimiento (SSD).
 
 
-La interfaz BlueXP muestra un tipo de máquina adicional compatible para Standard y BYOL: n1-Highmem-4. Sin embargo, este tipo de máquina no está pensado para entornos de producción. Lo hemos puesto a disposición únicamente para entornos específicos de laboratorio.
+La consola muestra un tipo de máquina compatible adicional para Estándar y BYOL: n1-highmem-4. Sin embargo, este tipo de máquina no está diseñada para entornos de producción. Lo hemos puesto a disposición únicamente para un entorno de laboratorio específico.
 
 A partir de la versión 9.13.0 del software Cloud Volumes ONTAP, _Flash Cache_, alta velocidad de escritura y una unidad de transmisión máxima (MTU) superior de 8,896 bytes, están disponibles para las siguientes instancias de implementación de parejas de alta disponibilidad:
 

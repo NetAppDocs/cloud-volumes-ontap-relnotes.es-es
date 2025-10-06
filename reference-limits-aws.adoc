@@ -22,7 +22,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 La capacidad máxima del sistema incluye almacenamiento basado en disco más almacenamiento de objetos utilizado para la clasificación de datos.
 
-NetApp no admite superar el límite de capacidad del sistema. Si alcanza el límite de capacidad con licencia, BlueXP muestra un mensaje de acción necesaria y ya no permite añadir discos adicionales.
+NetApp no admite exceder el límite de capacidad del sistema. Si alcanza el límite de capacidad con licencia, la consola de NetApp muestra un mensaje de acción requerida y ya no le permite agregar discos adicionales.
 
 En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. En estos casos, puede alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Consulte los límites de capacidad y de disco siguientes para obtener más información.
 
@@ -55,7 +55,7 @@ Límites de capacidad para otros tipos de licencias::
 El límite de capacidad es para todo el par HA.  No es por nodo.  Por ejemplo, la licencia Premium permite hasta 368 TiB en ambos nodos.
 
 .En el caso de un sistema de alta disponibilidad en AWS, ¿los datos reflejados tienen en cuenta el límite de capacidad?
-No, no lo hace. Los datos de una pareja de alta disponibilidad de AWS se replican de forma síncrona entre los nodos, de modo que los datos estén disponibles en caso de fallo. Por ejemplo, si compra un disco de 8 TIB en el nodo A, BlueXP también asigna un disco de 8 TIB en el nodo B que se utiliza para datos reflejados. Mientras que se aprovisionaron 16 TIB de capacidad, solo 8 TIB cuenta contra el límite de licencia.
+No, no lo es. Los datos de un par de AWS HA se reflejan de forma sincrónica entre los nodos para que estén disponibles en caso de falla. Por ejemplo, si compra un disco de 8 TiB en el nodo A, la consola también asigna un disco de 8 TiB en el nodo B que se utiliza para datos reflejados. Si bien se aprovisionaron 16 TiB de capacidad, solo 8 TiB cuentan para el límite de la licencia.
 
 
 
@@ -408,7 +408,7 @@ Las instancias que se enumeran a continuación son para las familias de instanci
 | *.24xgrande | 50 | 44 | 24 | 12 
 |===
 . Este número indica cuántas direcciones IP privadas _remaining_ están disponibles en el puerto e0a después de implementar y configurar Cloud Volumes ONTAP. Por ejemplo, un sistema *.2xlarge admite un máximo de 15 direcciones IP por interfaz de red. Cuando un par de alta disponibilidad se implementa en un único AZ, se asignan 5 direcciones IP privadas al puerto e0a. Como resultado, un par de alta disponibilidad que utiliza un tipo de instancia *.2xgrande tiene 10 direcciones IP privadas restantes para máquinas virtuales de almacenamiento adicionales.
-. El número indicado en estas columnas incluye la máquina virtual de almacenamiento inicial que BlueXP crea de forma predeterminada. Por ejemplo, si 24 aparece en esta columna, significa que puede crear 23 equipos virtuales de almacenamiento adicionales para un total de 24.
+. El número que aparece en estas columnas incluye la máquina virtual de almacenamiento inicial que la consola crea de manera predeterminada. Por ejemplo, si en esta columna aparece 24, significa que puede crear 23 máquinas virtuales de almacenamiento adicionales para un total de 24.
 . Una LIF de gestión para el equipo virtual de almacenamiento es opcional. Una LIF de gestión proporciona una conexión con herramientas de gestión como SnapCenter.
 +
 Dado que requiere una dirección IP privada, limitará la cantidad de equipos virtuales de almacenamiento adicionales que puede crear. La única excepción es un par de alta disponibilidad en varios AZs. En ese caso, la dirección IP de la LIF de gestión es una dirección IP _flotante_, por lo que no cuenta con el límite de IP _privado_.
@@ -452,7 +452,7 @@ Dado que requiere una dirección IP privada, limitará la cantidad de equipos vi
 . La creación de volúmenes FlexVol hasta un tamaño máximo de 300 TiB se admite mediante las siguientes herramientas y las versiones mínimas:
 +
 ** System Manager y la interfaz de línea de comandos de ONTAP a partir de Cloud Volumes ONTAP 9.12.1 P2 y 9.13.0 P2
-** BlueXP a partir de Cloud Volumes ONTAP 9.13.1
+** Comenzando con Cloud Volumes ONTAP 9.13.1
 
 
 

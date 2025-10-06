@@ -22,7 +22,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
 
-NetApp no admite exceder el límite de capacidad del sistema.  Si alcanza el límite de capacidad autorizado, BlueXP muestra un mensaje de acción requerida y le impide agregar más discos.
+NetApp no admite exceder el límite de capacidad del sistema. Si alcanza el límite de capacidad con licencia, la consola de NetApp muestra un mensaje de acción requerida y le impide agregar más discos.
 
 .Límite de capacidad para licencias basadas en capacidad
 Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles.  Consulte la https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["Documentación de Azure para discos administrados"^] y https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Documentación de Azure para el almacenamiento de blobs"^] .
@@ -697,8 +697,8 @@ Las máquinas virtuales de almacenamiento para recuperación ante desastres (DR)
 . Comenzando con ONTAP 9.12.1P2, el límite es 128 TB. En ONTAP 9.11.1 y versiones anteriores, el límite es de 16 TB.
 . La creación de volúmenes FlexVol hasta un tamaño máximo de 300 TiB se admite mediante las siguientes herramientas y las versiones mínimas:
 +
-** System Manager y la interfaz de línea de comandos de ONTAP a partir de Cloud Volumes ONTAP 9.12.1 P2 y 9.13.0 P2
-** BlueXP a partir de Cloud Volumes ONTAP 9.13.1
+** Administrador del sistema y la CLI de ONTAP a partir de Cloud Volumes ONTAP 9.12.1 P2 y 9.13.0 P2
+** Comenzando con Cloud Volumes ONTAP 9.13.1
 
 
 

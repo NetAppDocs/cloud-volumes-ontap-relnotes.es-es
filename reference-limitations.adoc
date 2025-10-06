@@ -62,7 +62,7 @@ El número máximo de transferencias simultáneas de SnapMirror o SnapVault para
 
 No debería usar las copias Snapshot de su proveedor de cloud como parte de su plan de backup y recuperación de datos de Cloud Volumes ONTAP. Debería usar siempre copias Snapshot de ONTAP o soluciones de backup de terceros para realizar backups y restaurar datos alojados en Cloud Volumes ONTAP.
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Descubre cómo utilizar el backup y la recuperación de datos de BlueXP para realizar backups y restauraciones de datos de ONTAP"^].
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Aprenda a utilizar NetApp Backup and Recovery para realizar copias de seguridad y restaurar datos de ONTAP"^] .
 
 
 NOTE: Los puntos de consistencia de ONTAP del sistema de archivos WAFL determinan la coherencia de datos. Solo ONTAP puede desactivar el sistema de archivos WAFL para realizar un backup consistente con los fallos.
@@ -81,24 +81,24 @@ Las soluciones de administración automática de recursos de aplicaciones no deb
 
 
 
-== Las actualizaciones de software deben ser completadas por BlueXP
+== Las actualizaciones de software deben ser completadas por la consola de NetApp
 
-Las actualizaciones de Cloud Volumes ONTAP deben completarse desde BlueXP. No debe actualizar Cloud Volumes ONTAP con System Manager o CLI. Hacerlo puede afectar a la estabilidad del sistema.
+Las actualizaciones de Cloud Volumes ONTAP deben completarse desde la consola de NetApp . No debe actualizar Cloud Volumes ONTAP mediante el Administrador del sistema o la CLI. Hacerlo puede afectar la estabilidad del sistema.
 
 
 
 == La implementación de Cloud Volumes ONTAP no se debe modificar desde la consola de su proveedor de cloud
 
-Los cambios realizados en una configuración de Cloud Volumes ONTAP desde la consola del proveedor de cloud dan como resultado una configuración no compatible. Cualquier cambio en los recursos de Cloud Volumes ONTAP que BlueXP crea y gestiona puede afectar a la estabilidad del sistema y a la capacidad de BlueXP para gestionar el sistema.
+Los cambios en la configuración de Cloud Volumes ONTAP desde la consola de su proveedor de nube dan como resultado una configuración no compatible. Cualquier cambio en los recursos de Cloud Volumes ONTAP que la consola crea y administra puede afectar la estabilidad del sistema y la capacidad de la consola para administrar el sistema.
 
 
 NOTE: Después de la implementación inicial, se admite la modificación del nombre de la suscripción de Azure utilizado para los recursos de Cloud Volumes ONTAP.
 
 
 
-== Los discos y agregados deben gestionarse desde BlueXP
+== Los discos y agregados deben administrarse desde la consola
 
-Todos los discos y agregados deben crearse y eliminarse directamente de BlueXP. No debe realizar estas acciones desde otra herramienta de gestión. De esta manera, se puede afectar a la estabilidad del sistema, se puede obstaculizar la capacidad de añadir discos en el futuro y generar potencialmente cuotas redundantes para proveedores de cloud.
+Todos los discos y agregados deben crearse y eliminarse directamente desde la consola. No debe realizar estas acciones desde otra herramienta de administración. Hacerlo puede afectar la estabilidad del sistema, obstaculizar la capacidad de agregar discos en el futuro y potencialmente generar tarifas redundantes del proveedor de la nube.
 
 
 
