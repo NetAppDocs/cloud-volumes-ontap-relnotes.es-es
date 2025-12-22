@@ -20,6 +20,14 @@ Las últimas versiones de la NetApp Console también introducen nuevas funciones
 
 
 
+== 9.17.1 P3 (22 de diciembre de 2025)
+
+El parche 9.17.1 P3 de Cloud Volumes ONTAP ya está disponible para actualización en AWS, Azure y Google Cloud. La consola le pedirá que actualice sus sistemas existentes a esta versión de parche.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["Ver la lista de errores corregidos en el parche P3"^](Se requiere iniciar sesión en el sitio de soporte de NetApp ).
+
+
+
 == 9.17.1 P2 (04 de diciembre de 2025)
 
 El parche 9.17.1 P2 de Cloud Volumes ONTAP ya está disponible para actualización en AWS, Azure y Google Cloud. La consola le pedirá que actualice sus sistemas existentes a esta versión de parche.
