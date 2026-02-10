@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.17.1 incluye una nueva mejora. 
+summary: Cloud Volumes ONTAP 9.18.1 incluye una nueva mejora. 
 ---
-= Novedades de Cloud Volumes ONTAP 9.17.1
+= Novedades en Cloud Volumes ONTAP 9.18.1
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,42 +14,15 @@ summary: Cloud Volumes ONTAP 9.17.1 incluye una nueva mejora.
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.17.1 incluye nuevas mejoras.
+Ya puedes desplegar y actualizar a Cloud Volumes ONTAP 9.18.1. Puedes ver la versión base de este lanzamiento y las últimas versiones de parches disponibles para desplegar y actualizar en la NetApp Console.
 
-Las últimas versiones de la NetApp Console también introducen nuevas funciones de Cloud Volumes ONTAP . Para obtener más información, consulte las novedades en https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] gestionado en la consola.
-
-
-
-== 9.17.1 P3 (22 de diciembre de 2025)
-
-El parche 9.17.1 P3 de Cloud Volumes ONTAP ya está disponible para actualización en AWS, Azure y Google Cloud. La consola le pedirá que actualice sus sistemas existentes a esta versión de parche.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P3["Ver la lista de errores corregidos en el parche P3"^](Se requiere iniciar sesión en el sitio de soporte de NetApp ).
+Para conocer las funciones de Cloud Volumes ONTAP que se han introducido en las últimas versiones de la NetApp Console, mira qué hay de nuevo en https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^].
 
 
 
-== 9.17.1 P2 (04 de diciembre de 2025)
+== 9.18.1 GA (10 de febrero de 2026)
 
-El parche 9.17.1 P2 de Cloud Volumes ONTAP ya está disponible para actualización en AWS, Azure y Google Cloud. La consola le pedirá que actualice sus sistemas existentes a esta versión de parche.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P2["Ver la lista de errores corregidos en el parche P2"^](Se requiere iniciar sesión en el sitio de soporte de NetApp ).
-
-
-
-== 9.17.1 P1 (4 de noviembre de 2025)
-
-El parche Cloud Volumes ONTAP 9.17.1 P1 ya está disponible para su implementación y actualización en AWS, Azure y Google Cloud. La consola le pedirá que actualice sus sistemas existentes a esta versión de parche.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["Ver la lista de errores corregidos en el parche P1"^](Se requiere iniciar sesión en el sitio de soporte de NetApp ).
-
-
-
-== 9.17.1 RC1 (4 de septiembre de 2025)
-
-Ahora puede usar la versión candidata 1 de Cloud Volumes ONTAP 9.17.1 para la implementación y actualización en Azure y Google Cloud.
-
-
-NOTE: Esta versión no está disponible para su implementación y actualización en AWS.
+La versión Cloud Volumes ONTAP 9.18.1 General Availability ya está disponible para despliegue y actualización en Amazon Web Services (AWS) y Microsoft Azure. Esta versión no está disponible para despliegue y actualización en Google Cloud.
 
 
 
@@ -69,7 +42,10 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Ruta de actualización admitida
 
-Puedes actualizar a Cloud Volumes ONTAP 9.17.1 desde la versión 9.16.1 en AWS, Azure y Google Cloud.  Para AWS, puede actualizar a Cloud Volumes ONTAP 9.17.1 P1 y versiones posteriores.  La consola le solicitará que actualice los sistemas Cloud Volumes ONTAP elegibles a esta versión.
+Puedes actualizar a Cloud Volumes ONTAP 9.18.1 desde la 9.17.1 P1 y parches posteriores en AWS y Azure. La NetApp Console te pedirá que actualices los sistemas Cloud Volumes ONTAP elegibles a esta versión.
+
+
+NOTE: Cloud Volumes ONTAP 9.18.1 no está disponible para upgrade en Google Cloud.
 
 
 
