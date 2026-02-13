@@ -20,9 +20,9 @@ Google Cloud admite varias configuraciones de Cloud Volumes ONTAP.
 
 == Configuraciones admitidas por licencia
 
-Cloud Volumes ONTAP está disponible en Google Cloud como un sistema de nodo único y como par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones no disruptivas.
+Cloud Volumes ONTAP está disponible en Google Cloud como un sistema de nodo único y como un par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones sin interrupciones.
 
-No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.
+No se admite la actualización de un sistema de nodo único a un par de HA. Si quieres cambiar entre un sistema de nodo único y un par de HA, necesitas implementar un sistema nuevo y replicar los datos del sistema existente al nuevo sistema.
 
 Cloud Volumes ONTAP puede ejecutarse en una instancia de máquina virtual reservada o bajo demanda desde el proveedor de cloud. No se admiten soluciones que usan otros tipos de instancia de máquinas virtuales.
 

@@ -51,6 +51,6 @@ NOTE: Cloud Volumes ONTAP 9.18.1 no está disponible para upgrade en Google Clou
 
 === Tiempo de inactividad
 
-* La actualización de un único sistema de nodos desconecta el sistema hasta 25 minutos, durante los cuales se interrumpe la I/O.
+* La actualización de un sistema de un solo nodo deja el sistema fuera de línea durante hasta 25 minutos, durante los cuales se interrumpe la I/O.
 * Actualizar un par de alta disponibilidad es sin interrupciones y las I/O no interrumpen. Durante este proceso de actualización no disruptivo, cada nodo se actualiza en tándem para continuar sirviendo I/O a los clientes.
 

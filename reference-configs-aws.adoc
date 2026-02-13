@@ -20,9 +20,9 @@ Se admiten varias configuraciones de Cloud Volumes ONTAP en AWS.
 
 == Número de nodos admitido
 
-Cloud Volumes ONTAP está disponible en AWS como un único sistema de nodo y como un par de nodos de alta disponibilidad para tolerancia a fallos y operaciones no disruptivas.
+Cloud Volumes ONTAP está disponible en AWS como un sistema de nodo único y como un par de nodos de alta disponibilidad (HA) para tolerancia a fallos y operaciones sin interrupciones.
 
-No se admite la actualización de un sistema de un solo nodo a un par de alta disponibilidad. Si desea cambiar entre un sistema de un solo nodo y un par de alta disponibilidad, debe poner en marcha un sistema nuevo y replicar los datos desde el sistema existente al nuevo sistema.
+No se admite la actualización de un sistema de nodo único a un par de HA. Si quieres cambiar entre un sistema de nodo único y un par de HA, necesitas implementar un sistema nuevo y replicar los datos del sistema existente al nuevo.
 
 
 
@@ -79,7 +79,7 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 
 
 --
-.Licencias basadas en nodos
+.Otras licencias
 --
 [cols="h,d,d,d,d"]
 |===
@@ -245,8 +245,8 @@ Los anchos de banda que se muestran en la tabla siguiente coinciden con los lím
 | m6id.32xlarge | 64 ^4^ | 512 | Compatible | 50 | 40,000 | Compatible 
 |===
 . Algunos tipos de instancias incluyen almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es eficaz para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico y servicios de archivos. La compresión debe deshabilitarse en todos los volúmenes para aprovechar las mejoras de rendimiento de Flash Cache. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Obtenga más información sobre Flash Cache"^].
-. Cloud Volumes ONTAP es compatible con una alta velocidad de escritura con la mayoría de los tipos de instancias cuando se utiliza un par de alta disponibilidad. Todos los tipos de instancia admiten la alta velocidad de escritura cuando se utiliza un sistema de nodo único. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
-. El tipo de instancia r5.12xLarge tiene una limitación conocida con compatibilidad. Si un nodo se reinicia de forma inesperada debido a una caída de alarma, es posible que el sistema no recopile los archivos de núcleo utilizados para solucionar los problemas y raíz provocando el problema. El cliente acepta los riesgos y los términos de soporte limitados y asume toda responsabilidad de soporte si se produce esta condición. Esta limitación afecta a los pares de alta disponibilidad recién puestos en marcha y a los pares de alta disponibilidad actualizados desde 9.8. La limitación no afecta a los sistemas de un solo nodo recién puestos en marcha.
+. Cloud Volumes ONTAP admite alta velocidad de escritura con la mayoría de los tipos de instancia cuando usas un par de HA. Se admite alta velocidad de escritura con todos los tipos de instancia cuando usas un sistema de nodo único. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["Obtenga más información sobre cómo elegir una velocidad de escritura"^].
+. El tipo de instancia r5.12xlarge tiene una limitación conocida con la capacidad de soporte. Si un nodo se reinicia inesperadamente debido a un pánico, es posible que el sistema no recopile los archivos core que se usan para investigar y encontrar la causa del problema. El cliente acepta los riesgos y los términos de soporte limitado y asume toda la responsabilidad de soporte si ocurre esta condición. Esta limitación afecta a los pares de HA recién implementados y a los pares de HA actualizados desde 9.8. La limitación no afecta a los sistemas de un solo nodo recién implementados.
 . Aunque estos tipos de instancia EC2 admiten más de 64 vCPU, Cloud Volumes ONTAP solo admite hasta 64 vCPU.
 . Al seleccionar un tipo de instancia de EC2, puede especificar si es una instancia compartida o una instancia dedicada.
 . Las zonas locales de AWS son compatibles con las siguientes familias de tipos de instancia EC2 con tamaños xlarge a 4xlarge: M5, C5, C5d, R5 y R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Debe consultar AWS para obtener los detalles más recientes y completos sobre los tipos de instancia de EC2 admitidos en las zonas locales"^].

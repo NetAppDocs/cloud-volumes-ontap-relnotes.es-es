@@ -96,7 +96,7 @@ Los límites no incluyen el disco raíz, el disco principal y el VNVRAM.
 * Puede ver la capacidad máxima del sistema cuando usa solo discos y cuando usa discos y niveles de datos fríos en el almacenamiento de objetos.
 * Los sistemas de nodo único y alta disponibilidad que utilizan discos gestionados tienen un máximo de 32 TIB por disco. La cantidad de discos admitidos varía según el tamaño de la máquina virtual.
 * Los sistemas DE ALTA DISPONIBILIDAD que usan los blobs de la página tienen un máximo de 8 TIB por blob de página. La cantidad de discos admitidos varía según el tamaño de la máquina virtual.
-* El límite basado en disco de 896 TIB indicado para sistemas de un solo nodo con ciertos tamaños de máquina virtual es el límite _tested_.
+* El límite de 896 TiB basado en disco que se indica para sistemas de nodo único con ciertos tamaños de VM es el límite _probado_.
 
 
 
