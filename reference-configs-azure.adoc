@@ -166,7 +166,7 @@ De manera similar, si elige discos administrados SSD Premium para un entorno que
 
 
 --
-.Licencias basadas en nodos
+.Otras licencias
 --
 [cols="h,d,d,d,d"]
 |===
@@ -381,7 +381,7 @@ Notas:
 
 
 --
-.Licencias basadas en nodos
+.Otras licencias
 --
 [cols="h,d,d,d"]
 |===
@@ -543,7 +543,7 @@ Notas:
 
 
 --
-.Licencias basadas en nodos
+.Otras licencias
 --
 [cols="h,d,d,d"]
 |===
