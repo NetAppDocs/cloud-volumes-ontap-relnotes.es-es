@@ -51,89 +51,184 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 
 
 | Tipos de máquina virtual admitidos  a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2 ^1^
 * DS5_hacia 2 1
 * DS13_v2 ^1^
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E4ds_v4
 * E8ds_v4
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8S_v3 hacia 2
 * L16s_v3 ^2^
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E4ds_esta versión 3
 * E8DS_v4 hacia 3
 * E4ds_v5
 * E8ds_v5
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2 ^1^
 * DS5_hacia 2 1
 * DS13_v2 ^1^
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E4ds_esta versión 3
 * E8DS_v4 hacia 3
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8S_v3 hacia 2
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -141,6 +236,7 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 * L64s_v3 ^2^
 
 
+=====
 
 
 | Tipos de disco compatibles con esta versión 4 3+| Discos gestionados HDD estándar, discos gestionados SSD estándar, discos gestionados SSD premium y discos gestionados SSD premium de v2 TB. 
@@ -177,79 +273,214 @@ De manera similar, si elige discos administrados SSD Premium para un entorno que
 
 
 | Tipos de máquina virtual admitidos  a| 
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E4bds_v5 ^7^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E4s_v3 ^1^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E4ds_esta versión 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E4ds_v6 ^6^
 
- a| 
+
+===== a| 
+.Serie Dsv2
+[%collapsible]
+=====
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+
+
+=====
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E8bds_v5 ^7^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3 ^1^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8S_v3 hacia 2
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS5_hacia 2 1
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2 ^1^
 * DS5_hacia 2 1
 * DS13_v2 ^1^
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E4ds_esta versión 3
 * E8DS_v4 hacia 3
 * E32ds_v4 hacia 3
 * E48DS_v4 hacia 3
 * E80ids_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8S_v3 hacia 2
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -257,6 +488,7 @@ De manera similar, si elige discos administrados SSD Premium para un entorno que
 * L64s_v3 ^2^
 
 
+=====
 
 
 | Tipos de disco compatibles con esta versión 4 4+| Discos duros estándar gestionados, discos SSD estándar gestionados y discos SSD premium gestionados 
@@ -307,55 +539,120 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 
 
 | Tipos de máquina virtual admitidos  a| 
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E8bds_v5 ^9^
 * E16bds_v5 ^9^
 * E32bds_v5 ^9^
 * E48bds_v5 ^9^
 * E64bds_v5 ^9^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8ds_v4
 * E32ds_v4 ^1^
 * E48DS_v4 hacia 1
 * E80ids_v4 ^1,2^
-* E104ids_v5 ^9^
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* E104ids_v5 ^9^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E20ds_v6 ^8^
 * E32ds_v6 ^8^
 * E48ds_v6 ^8^
 * E64ds_v6 ^8^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8s_v3 ^1,3,5^
 * L16s_v3 hacia 1,3,5
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
 * L64s_v3 ^1,3,5^
 
- a| 
+
+===== a| 
+.Serie Edsv4
+[%collapsible]
+=====
 * E8ds_v4
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5 ^4^
 
- a| 
+
+===== a| 
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E8bds_v5 ^9^
 * E16bds_v5 ^9^
 * E32bds_v5 ^9^
 * E48bds_v5 ^9^
 * E64bds_v5 ^9^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8ds_v4
 * E32ds_v4 ^1^
 * E48DS_v4 hacia 1
 * E80ids_v4 ^1,2^
-* E104ids_v5 ^9^
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* E104ids_v5 ^9^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E20ds_v6 ^8^
 * E32ds_v6 ^8^
 * E48ds_v6 ^8^
 * E64ds_v6 ^8^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8s_v3 ^1,3,5^
 * L16s_v3 hacia 1,3,5
 * L32s_v3 ^1,3,5^
@@ -363,6 +660,7 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 * L64s_v3 ^1,3,5^
 
 
+=====
 
 
 | Tipos de disco compatibles con esta versión 6 3+| Discos administrados SSD Premium o discos administrados SSD Premium v2. 
@@ -392,60 +690,132 @@ Notas:
 
 
 | Tipos de máquina virtual admitidos  a| 
-* E8DS_v4 hacia 4
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E8bds_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
+* E8DS_v4 hacia 4
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L8s_v3 ^4,5^
 
- a| 
+
+===== a| 
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
 
- a| 
+
+===== a| 
+.Serie Ebdsv5
+[%collapsible]
+=====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 4
 * E32ds_v4 hacia 1,4
 * E48DS_v4 hacia 1,4
 * E80ids_v4 hacia 1,2,4
-* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+* E104ids_v5 ^7^
+
+
+=====
+.Serie Edsv6
+[%collapsible]
+=====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+
+=====
+.Serie Lsv3
+[%collapsible]
+=====
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
 
 
+=====
 
 
 | Tipos de disco admitidos 3+| Discos administrados SSD Premium o discos administrados SSD Premium v2. 
@@ -458,7 +828,7 @@ Notas:
 . ^4^ Estos tipos de VM son compatibles con pares de alta disponibilidad en configuraciones de zona de disponibilidad única y zona de disponibilidad múltiple que se ejecutan en discos administrados compartidos. Para los tipos de máquinas virtuales LS_v3, el soporte de varias zonas de disponibilidad comienza desde la versión 9.13.1 de ONTAP. Para los tipos de máquinas virtuales Eds_v5, el soporte de varias zonas de disponibilidad comienza desde la versión 9.14.1 RC1 de ONTAP.
 . ^5^ Este tipo de VM incluye almacenamiento NVMe local, que Cloud Volumes ONTAP utiliza como _Flash Cache_. Flash Cache acelera el acceso a los datos mediante el almacenamiento en caché inteligente en tiempo real de datos recientes de usuarios y metadatos de NetApp. Es efectivo para cargas de trabajo de lectura intensiva aleatoria, como bases de datos, correo electrónico o servicios de archivos. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["Leer más"^].
 . ^6^ Los tipos de VM Edsv6 son compatibles con nuevas implementaciones de Cloud Volumes ONTAP 9.17.1 y versiones posteriores. No se puede cambiar una implementación existente con ningún otro tipo de VM, por ejemplo, de Edsv5 a Edsv6; solo se admiten cambios de tamaño entre variantes de Edsv6 (por ejemplo, E20ds_v6 → E32ds_v6). Para obtener información sobre este tipo de máquina virtual, consulte https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic["Documentación de Azure: Serie de tamaños de Edsv6"^].
-. ^7^ Las máquinas virtuales Ebdsv5 y E104ids_v5 están disponibles para nuevas implementaciones y actualizaciones de Cloud Volumes ONTAP 9.18.1 y posteriores. Puedes cambiar o actualizar tus máquinas virtuales Edsv4, Edsv5 u otros tipos de Ebdsv5 existentes a Ebdsv5. Puedes actualizar las máquinas virtuales Ebdsv5 o Eidsv5 a E104ids_v5.v
+. ^7^ Las máquinas virtuales Ebdsv5 y E104ids_v5 están disponibles para nuevas implementaciones y actualizaciones de Cloud Volumes ONTAP 9.18.1 y posteriores. Puedes cambiar o actualizar tus máquinas virtuales Edsv4, Edsv5 u otros tipos de Ebdsv5 existentes a Ebdsv5. Puedes actualizar las máquinas virtuales Ebdsv5 o Eidsv5 a E104ids_v5.
 
 
 --
@@ -487,42 +857,107 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 
 
 | Tipos de máquina virtual admitidos  a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2
 * DS5_hacia 2 1
 * DS13_v2
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3
 * E48s_v3 esta 1
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2
 * DS13_v2
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2
 * DS5_hacia 2 1
 * DS13_v2
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3
 * E48s_v3 esta 1
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
@@ -530,6 +965,7 @@ Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la o
 * E64ds_v5 ^1^
 
 
+=====
 
 
 | Tipos de disco admitidos 3+| Blobs de página 
@@ -554,37 +990,102 @@ Notas:
 
 
 | Tipos de máquina virtual admitidos  a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2
 * DS13_v2
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E8ds_v5
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS5_hacia 2 1
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E48s_v3 esta 1
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
 
- a| 
+
+===== a| 
+.Serie DSv2
+[%collapsible]
+=====
 * DS4_v2
 * DS5_hacia 2 1
 * DS13_v2
 * DS14_v2 hacia 1
 * DS15_hacia 2 1
+
+
+=====
+.Serie Esv3
+[%collapsible]
+=====
 * E8s_v3
 * E48s_v3 esta 1
+
+
+=====
+.Serie Edsv4
+[%collapsible]
+=====
 * E8DS_v4 hacia 3
 * E32ds_v4 hacia 1,3
 * E48DS_v4 hacia 1,3
 * E80ids_v4 hacia 1,2,3
+
+
+=====
+.Serie Edsv5
+[%collapsible]
+=====
 * E4ds_v5
 * E8ds_v5
 * E20ds_v5 ^1^
@@ -593,6 +1094,7 @@ Notas:
 * E64ds_v5 ^1^
 
 
+=====
 
 
 | Tipos de discos de datos admitidos 3+| Blobs de página 
