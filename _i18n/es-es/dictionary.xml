@@ -377,7 +377,6 @@
   <block id="4d2719ea5599a5bf1a9973d3b247f959" category="section-title">Limitación de la licencia de SnapManager</block>
   <block id="c91bb6f1740b2a7b3e274deca5e32b94" category="paragraph">Las licencias de SnapManager por servidor son compatibles con Cloud Volumes ONTAP. No se admiten licencias por sistema de almacenamiento (suite SnapManager).</block>
   <block id="c3f5fdee9b6adb6eccff2d4c189ead12" category="section-title">Funciones ONTAP no compatibles</block>
-  <block id="534cab245a3cc0ececa966044bad6ba2" category="paragraph">Cloud Volumes ONTAP no admite las siguientes funciones:</block>
   <block id="a031ea731cd3c4992b7f33bad9f72a00" category="list-text">Deduplicación inline a nivel de agregado</block>
   <block id="98e2e51de88bd2dae78a66fdad91936c" category="list-text">Deduplicación en segundo plano a nivel de agregado</block>
   <block id="5873635ff256383dcb0b47a0e49f71b1" category="list-text">Centro de mantenimiento de discos</block>
@@ -926,4 +925,6 @@
   <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">El parche Cloud Volumes ONTAP 9.18.1 P2 ya está disponible para despliegue y actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas existentes a esta versión del parche.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">Ver la lista de errores corregidos en el parche P2</block>
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block> (NetApp se requiere inicio de sesión en Support Site).</block>
+  <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">Algunas funciones de ONTAP no son compatibles con Cloud Volumes ONTAP, entre otras:</block>
+  <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">Gestor de claves integrado (OKM) para cifrado</block>
 </blocks>
