@@ -24,13 +24,19 @@ Para conocer las funciones de Cloud Volumes ONTAP que se han introducido en las 
 
 El parche Cloud Volumes ONTAP 9.18.1 P2 ya está disponible para despliegue y actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas existentes a esta versión del parche.
 
+
+NOTE: Para AWS, Cloud Volumes ONTAP 9.18.1 P2 es la versión estándar para la implementación y la actualización. No se admite ninguna versión anterior ni ningún parche de la versión 9.18.1.
+
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2["Ver la lista de errores corregidos en el parche P2"^] (NetApp se requiere inicio de sesión en Support Site).
 
 
 
 == 9.18.1 P1 (31 de marzo de 2026)
 
-El parche Cloud Volumes ONTAP 9.18.1 P1 ya está disponible para despliegue y actualización en AWS, Azure y Google Cloud. La consola te pedirá que actualices tus sistemas existentes a esta versión del parche.
+El parche Cloud Volumes ONTAP 9.18.1 P1 ya está disponible para su implementación y actualización en Azure y Google Cloud. La consola te pedirá que actualices tus sistemas actuales a esta versión del parche.
+
+
+NOTE: Esta versión no está disponible para su implementación y actualización en AWS.
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1["Ver la lista de errores corregidos en el parche P1"^] (NetApp se requiere inicio de sesión en Support Site).
 
@@ -38,7 +44,10 @@ link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/
 
 == 9.18.1 GA (10 de febrero de 2026)
 
-La versión Cloud Volumes ONTAP 9.18.1 General Availability ya está disponible para implementación y actualización en Amazon Web Services (AWS), Microsoft Azure y Google Cloud.
+La versión de disponibilidad general de Cloud Volumes ONTAP 9.18.1 ya está disponible para su implementación y actualización en Microsoft Azure y Google Cloud.
+
+
+NOTE: Esta versión no está disponible para su implementación y actualización en Amazon Web Services (AWS).
 
 
 
