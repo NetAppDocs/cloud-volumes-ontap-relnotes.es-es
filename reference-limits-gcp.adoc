@@ -18,6 +18,7 @@ Cloud Volumes ONTAP tiene límites de configuración de almacenamiento para prop
 
 
 
+[[maximum-system-capacity-by-license]]
 == Capacidad máxima del sistema por licencia
 
 La capacidad máxima del sistema para un sistema Cloud Volumes ONTAP viene determinada por su licencia. La capacidad máxima del sistema incluye almacenamiento basado en disco y almacenamiento de objetos utilizado para la organización en niveles de datos.
@@ -26,6 +27,7 @@ NetApp no admite exceder el límite de capacidad del sistema. Si alcanza el lím
 
 En algunas configuraciones, los límites de discos impiden que llegue al límite de capacidad usando solo discos. Es posible alcanzar el límite de capacidad mediante https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["organización en niveles de los datos inactivos en el almacenamiento de objetos"^]. Consulte los siguientes límites de discos para obtener más información.
 
+[[cap-license-gcp]]
 .Límite de capacidad para licencias basadas en capacidad
 Con licencias basadas en capacidad, cada sistema Cloud Volumes ONTAP admite la organización en niveles del almacenamiento de objetos.  La capacidad total escalonada se puede escalar hasta el límite de capacidad del proveedor de la nube.  Si bien la licencia no impone restricciones de capacidad, debe seguir las https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Mejores prácticas de FabricPool"^] para garantizar un rendimiento óptimo, confiabilidad y rentabilidad al configurar y administrar la organización en niveles. Consulte la  https://cloud.google.com/storage/docs/buckets["Documentación de Google Cloud"^] Para más información.
 
@@ -59,6 +61,7 @@ No, no lo es. Los datos de un par HA se reflejan de forma sincrónica entre los 
 
 
 
+[[aggregate-limits]]
 == Límites del agregado
 
 Cloud Volumes ONTAP agrupa los discos de Google Cloud Platform en _aggregates_. Los agregados proporcionan almacenamiento para volúmenes.
@@ -92,6 +95,7 @@ Notas:
 
 
 
+[[disk-and-tiering-limits]]
 == Límites de discos y organización en niveles
 
 En la siguiente tabla se muestra la capacidad máxima del sistema solo con discos, y con discos y organización en niveles de datos inactivos al almacenamiento de objetos. Los límites de discos son específicos para los discos que contienen datos de usuario. Entre los límites no se incluyen el disco de arranque, el disco raíz o la NVRAM.
@@ -120,6 +124,7 @@ Este límite está definido por los límites de la máquina virtual en Google Cl
 
 
 
+[[storage-vm-limits]]
 == Límites de máquinas virtuales de almacenamiento
 
 Algunas configuraciones le permiten crear máquinas virtuales de almacenamiento (SVM) adicionales para Cloud Volumes ONTAP.
@@ -164,6 +169,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[logical-storage-limits]]
 == Límites de almacenamiento lógico
 
 [cols="22,22,56"]
@@ -206,6 +212,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 
 
 
+[[iscsi-storage-limits]]
 == Límites de almacenamiento de iSCSI
 
 [cols="3*"]
@@ -247,6 +254,7 @@ Los equipos virtuales de almacenamiento que configure para la recuperación ante
 |===
 
 
+[[cloud-volumes-ontap-ha-pairs-do-not-support-immediate-storage-giveback]]
 == Los pares de alta disponibilidad de Cloud Volumes ONTAP no admiten la devolución inmediata del almacenamiento
 
 Cuando un nodo se reinicia, el partner debe sincronizar los datos para que puedan devolver el almacenamiento. El tiempo que tarda en resincronizar los datos depende de la cantidad de datos escritos por los clientes mientras el nodo estaba inactivo y de la velocidad de escritura de datos durante el momento de la restauración.
