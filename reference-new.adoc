@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.19.1 incluye una nueva mejora.
 [role="lead"]
 Ya puedes desplegar y actualizar a Cloud Volumes ONTAP 9.19.1. Puedes ver la versión base de este lanzamiento y las últimas versiones de parches disponibles para desplegar y actualizar en la NetApp Console.
 
-Para conocer las funciones de Cloud Volumes ONTAP que se han introducido en las últimas versiones de la NetApp Console, mira qué hay de nuevo en https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^].
+Para conocer más sobre las funciones de Cloud Volumes ONTAP, las configuraciones compatibles, los límites y más, consulta https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html["Documentación de Cloud Volumes ONTAP"^].
 
 
 
