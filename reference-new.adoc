@@ -20,10 +20,10 @@ Para conocer más sobre las funciones de Cloud Volumes ONTAP, las configuracione
 
 
 
-[[9-19-1-rc-13-july-2026]]
-== 9.19.1 RC (13 de julio de 2026)
+[[9-19-1-10-august-2026]]
+== 9.19.1 (10 de agosto de 2026)
 
-La versión candidata (RC) de Cloud Volumes ONTAP 9.19.1 ya está disponible para su implementación y actualización únicamente en Google Cloud. Esta versión no está disponible para su implementación y actualización en Amazon Web Services (AWS) ni en Microsoft Azure (Azure).
+La versión de disponibilidad general (GA) de Cloud Volumes ONTAP 9.19.1 ya está disponible para su implementación y actualización únicamente en Amazon Web Services (AWS) y Google Cloud. Esta versión no está disponible para su implementación y actualización en Microsoft Azure (Azure).
 
 
 
@@ -39,17 +39,17 @@ Lea estas notas para obtener más información acerca de cómo actualizar a esta
 
 Las actualizaciones de Cloud Volumes ONTAP deben completarse desde la consola. No debe actualizar Cloud Volumes ONTAP mediante el Administrador del sistema o la CLI. Hacerlo puede afectar la estabilidad del sistema.
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html["Aprende cómo actualizar cuando la consola te lo notifique"^] .
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-updating-ontap-cloud.html["Aprende cómo actualizar cuando la consola te lo notifique"^].
 
 
 
 [[supported-upgrade-path]]
 === Ruta de actualización admitida
 
-Puedes actualizar a Cloud Volumes ONTAP 9.19.1 RC desde la 9.18.1 solo en Google Cloud. La consola te pedirá que actualices los sistemas Cloud Volumes ONTAP que cumplan los requisitos a esta versión.
+Puedes actualizar a Cloud Volumes ONTAP 9.19.1 desde la 9.18.1 en AWS y Google Cloud. La consola te indicará que actualices los sistemas Cloud Volumes ONTAP compatibles a esta versión.
 
 
-NOTE: En AWS y Azure, no se te pedirá que actualices a la versión 9.19.1 RC porque esta versión no está disponible para implementación ni actualización para estos proveedores de nube.
+NOTE: En Azure, no se te pedirá que actualices a la versión 9.19.1 porque esta versión no está disponible para implementación ni actualización en este proveedor de nube.
 
 
 
